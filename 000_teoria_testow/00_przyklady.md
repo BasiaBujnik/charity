@@ -2,6 +2,19 @@
 
 Problemy wydajnościowe aplikacji mają różne przyczyny i konsekwencje. Jest też wiele możliwych odpowiedzi i rozwiązań, które można zastosować.
 
+Konsekwencje:
+ - utrata przychodów
+ - ryzyko roszczeń finansowych
+ - utrata zaufania klientów
+ 
+Przyczyny:
+ - brak testów :)
+ - bycie ofiarą własnego sukcesu
+ - nieprzygotowanie aplikacji na określoną sytuacją związaną ze wziększonym obciążeniem
+ 
+ 
+
+***
 #### 01.03.2011 - uefa.com
 **Sytuacja**: Nie można zarejestrować się w loterii biletowej na UEFA 2012
 
@@ -29,7 +42,7 @@ Problemy wydajnościowe aplikacji mają różne przyczyny i konsekwencje. Jest t
 #### 7.02.2021 - CBS/SuperBowl
 **Sytuacja**: Nie działała transmisja SuperBowl 
 
-**Konsekwencja**: SuperBowl to najbardziej dochodowe wydarzenie sportowe na świecie. 30s reklamy kosztuje 5.6 mln $. Formy wykupujące reklamy liczą na odpowiedni zasięg.
+**Konsekwencja**: SuperBowl to najbardziej dochodowe wydarzenie sportowe na świecie. 30s reklamy kosztuje 5.6 mln $. Firmy wykupujące reklamy liczą na odpowiedni zasięg.
                   Niedostępność medium zmniejsza zasięg i może być powodem żądań rekompensaty.
 
 **Przyczyna**: Zbyt wielu użytkowników  
