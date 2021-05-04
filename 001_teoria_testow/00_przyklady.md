@@ -1,4 +1,4 @@
-# Przykłady
+# Po co testować wydajność, przykłady z życia wzięte
 
 Problemy wydajnościowe aplikacji mają różne przyczyny i konsekwencje. Jest też wiele możliwych odpowiedzi i rozwiązań, które można zastosować.
 
@@ -50,3 +50,7 @@ Przyczyny:
 ![login.gov.pl nie dziala](img/superbowl.png)
 
     `żródło: https://www.the-sun.com/news/2290209/super-bowl-2021-cbs-all-access-down/#`
+
+***
+
+Potraficie podać inne przykłady, które zapadły Wam w pamięć ?
