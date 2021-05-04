@@ -20,15 +20,18 @@ Problemy wydajnościowe aplikacji mają różne przyczyny i konsekwencje. Jest t
 **Przyczyna**: Prawdopodobnie login.gov.pl nie był przygotowany na tak duży ruch spowodowany próbą rejestracji na szczepienie grupy 30-40 latków  
 
 ![login.gov.pl nie dziala](img/zus-down.jpg)
+
     `żródło: własne`
 
 *** 
 #### 7.02.2021 - CBS/SuperBowl
 **Sytuacja**: Nie działała transmisja SuperBowl 
 
-**Konsekwencja**:SuperBowl to najbardziej dochodowe wydarzenie sportowe na świecie. 30s reklamy kosztuje 5.6 mln $.
+**Konsekwencja**: SuperBowl to najbardziej dochodowe wydarzenie sportowe na świecie. 30s reklamy kosztuje 5.6 mln $. Formy wykupujące reklamy liczą na odpowiedni zasięg.
+                  Niedostępność medium zmniejsza zasięg i może być powodem żądań rekompensaty.
 
 **Przyczyna**: Zbyt wielu użytkowników  
 
 ![login.gov.pl nie dziala](img/superbowl.png)
+
     `żródło: https://www.the-sun.com/news/2290209/super-bowl-2021-cbs-all-access-down/#`
