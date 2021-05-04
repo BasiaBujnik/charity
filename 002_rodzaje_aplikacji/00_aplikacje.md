@@ -17,6 +17,10 @@ Resources:
 - CSS
 - JavaScript
 - Media
+
+Invoke-WebRequest
+
+
 ## Co robi przeglądarka
 ***
 
