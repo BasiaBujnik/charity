@@ -1,9 +1,6 @@
-#Rodzaje AUT (Application-Under-Test): SPA, MPA, Low-Code, No-Code.
+#Jak działa HTTP i co robi przeglądarka? 
 ***
-## MPA
+## HTTP 
 ***
-## SPA
+## Co robi przeglądarka
 ***
-## Low-Code
-***
-## No-Code
