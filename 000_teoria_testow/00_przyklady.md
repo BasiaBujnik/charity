@@ -24,7 +24,7 @@ Przyczyny:
 
 ![uefa.com nie dziala](img/euro2012.jpg)
 
-    `żródło: https://www.rp.pl/artykul/619791-Bilety-na-Euro-2012--strona-UEFA-z-biletami-nie-dziala.html?fbclid=IwAR10hMsIeX1xZXT8XABpN2RqTlNKNhPEDnr7FzndcPhrnHoZE4VU84tz-QA`
+    `żródło: https://www.rp.pl/artykul/619791-Bilety-na-Euro-2012--strona-UEFA-z-biletami-nie-dziala.html`
 
 *** 
 #### 29.04.2021 - login.gov.pl
