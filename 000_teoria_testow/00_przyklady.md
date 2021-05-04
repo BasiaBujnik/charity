@@ -1,3 +1,5 @@
+# Przykłady
+
 Problemy wydajnościowe aplikacji mają różne przyczyny i konsekwencje. Jest też wiele możliwych odpowiedzi i rozwiązań, które można zastosować.
 
 #### 01.03.2011 - uefa.com
