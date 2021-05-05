@@ -24,6 +24,7 @@ Czas związany z Frontendem = cala reszta
 Tak wyglądają proporcje czasu dla 50 000 stron z [HTTP Archive](http://httparchive.org/).
 
 ![Golden Perormance Rule](img/golden-top50K.png)
+
 `żrodło: https://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/`
 
 ## front-end vs back-end
