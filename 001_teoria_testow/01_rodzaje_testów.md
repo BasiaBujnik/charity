@@ -28,6 +28,20 @@ Tak wyglądają proporcje czasu dla 50 000 stron z [HTTP Archive](http://httparc
 `żrodło: https://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/`
 
 ## front-end vs back-end
+
+Jakie czynniki mają najczęściej wpływ na wydajnośc frontendu ?
+
+- połączenie sieciowe
+- rodzaj klienta (PC, Smartphone)
+- Parametry klienta np. CPU, karta graficzna
+- na ogół wydajnośc frontendu badamy z perspektywy jednego użytkownika w izolacji od backendu
+
+Jakie czynniki mają najczęściej wpływ na wydajnośc backendu ?
+
+- liczba równoległych sesji, żadań, zadań
+- wolumen danych
+
+
 ### lighhouse metrics
 Core Web Vitals
 ![Core Web Vitals](img/CoreWebVitals.png)
