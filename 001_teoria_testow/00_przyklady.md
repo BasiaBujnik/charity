@@ -11,11 +11,17 @@ Przyjmijmy, że jesteście producentem luksusowych aut. Jakie testy wydajnościo
 
 Problemy wydajnościowe aplikacji mają różne przyczyny i konsekwencje. Jest też wiele możliwych odpowiedzi i rozwiązań, które można zastosować.
 
-Konsekwencje:
+Konsekwencje problemów wydajnościowych:
  - utrata przychodów
  - ryzyko roszczeń finansowych
  - utrata zaufania klientów
  
+Testujemy ponieważ ...?
+-  komuś coś obiecaliśmy (wymagania, obietnice)
+-  tak nakazują przepisy (branża medyczna)
+-  chcemy wiedzieć
+-  nasza opinie nam nakazuje, ... 
+
 Przyczyny:
  - brak testów :)
  - bycie ofiarą własnego sukcesu
