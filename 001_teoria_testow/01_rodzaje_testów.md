@@ -39,6 +39,7 @@ Google ogłosił, że Core Web Vitals będą miały wpływ na pozycjonowanie str
 
 Links:
 - https://github.com/GoogleChrome/web-vitals
+
 ![warstwy](img/lighhouse.png)
 ### lighhouse Ci server metrics
 ![warstwy](img/lighhouseci1.png)
