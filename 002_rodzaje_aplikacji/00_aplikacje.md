@@ -23,7 +23,9 @@ Resources:
 ```powershell
     Invoke-WebRequest
 ```
-
+```sh
+    curl -X GET http://bing.com
+```
 
 ## Co robi przeglądarka
 ***
