@@ -1,3 +1,12 @@
+# Czym są testy wydajnościowe ?
+
+Przyjmijmy, że jesteście producentem luksusowych aut. Jakie testy wydajnościowe można zaplanować i wykonać dla supersamochodu ? 
+
+![koenigsegg](img/koenigsegg.jpg)
+
+    `żródło: https://www.autocentrum.pl/ac-file/news/58932ffa592c7d8b479156db/koenigsegg-one-1-pierwszy-na-swiecie-megasamochod.jpgl`
+
+*** 
 # Po co testować wydajność, przykłady z życia wzięte
 
 Problemy wydajnościowe aplikacji mają różne przyczyny i konsekwencje. Jest też wiele możliwych odpowiedzi i rozwiązań, które można zastosować.
