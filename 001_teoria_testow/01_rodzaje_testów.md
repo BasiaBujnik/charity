@@ -1,6 +1,6 @@
 # Rodzaje testów wydajnościowych i nomenklatura
 
-## model warstwowy aplikacji (abstrakcja)
+## AUT(application under test) - model warstwowy aplikacji
 
 
 ![warstwy](img/app.png)
@@ -11,6 +11,7 @@
 - Jakie znacie bazy danych?
 - Jakie technologie frontendowe znacie? Co może być frontendem ?
 
+## zlota zasada testowania wydajności
 ## front-end vs back-end
 ### lighhouse metrics
 ![warstwy](img/lighhouse.png)
@@ -23,4 +24,5 @@
 ## peak capacity testy 
 ## testy A/B
 ## chaos engineering attacks
+## reliability testing
 

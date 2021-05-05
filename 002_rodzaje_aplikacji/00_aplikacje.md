@@ -5,7 +5,9 @@
 
     `żrodło: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works`
 
-HTTP Methods:    
+Nie ma odpowiedzi bez żądania. Serwer nie może wysłać wiadomości pierwszy.
+
+HTTP metody:    
 - GET /home
 - POST
 - PUT
@@ -18,7 +20,9 @@ Resources:
 - JavaScript
 - Media
 
-Invoke-WebRequest
+```powershell
+    Invoke-WebRequest
+```
 
 
 ## Co robi przeglądarka
