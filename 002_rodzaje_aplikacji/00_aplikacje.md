@@ -23,7 +23,7 @@ Resources:
 ```powershell
     Invoke-WebRequest
 ```
-```sh
+```shell script
     curl -X GET http://bing.com
 ```
 
