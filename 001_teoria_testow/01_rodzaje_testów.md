@@ -12,6 +12,19 @@
 - Jakie technologie frontendowe znacie? Co może być frontendem ?
 
 ## zlota zasada testowania wydajności
+
+> 80-90% of the end-user response time is spent on the frontend. Start There.
+>
+> Steve Souders, Google’s Head Performance Engineer, 2007, http://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/
+
+Czas związany z Backendem = TTFB
+
+Czas związany z Frontendem = cala reszta
+
+Tak wyglądają proporcje czasu dla 50 000 stron z [HTTP Archive](http://httparchive.org/).
+
+![warstwy](img/golden-top50K.png)
+
 ## front-end vs back-end
 ### lighhouse metrics
 ![warstwy](img/lighhouse.png)
