@@ -10,6 +10,11 @@ document.getElementById('button3').addEventListener("click", function(event){
     loadSearchResults('https://jsonplaceholder.typicode.com/todos/3');
 }); //we will change text for user - register binding for user action
 
+document.getElementById('button4').addEventListener("click", function(event){
+    loadSearchResults('http://localhost:5000/todos');
+}); //we will change text for user - register binding for user action
+
+
 
 function getTextFromBackend(url){ //the new text is coming from backend. network communication is involved
     fetch(url)
@@ -26,8 +31,13 @@ function loadSearchResults(url) {
   xhttp.responseType = 'json';
   xhttp.onreadystatechange = function() { //callback function, so function to be called when readyState changes
     if (this.readyState === CALL_SUCCESSFUL && this.status === HTTP_OK) { //successfully finished
-            document.getElementById('paragraph').innerText = `Response from backend \r ${url} is \r` + xhttp.response.title     };ó
+            document.getElementById('paragraph').innerText = `Response from backend \r ${url} is \r` + xhttp.response.title
+    }
+    else if(this.readyState !== CALL_SUCCESSFUL){
+            document.getElementById('paragraph').innerText = 'Backend unavailable'
+     };
   };
   xhttp.open("GET", url, true); //true makes it asynchronous call
+  xhttp.setRequestHeader("Authorization", "Basic " + btoa("user:pass"));
   xhttp.send();
  }
