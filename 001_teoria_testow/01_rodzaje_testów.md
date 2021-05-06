@@ -73,7 +73,7 @@ Jakie czynniki mają najczęściej wpływ na wydajnośc backendu ?
 - wolumen danych w backendzie np. w bazie danych
 - parametry maszyn obsługujących ruch. np liczba i moc CPU, ilość pamięci RAM. szybkośc dysku i operacji IO
 - wa przypadku chmur parametry usługi np. abstrakycjne jednostki obliczeniowe ACU,DTU, ... 
-- wydajność frontendu testujemy zastępując prawdziwych klientów (przeglądarki, etc.) odpowiednim narzędziem np. JMeter
+- wydajność backendu testujemy zastępując prawdziwych klientów (przeglądarki, etc.) odpowiednim narzędziem np. JMeter
 
 
 ### lighhouse metrics
