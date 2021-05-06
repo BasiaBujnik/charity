@@ -23,14 +23,10 @@ function loadSearchResults(url) {
   const CALL_SUCCESSFUL = 4;
   const HTTP_OK = 200;
   var xhttp = new XMLHttpRequest();
+  xhttp.responseType = 'json';
   xhttp.onreadystatechange = function() { //callback function, so function to be called when readyState changes
     if (this.readyState === CALL_SUCCESSFUL && this.status === HTTP_OK) { //successfully finished
-       let xhttp = new XMLHttpRequest(); //scope xhttp to this block
-       xhttp.open("GET", url, true); //async to
-       xhttp.onreadystatechange = function(){ //if first request was successful we get entire user list and update in DOM
-            document.getElementById('paragraph').innerText = `Response from backend \r ${url} is \r` + xhttp.responseText     };
-       xhttp.send();
-    }
+            document.getElementById('paragraph').innerText = `Response from backend \r ${url} is \r` + xhttp.response.title     };ó
   };
   xhttp.open("GET", url, true); //true makes it asynchronous call
   xhttp.send();
