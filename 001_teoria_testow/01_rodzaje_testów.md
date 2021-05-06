@@ -17,23 +17,32 @@ akcji użytkonwika np. kliknięcia w przycisk. Frontend jest dla użytkownika a 
 - Jakie znacie bazy danych?
 - Jakie technologie frontendowe znacie? Co może być frontendem ?
 
-## zlota zasada testowania wydajności
+## zlota zasada wydajności - _Performance Golden Rule_
 
 > 80-90% of the end-user response time is spent on the frontend. Start There.
 >
 > [Steve Souders, Google’s Head Performance Engineer, 2007](http://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/)
 
-Czas związany z Backendem = TTFB
+Czas odpowiedzi całego systemu na żądanie użytkwonika dzielimy na:
+- czas związany z backendem = TTFB (Time To First Byte)
+- czas związany z frontendem = cala reszta
 
-Czas związany z Frontendem = cala reszta
-
-Tak wyglądają proporcje czasu dla 50 000 stron z [HTTP Archive](http://httparchive.org/).
+Tak wyglądają proporcje tych dwóch składników dla 50 000 reprezentatywnych stron z [HTTP Archive](http://httparchive.org/).
 
 ![Golden Perormance Rule](img/golden-top50K.png)
 
 `żrodło: https://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/`
 
-## front-end vs back-end
+## frontend vs backend
+Czym się różnią sie te testy?
+
+1) Wydajność frontendu w zasadzie się nie zmienia jeśli z systemu korzysta wielu użytkowników i jest podobna dla każdego użytkownika ponieważ np. przeglądarki dwóch osób nie mają ze sobą nic wspólnego
+2) Powyższe stwierdzenie jest prawdziwe o ile backend odpowiada na czas dlatego testując sam frontend czesto backend mockujemy (udajemy) i zakładamy, że nie jest on problemem.
+3) W testowaniu i optymalizacji frontendu zajmujemy się więc tym co jest związane jedynie z nim.
+4) W przypadku backendu, skupiamy się na symulowaniu obciążenia - wielu użytkowników, tutaj liczba użytkowników/klientów ma znaczenie bo liczba żądań od użytkowników to jeden z głównych czynników obciążających backend.
+5) Nie ma natomiast znaczenia jaką kto ma przeglądarkę, co generuje żądanie, liczy sie tylko to ile jest ich w czasie.
+
+ 
 
 Jakie czynniki mają najczęściej wpływ na wydajnośc frontendu ?
 
