@@ -7,7 +7,8 @@ Frontend (to co wyświela przeglądarka, aplikacja desktopowa) testuje sie inacz
 Najprościej myśleć o frontendzie jako czymś co prezentuje rezultaty otrzymane z backendu i pozwala nam wchodzić w interakcje z systemem. Backend generuje rezultaty w odpowiedzi na żądania z frontendu, które są konsekwencją
 akcji użytkonwika np. kliknięcia w przycisk. Frontend jest dla użytkownika a z  backendem powinny "rozmawiać" programy. W świecie aplikacji webowych frontend top strona w przeglądarce a backend to np. API serwer i baza MySQL. 
 
-> Nasze szkolenie odbywa się w kontekście testowania backendu aplikacji webowych.  
+> Nasze szkolenie odbywa się w kontekście testowania backendu aplikacji webowych. 
+ 
 
 ![warstwy](img/app.png)
 
