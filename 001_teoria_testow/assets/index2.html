@@ -24,7 +24,7 @@
             fetch(url)
               .then(response => response.json())
               .then(data => {
-                document.getElementById('paragraph').innerText = 'Response from backend: ' + data.title //actually use something to change content based on response
+                document.getElementById('paragraph').innerText = `Response from backend ${url}: ` + data.title //actually use something to change content based on response
               });
         }
 </script>
