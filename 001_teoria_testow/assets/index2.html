@@ -20,11 +20,11 @@
             getTextFromBackend('https://jsonplaceholder.typicode.com/todos/2');
         }); //we will change text for user - register binding for user action
 
-        function getTextFromBackend(url){ //the new text is coming from backend
+        function getTextFromBackend(url){ //the new text is coming from backend. network communication is involved
             fetch(url)
               .then(response => response.json())
               .then(data => {
-                document.getElementById('paragraph').innerText = `Response from backend ${url}: ` + data.title //actually use something to change content based on response
+                document.getElementById('paragraph').innerText = `Response from backend \r ${url} is \r` + data.title //actually use something to change content based on response
               });
         }
 </script>

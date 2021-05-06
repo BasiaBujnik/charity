@@ -44,7 +44,8 @@ Czym się różnią sie te testy?
 3) W testowaniu i optymalizacji frontendu zajmujemy się więc tym co jest związane jedynie z nim.
 4) W przypadku backendu, skupiamy się na symulowaniu obciążenia - wielu użytkowników, tutaj liczba użytkowników/klientów ma znaczenie bo liczba żądań od użytkowników to jeden z głównych czynników obciążających backend.
 5) Nie ma natomiast znaczenia jaką kto ma przeglądarkę, co generuje żądanie, liczy sie tylko to ile jest ich w czasie.
-6) Frontend możemy testować również E2E czyli z prawdziwym systemem pod prawdziwym lub syntetycznym obciążeniem. Oprócz tego używa się również RUM (Real User Monitoring) do analizy pasywnej.
+6) Dodatkowo testując backend nie renderujemy stron WWW, pomijamy więc interpretacje JavaScriptu
+7) Frontend możemy testować również E2E czyli z prawdziwym systemem pod prawdziwym lub syntetycznym obciążeniem. Oprócz tego używa się również RUM (Real User Monitoring) do analizy pasywnej.
 
 ![Frontend testing](img/frontend-testing.png)
 
@@ -60,13 +61,17 @@ Jakie czynniki mają najczęściej wpływ na wydajnośc frontendu ?
 - Parametry klienta np. CPU, karta graficzna, pamięć
 - na ogół wydajnośc frontendu badamy z perspektywy jednego użytkownika w izolacji od backendu lub z nieobciążonym backendem
 
+
+
+![Backend testing](img/backend-testing.png)
+
 Jakie czynniki mają najczęściej wpływ na wydajnośc backendu ?
 
-
-![Backend testing](img/frontend-testing.png)
-
 - liczba równoległych sesji, żadań, zadań
-- wolumen danych
+- wolumen danych w backendzie np. w bazie danych
+- parametry maszyn obsługujących ruch. np liczba i moc CPU, ilość pamięci RAM. szybkośc dysku i operacji IO
+- wa przypadku chmur parametry usługi np. abstrakycjne jednostki obliczeniowe ACU,DTU, ... 
+- wydajność frontendu testujemy zastępując prawdziwych klientów (przeglądarki, etc.) odpowiednim narzędziem np. JMeter
 
 
 ### lighhouse metrics
