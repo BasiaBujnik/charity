@@ -1,6 +1,6 @@
 # Czym są testy wydajnościowe ?
 
-Przyjmijmy, że jesteście producentem luksusowych aut. Jakie testy wydajnościowe można zaplanować i wykonać dla supersamochodu ? 
+Przyjmijmy, że jesteście producentem luksusowych aut. Jakie testy wydajnościowe można zaplanować i wykonać dla supersamochodu ?  Co znaczy wydajny w kontekście auta?
 
 ![koenigsegg](img/koenigsegg.jpg)
 
@@ -11,25 +11,26 @@ Przyjmijmy, że jesteście producentem luksusowych aut. Jakie testy wydajnościo
 
 Problemy wydajnościowe aplikacji mają różne przyczyny i konsekwencje. Jest też wiele możliwych odpowiedzi i rozwiązań, które można zastosować.
 
-Konsekwencje problemów wydajnościowych:
- - utrata przychodów
- - ryzyko roszczeń finansowych
- - utrata zaufania klientów
- 
-Testujemy ponieważ ...?
+Testujemy wydajność ponieważ:
 -  komuś coś obiecaliśmy (wymagania, obietnice)
 -  tak nakazują przepisy (branża medyczna)
 -  chcemy wiedzieć
--  nasza opinie nam nakazuje, ... 
+-  nasza opinie/image nam nakazuje, ... 
 
+Konsekwencje problemów wydajnościowych to np.:
+ - utrata przychodów (sklepy internetowe)
+ - ryzyko roszczeń finansowych
+ - utrata zaufania klientów
+ 
 Przyczyny:
  - brak testów :)
  - bycie ofiarą własnego sukcesu
- - nieprzygotowanie aplikacji na określoną sytuacją związaną ze wziększonym obciążeniem
+ - nieprzygotowanie aplikacji na określoną sytuacją związaną ze zwiększonym obciążeniem
+ - niektóre problemy powstają tylko pod dużym obciążeniem
  
  
-
 ***
+### Przykłady
 #### 01.03.2011 - uefa.com
 **Sytuacja**: Nie można zarejestrować się w loterii biletowej na UEFA 2012
 
