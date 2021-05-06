@@ -13,7 +13,8 @@ akcji użytkonwika np. kliknięcia w przycisk. Frontend jest dla użytkownika a 
 ![warstwy](img/app.png)
 
     `żródło: Gabriel Starczewski`
-    
+
+Pytanie:
 - Jakie znacie przykłady serwera aplikacji?
 - Jakie znacie bazy danych?
 - Jakie technologie frontendowe znacie? Co może być frontendem ?
