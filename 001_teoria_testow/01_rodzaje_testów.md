@@ -47,6 +47,8 @@ Czym się różnią sie te testy?
 6) Dodatkowo testując backend nie renderujemy stron WWW, pomijamy więc interpretacje JavaScriptu
 7) Frontend możemy testować również E2E czyli z prawdziwym systemem pod prawdziwym lub syntetycznym obciążeniem. Oprócz tego używa się również RUM (Real User Monitoring) do analizy pasywnej.
 
+
+### frontend testing
 ![Frontend testing](img/frontend-testing.png)
 
 Zadanie:
@@ -62,7 +64,7 @@ Jakie czynniki mają najczęściej wpływ na wydajnośc frontendu ?
 - na ogół wydajnośc frontendu badamy z perspektywy jednego użytkownika w izolacji od backendu lub z nieobciążonym backendem
 
 
-
+### backend testing
 ![Backend testing](img/backend-testing.png)
 
 Jakie czynniki mają najczęściej wpływ na wydajnośc backendu ?
