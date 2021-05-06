@@ -1,6 +1,6 @@
 # Rodzaje testów wydajnościowych i nomenklatura
 
-## AUT(application under test) - model warstwowy aplikacji
+## AUT(application under test, system under test) - model warstwowy aplikacji
 
 Aplikacje w szczególności webowe można opisać jako składające się z frontendu i backendu. Czasami spotkamy się z modelem warstowym gdzie wyrózniamy warstwę prezentacji, logiki i danych.
 Frontend (to co wyświela przeglądarka, aplikacja desktopowa) testuje sie inaczej niż Backend (serwer aplikacji, api, baza). Ważne są inne metryki, mamy do czynienia z innym podejściem.
