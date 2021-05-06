@@ -46,7 +46,7 @@ Czym się różnią sie te testy?
 5) Nie ma natomiast znaczenia jaką kto ma przeglądarkę, co generuje żądanie, liczy sie tylko to ile jest ich w czasie.
 6) Frontend możemy testować również E2E czyli z prawdziwym systemem pod prawdziwym lub syntetycznym obciążeniem. Oprócz tego używa się również RUM (Real User Monitoring) do analizy pasywnej.
 
- obrazki
+![Frontend testing](img/frontend-testing.png)
 
 Jakie czynniki mają najczęściej wpływ na wydajnośc frontendu ?
 
