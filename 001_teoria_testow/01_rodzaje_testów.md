@@ -48,6 +48,11 @@ Czym się różnią sie te testy?
 
 ![Frontend testing](img/frontend-testing.png)
 
+Zadanie:
+
+1. Otwórz plik zawierający [sam frontend](assets/index1.html) w przeglądarce. Z czego się składa ?
+2. Otwórz plik zawierający [frontend komunkujący się z backendem](assets/index2.html) w przeglądarce. Z czego się składa ? Co jest backendem?
+
 Jakie czynniki mają najczęściej wpływ na wydajnośc frontendu ?
 
 - połączenie sieciowe
