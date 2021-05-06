@@ -20,7 +20,7 @@ Pytanie:
 - Jakie znacie bazy danych?
 - Jakie technologie frontendowe znacie? Co może być frontendem ?
 
-## zlota zasada wydajności - _Performance Golden Rule_
+## Złota zasada wydajności - _Performance Golden Rule_
 
 > 80-90% of the end-user response time is spent on the frontend. Start There.
 >
