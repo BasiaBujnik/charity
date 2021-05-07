@@ -1,0 +1,94 @@
+trigger: none
+
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+parameters:
+
+  - name: mode
+    default: jmeter
+    values:
+      - jmeter
+      - jmeter_with_dynamic_pools
+      - jmeter_dynamic
+      - tests
+
+  - name: data_dir
+    type: string
+    default: path/to/jmeter/test_data
+
+  - name: jmeter_slaves
+    default: 1
+    type: number
+
+  - name: jmx
+    default: path/to/jmeter/script/bulletin.jmx
+    type: string
+
+  - name: jmeter_args
+    default: "-Gthreads=1 -Gloops=1 -Gdata_dir=/shared"
+    type: string
+
+  - name: kubernetes_service_connection
+    default: k8
+    type: string
+
+  - name: arm_service_connection
+    default: _
+    type: string
+
+resources:
+  repositories:
+    - repository: crux
+      type: github
+      name: ObjectivityLtd/crux
+      #ref: refs/tags/0.4.1
+      ref: refs/heads/feature/parametrization
+      endpoint: crux
+
+    - repository: tests
+      type: github
+      name: gabrielstar/node-bulletin-board
+      #ref: refs/tags/0.3.2
+      #ref: refs/heads/feature/parametrization
+      #ref: refs/tags/0.4.1
+      endpoint: crux
+
+variables:
+  imageName: 'charity-backend'
+  dockerfilePath: '003_aut/api/app/Dockerfile'
+  dockerRegistryServiceConnection: boostRegistryServiceConnection
+  armServiceConnectionBoost: boost
+  appName: appxx
+  container: appxx.azurecr.io/charity-backend:latest
+
+stages:
+- stage: Build
+  displayName: Test, Build and Push docker image
+  jobs:
+  - job: Build
+    displayName: Test, Build, Push
+    steps:
+    - task: Docker@2
+      displayName: Build and push an image to container registry
+      inputs:
+        command: buildAndPush
+        repository: $(imageName)
+        dockerfile: $(dockerfilePath)
+        containerRegistry: $(dockerRegistryServiceConnection)
+        tags: |
+          latest
+
+- stage: Deploy
+  displayName: Deploy App
+  jobs:
+  - job:
+    steps:
+    - task: AzureWebAppContainer@1 # Add this at the end of your file
+      displayName: Deploy
+      inputs:
+        azureSubscription: '$(armServiceConnectionBoost)'
+        appName: '$(appname)'
+        containers: $(container)
+
