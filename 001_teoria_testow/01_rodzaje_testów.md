@@ -170,7 +170,7 @@ Zadanie:
 
 >Wymaganie1: 95% czasów odpowiedzi API < 4s
 >
->Wymaganie2: Maksymalna liczba użytkowników na minutę 180.
+>Wymaganie2: Maksymalna oczekiwana liczba użytkowników na minutę 180.
 
 - Test: 
     -   Miara obciążenia:
