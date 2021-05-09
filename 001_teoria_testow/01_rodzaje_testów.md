@@ -177,4 +177,4 @@ Zadanie:
         - Liczba użytkowników na minutę
         
 Jaką możemy zaproponować strategię testów zawierającą większość rodzajów testów z tych, które poznaliśmy?
-Jak mogłaby wyglądać realizacja takieg strategii?
+Jak mogłaby wyglądać realizacja takiej strategii?
