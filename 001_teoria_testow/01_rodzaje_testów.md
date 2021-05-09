@@ -166,4 +166,4 @@ Pytanie:
 ### chaos engineering attacks
 ### reliability testing (testy niezawodności)
 
-<div style="display:nomne"><p>Odpowiedź</p></div>
+<div style="display:none"><p>Odpowiedź</p></div>
