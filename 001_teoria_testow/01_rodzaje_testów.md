@@ -65,6 +65,10 @@ Jakie czynniki mają najczęściej wpływ na wydajnośc frontendu ?
 
 
 ### backend testing
+
+Podczas testowania backendu symulujemy/zastępujemy naszych użytkowników narzędziem. 
+
+![Backend testing people](img/backend-testing-people.png)
 ![Backend testing](img/backend-testing.png)
 
 Jakie czynniki mają najczęściej wpływ na wydajnośc backendu ?
@@ -77,6 +81,12 @@ Jakie czynniki mają najczęściej wpływ na wydajnośc backendu ?
 
 
 ### lighhouse metrics
+
+Zadanie:
+- Otwórz konsolę Chrome Web Tools
+- Wykonaj audyt jednej z naszych aplikacji 
+- Zapoznaj się z metrykami
+
 Core Web Vitals
 ![Core Web Vitals](img/CoreWebVitals.png)
 `żrodło: https://web.dev/vitals/`
