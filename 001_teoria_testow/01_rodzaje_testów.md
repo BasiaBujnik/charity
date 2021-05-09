@@ -20,6 +20,7 @@ Pytanie:
 - Jakie znacie bazy danych?
 - Jakie technologie frontendowe znacie? Co może być frontendem ?
 
+***
 ## Złota zasada wydajności - _Performance Golden Rule_
 
 > 80-90% of the end-user response time is spent on the frontend. Start There.
@@ -47,7 +48,7 @@ Czym się różnią sie te testy?
 6) Dodatkowo testując backend nie renderujemy stron WWW, pomijamy więc interpretacje JavaScriptu
 7) Frontend możemy testować również E2E czyli z prawdziwym systemem pod prawdziwym lub syntetycznym obciążeniem. Oprócz tego używa się również RUM (Real User Monitoring) do analizy pasywnej.
 
-
+***
 ### frontend testing
 ![Frontend testing](img/frontend-testing.png)
 
@@ -63,7 +64,7 @@ Jakie czynniki mają najczęściej wpływ na wydajnośc frontendu ?
 - Parametry klienta np. CPU, karta graficzna, pamięć
 - na ogół wydajnośc frontendu badamy z perspektywy jednego użytkownika w izolacji od backendu lub z nieobciążonym backendem
 
-
+***
 ### backend testing
 
 Podczas testowania backendu symulujemy/zastępujemy naszych użytkowników narzędziem. 
@@ -79,7 +80,7 @@ Jakie czynniki mają najczęściej wpływ na wydajnośc backendu ?
 - wa przypadku chmur parametry usługi np. abstrakycjne jednostki obliczeniowe ACU,DTU, ... 
 - wydajność backendu testujemy zastępując prawdziwych klientów (przeglądarki, etc.) odpowiednim narzędziem np. JMeter
 
-
+***
 ### lighhouse metrics
 
 Zadanie:
@@ -100,14 +101,28 @@ Links:
 - https://github.com/GoogleChrome/web-vitals
 
 ![warstwy](img/lighhouse.png)
+***
 ### lighhouse Ci server metrics
 ![warstwy](img/lighhouseci1.png)
 ![warstwy](img/lighhouseci2.png)
 
-## load testy
-## stress testy
-## peak capacity testy 
-## testy A/B
-## chaos engineering attacks
-## reliability testing
+## Rodzaje testów
+
+Niestety nomenklatura nie jest spójna w tym zakresie. 
+![testy](img/tests.png)
+Proponowane definicje przez autora:
+### load testy (testy obciążeniowe)
+
+Testowanie aplikacji pod określonym obciążeniem (load) e.g. 100 sesji na minutę, 50 requestów na sekundę.
+System możemy testować wielokrotnie zmieniając obciążenie (load), żeby np znależć maksymalne obciążenie, z którym system sobie poradzi (maximum capacity testing).
+
+### stress testy
+### peak load testy
+### (maximum) capacity testy
+### soak testy 
+### spike testy
+
+### testy A/B
+### chaos engineering attacks
+### reliability testing
 
