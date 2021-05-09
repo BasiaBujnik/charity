@@ -155,7 +155,14 @@ przepełnienie dysku, pamięci, ...
 
 ### spike testy
 
-### testy A/B
+Testujemy aplikację symulując gwałtowny wzrost obciążenia. Docelowa wartośc obciążenia może być mniejsza lub większa od naszego maksimum. Sprawdzamy czy aplikacja
+poradzi sobie z taką sytuacją.
+
+Pytanie:
+- W jakich rodzajach aplikacji mają miejsce takie wzorce ruchu ?
+- Jakie zdarzenia powodują takie wzorce ruchu?
+
+### testy A/B (testy porównawcze)
 ### chaos engineering attacks
-### reliability testing
+### reliability testing (testy niezawodności)
 
