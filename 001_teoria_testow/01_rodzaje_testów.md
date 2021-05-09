@@ -110,6 +110,7 @@ Links:
 
 Niestety nomenklatura nie jest spójna w tym zakresie. 
 ![testy](img/tests.png)
+`żrodło: Gabriel Starczewski`
 Proponowane definicje przez autora:
 ### load testy (testy obciążeniowe)
 
