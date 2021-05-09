@@ -166,4 +166,15 @@ Pytanie:
 ### chaos engineering attacks
 ### reliability testing (testy niezawodności)
 
-<div style="display:none"><p>Odpowiedź</p></div>
+Zadanie:
+
+>Wymaganie1: 95% czasów odpowiedzi API < 4s
+>
+>Wymaganie2: Maksymalna liczba użytkowników na minutę 180.
+
+- Test: 
+    -   Miara obciążenia:
+        - Liczba użytkowników na minutę
+        
+Jaką możemy zaproponować strategię testów zawierającą większość rodzajów testów z tych, które poznaliśmy?
+Jak mogłaby wyglądać realizacja takieg strategii?
