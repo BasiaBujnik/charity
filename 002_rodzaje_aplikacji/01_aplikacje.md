@@ -6,6 +6,9 @@ Najczęściej spotykane rodzaje AUT to SPA, MPA, API. ... Co to znaczy?
 
 ![spa i mpa](img/traditional-and-spa.jpg)
 
+
+``żródło: https://dzone.com/articles/the-comparison-of-single-page-and-multi-page-appli``
+
 ## MPA (Multi Page Application; aplikacje tradycyjne)
 
 W aplikacjach typu MPA każda nowa strona powoduje wysłanie do serwera żądania o dokument HTML, który powoduje przeładowanie
