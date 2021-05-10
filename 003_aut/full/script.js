@@ -1,4 +1,6 @@
 //register events
+//const BACKEND_URL = "http://localhost:5000"
+const BACKEND_URL = "https://appxx.azurewebsites.net"
 document.getElementById('button1').addEventListener("click", function(event){
         getTextFromBackend('https://jsonplaceholder.typicode.com/todos/1');
     }); //we will change text for user - register binding for user action
@@ -12,15 +14,15 @@ document.getElementById('button3').addEventListener("click", function(event){
 }); //we will change text for user - register binding for user action
 
 document.getElementById('button4').addEventListener("click", function(event){
-    loadSearchResults('http://localhost:5000/todos');
+    loadSearchResults(BACKEND_URL + '/todos');
 }); //we will change text for user - register binding for user action
 
 document.getElementById('posts1').addEventListener("click", function(event){
-    loadPosts('http://localhost:5000/posts');
+    loadPosts(BACKEND_URL + '/posts');
 }); //we will change text for user - register binding for user action
 
 document.getElementById('addpost').addEventListener("submit", function(event){
-    addPost('http://localhost:5000/post/add/newpost');
+    addPost(BACKEND_URL + '/post/add/newpost');
 }); //we will change text for user - register binding for user action
 
 
@@ -60,10 +62,10 @@ function loadSearchResults(url) {
          data.forEach(post => {
             if(post.title){
                 var node = document.createElement("br");
-                document.getElementById('posts').appendChild(node);
-                document.getElementById('posts').innerText += post.title +' says ' + post.body //actually use something to change content based on response
+                document.getElementById('posts').prepend(node);
+                document.getElementById('posts').innerText = post.title +' says ' + post.body + document.getElementById('posts').innerText //actually use something to change content based on response
             }
-                document.getElementById('paragraph').innerText = "Loaded"
+                document.getElementById('paragraph').innerText = "Loaded from " + BACKEND_URL
             }
          );
        });
@@ -75,7 +77,7 @@ function loadSearchResults(url) {
    xhttp.responseType = 'json';
    xhttp.onreadystatechange = function() { //callback function, so function to be called when readyState changes
      if (this.readyState === CALL_SUCCESSFUL && this.status === HTTP_OK) { //successfully finished
-             loadPosts('http://localhost:5000/posts');
+             loadPosts(BACKEND_URL + '/posts');
      }
      else if(this.readyState !== CALL_SUCCESSFUL){
              document.getElementById('paragraph').innerText = 'Backend unavailable'
