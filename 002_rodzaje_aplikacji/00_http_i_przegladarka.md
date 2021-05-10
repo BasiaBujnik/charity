@@ -71,16 +71,18 @@ Z pomocą linii polecen (bash/powershell) dla dowolnego adresu URL spróbuj wyko
 
 ## Co robi przeglądarka
 
-1. W najprostszym scenariuszu ściagamy HTML, który zawiera zasoby.
+1. W najprostszym scenariuszu ściągamy HTML, który zawiera zasoby.
 2. Przeglądarka parsuje HTML i identyfikuje dodatkowe zasoby (embedded resources).
-2. A w międzyczasie silnik przeglądarki renderuje zawartość tak szybko jak potrafi.  
+3. Dodatkowe zasoby są dociągane
+4. A równolegle silnik przeglądarki renderuje zawartość tak szybko jak potrafi.  
 
 ***
 
 ![warstwy](img/browser.png)
 
     `żródło: https://www.youtube.com/watch?v=oZkfApkWgPc&t=369s`
-    
+   
+Oczywiście zanim coś zostanie ściągnięte, przeglądarka nawiązuje połączenie TCP, rozwiązuje nazwę DNS i przegląda cache. 
  
 ![warstwy](img/browserTimings.png)
 
@@ -89,5 +91,17 @@ Z pomocą linii polecen (bash/powershell) dla dowolnego adresu URL spróbuj wyko
     
 ## Co jeszcze robi przeglądarka?
 
-### CORS, ciasteczka, cache
-### pre-fligh requests, fetch and AJAX calls
+- Pozwala na utrzymywanie sesji (zapisuje dane: ciasteczka, local storage)
+- Nawiązuje bezpieczny kanał np. HTTPS
+- Chroni użytkownika np. implementując CORS (https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+
+### CORS
+
+Z powodów bezpieczeństwa przeglądarki blokują requesty HTTP ze skryptów jeśli dotyczą innego serwera niż źródłowy.
+Programista może jednak zezwolić na takie działanie. Jendym z elementów implementacji CORS jest "pre-flighted request", który 
+jest żądaniem OPTIONS sprawdzającym co można wysłać do serwera zanim to faktycznie wyślemy (wysłanie bez sprawdzenia może doprowadzić do narażenia danych).
+
+W Chromie zobaczycie te requesty jaki pre-flight.
+
+### fetch and AJAX calls
+
