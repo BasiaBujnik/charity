@@ -73,7 +73,7 @@ Z pomocą linii polecen (bash/powershell) dla dowolnego adresu URL spróbuj wyko
 
 1. W najprostszym scenariuszu ściagamy HTML, który zawiera zasoby.
 2. Przeglądarka parsuje HTML i identyfikuje dodatkowe zasoby (embedded resources).
-2. A w międzyczasie silnik przeglądarki renderuje zawartość tak szybko jak potrafi. 
+2. A w międzyczasie silnik przeglądarki renderuje zawartość tak szybko jak potrafi.  
 
 ***
 
