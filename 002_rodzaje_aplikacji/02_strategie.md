@@ -74,3 +74,4 @@ Podejście selektywne i nastawione na konkretny efekt.
     - Kontekst (przedmiot testów, strategia, ...)
     - Narzędzie - rzemiosło
    
+Naszym narzędziem będzie JMeter.
