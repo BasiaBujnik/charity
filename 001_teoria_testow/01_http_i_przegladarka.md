@@ -4,7 +4,7 @@
 
 Protokołem komunikacyjnym aplikacji webowych jest HTTP. Opisuje on jaką akcję chcemy wykonać względem określonego zasobu (na serwerze).
 
-![warstwy](img/simple-client-server.png)
+![warstwy](../002_rodzaje_aplikacji/img/simple-client-server.png)
 
     `żrodło: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works`
 
@@ -34,7 +34,7 @@ Metody HTTP:
 - pustej linii
 - ciała/zawartości (body)
 
-![warstwy](img/httpmsgstructure2.png)
+![warstwy](../002_rodzaje_aplikacji/img/httpmsgstructure2.png)
 ``źródło: https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages``
 
 
@@ -78,13 +78,13 @@ Z pomocą linii polecen (bash/powershell) dla dowolnego adresu URL spróbuj wyko
 
 ***
 
-![warstwy](img/browser.png)
+![warstwy](../002_rodzaje_aplikacji/img/browser.png)
 
     `żródło: https://www.youtube.com/watch?v=oZkfApkWgPc&t=369s`
    
 Oczywiście zanim coś zostanie ściągnięte, przeglądarka nawiązuje połączenie TCP, rozwiązuje nazwę DNS i przegląda cache. 
  
-![warstwy](img/browserTimings.png)
+![warstwy](../002_rodzaje_aplikacji/img/browserTimings.png)
 
     `żródło: https://www.youtube.com/watch?v=oZkfApkWgPc&t=369s`
     
