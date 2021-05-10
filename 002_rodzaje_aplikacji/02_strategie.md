@@ -18,6 +18,18 @@ Złe:
 
 ## Strategie/podejścia
 
+Często sami określamy co należy przetestować - do tego przydaje się analiza biznesowa. Zadajemy tedy pytanie.
+
+> Co zawsze musi działać w Twojej aplikacji?
+>
+>
+> Jaki problem biznesowy rozwiązuje Twoja aplikacja?
+>
+> Brak lub niedostępność, której funkcjonalności ma największe konsekwencje?
+>
+
+Z wywiadu powinniśmy otrzymać listę funkcjonalności do uporządkowania i testowania.
+
 ## record-correlate-replay
 
 1. Używamy prawdziwej aplikacji.
