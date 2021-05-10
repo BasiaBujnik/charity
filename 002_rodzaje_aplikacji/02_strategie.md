@@ -42,6 +42,11 @@ Warto zajrzejć do tego artykułu (SLO/SLI): https://cloud.google.com/blog/produ
 
 Z wywiadu powinniśmy otrzymać listę funkcjonalności do uporządkowania i testowania.
 
+1. Płatności koszyka
+2. Przeszukiwanie najbardziej dochodowych kategorii
+3. Wgląd w zamówienie do realizacji
+...
+
 ## record-correlate-replay
 
 1. Używamy prawdziwej aplikacji.
