@@ -1,12 +1,17 @@
-from flask import Flask, jsonify
-from flask_cors import cross_origin
+from flask import Flask, jsonify, request
+from flask_cors import cross_origin, CORS
 from flask_basicauth import BasicAuth
 
 app = Flask(__name__)
-
+#auth
 app.config['BASIC_AUTH_USERNAME'] = 'user'
 app.config['BASIC_AUTH_PASSWORD'] = 'pass'
 basic_auth = BasicAuth(app)
+#cors
+CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
+
+posts = []
 
 #curl -X GET http://localhost:5000/
 #Invoke-WebRequest -Uri http://localhost:5000/ -Method GET
@@ -32,10 +37,26 @@ def post():
     """POST in server"""
     return jsonify(message="POST request returned")
 
-#curl -X POST http://localhost:5000/post/name/gabriel
 #Invoke-WebRequest -Uri http://localhost:5000/post/name/gabriel -Method POST
 @app.route("/post/name/<string:name>", methods=["POST"])
 @cross_origin()
 def post_name(name):
     """POST in server"""
     return jsonify(message="Name is %s" % name)
+
+#$params = @{"title"="My Post";"body"="Hello";}
+#Invoke-WebRequest -Uri http://localhost:5000/post/add/newpost -Method POST -Body ($params | ConvertTo-JSON) -ContentType "application/json"
+@app.route("/post/add/<string:name>", methods=["POST"])
+@cross_origin()
+def post_add(name):
+    """POST in server"""
+    post = request.json
+    posts.append(post)
+    print("post" )
+    return jsonify("%s post added" % post['title']), 201
+
+@app.route('/posts',methods=["GET"])
+@cross_origin()
+def posts_all():
+    response = jsonify(posts)
+    return response,200
