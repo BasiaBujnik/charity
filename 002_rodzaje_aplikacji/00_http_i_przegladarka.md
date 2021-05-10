@@ -105,3 +105,7 @@ W Chromie zobaczycie te requesty jaki pre-flight.
 
 ### fetch and AJAX calls
 
+**Zadanie:**
+
+Otwórz 'Chrome Dev Tools' i załaduj wybraną przez siebię stronę - portal z wiadomościami
+Zanalizuj zakładkę Network, czy jesteś w stanie zrozumieć co ściąga Twoja przeglądarka?
