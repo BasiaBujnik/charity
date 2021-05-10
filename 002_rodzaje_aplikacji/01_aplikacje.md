@@ -1,4 +1,5 @@
 #Rodzaje AUT (Application-Under-Test): SPA, MPA, API
+
 ***
 
 Najczęściej spotykane rodzaje AUT to SPA, MPA, API. ... Co to znaczy?
