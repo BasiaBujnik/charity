@@ -1,4 +1,4 @@
-#Rodzaje AUT (Application-Under-Test): SPA, MPA, API
+# Rodzaje AUT (Application-Under-Test): SPA, MPA, API
 
 ***
 
