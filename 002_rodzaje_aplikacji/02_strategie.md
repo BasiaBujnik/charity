@@ -18,7 +18,7 @@ Złe:
 
 ## Strategie/podejścia
 
-Często sami określamy co należy przetestować - do tego przydaje się analiza biznesowa. Zadajemy tedy pytanie.
+Często sami określamy co należy przetestować - do tego przydaje się analiza biznesowa. Zadajemy wtedy pytania.
 
 > Co zawsze musi działać w Twojej aplikacji?
 >
@@ -27,6 +27,11 @@ Często sami określamy co należy przetestować - do tego przydaje się analiza
 >
 > Brak lub niedostępność, której funkcjonalności ma największe konsekwencje?
 >
+
+
+Warto zajrzejć do tego artykułu (SLO/SLI): https://cloud.google.com/blog/products/management-tools/practical-guide-to-setting-slos
+
+![testy](img/triangle.png)
 
 Z wywiadu powinniśmy otrzymać listę funkcjonalności do uporządkowania i testowania.
 
