@@ -38,7 +38,12 @@ Często sami określamy co należy przetestować - do tego przydaje się analiza
 
 Warto zajrzejć do tego artykułu (SLO/SLI): https://cloud.google.com/blog/products/management-tools/practical-guide-to-setting-slos
 
+
+Spotkanie 3 stron:
+
 ![testy](img/triangle.png)
+
+``źródłó: Gabriel Starczewski``
 
 Z wywiadu powinniśmy otrzymać listę funkcjonalności do uporządkowania i testowania.
 
