@@ -60,8 +60,8 @@ Zasobami, które najczęściej pobieramy w trakcie interakcji ze stronami webowy
 - Czcionki (fonts)
 
 Podstawowa różnica między zwykłym klientem HTTP i przeglądarką jest to, że:
-- przeglądarka interpretuje Javascript
-- przeglądarka wyświetla kompletnie przeprocesowaną zawartość strony użytkownikowi
+- przeglądarka interpretuje Javascript (z pomocą silników, z których najpopularniejszy jest V8/Chromium od Google)
+- przeglądarka wyświetla kompletnie przeprocesowaną zawartość strony użytkownikowi (renderuje zawartość)
 
 W testach wydajnościowych musimy rozumieć jak działa przeglądarka lecz na codzień pracujemy bezpośrednio z żądaniami HTTP. 
 
@@ -70,11 +70,22 @@ W testach wydajnościowych musimy rozumieć jak działa przeglądarka lecz na co
 Z pomocą linii polecen (bash/powershell) dla dowolnego adresu URL spróbuj wykonać metody HEAD,GET,TRACE, OPTIONS
 
 ## Co robi przeglądarka
+
+1. W najprostszym scenariuszu ściagamy HTML, który zawiera zasoby.
+2. Przeglądarka parsuje HTML i identyfikuje dodatkowe zasoby (embedded resources).
+2. A w międzyczasie silnik przeglądarki renderuje zawartość tak szybko jak potrafi. 
+
 ***
 
 ![warstwy](img/browser.png)
 
     `żródło: https://www.youtube.com/watch?v=oZkfApkWgPc&t=369s`
+    
+ 
+![warstwy](img/browserTimings.png)
+
+    `żródło: https://www.youtube.com/watch?v=oZkfApkWgPc&t=369s`
+    
     
 ## Co jeszcze robi przeglądarka?
 
