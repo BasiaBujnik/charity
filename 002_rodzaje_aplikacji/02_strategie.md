@@ -43,7 +43,7 @@ Spotkanie 3 stron:
 
 ![testy](img/triangle.png)
 
-``źródłó: Gabriel Starczewski``
+``źródło: Gabriel Starczewski``
 
 Z wywiadu powinniśmy otrzymać listę funkcjonalności do uporządkowania i testowania.
 
