@@ -1,5 +1,12 @@
-# Analiza wymagań niefunkcjonalnych, dobór właściwej strategii testowania, najczęściej spotykane przypadki
+# Analiza wymagań niefunkcjonalnych (NFR/SLO), dobór właściwej strategii testowania, najczęściej spotykane przypadki
 ***
+
+**NFR** - Non Functional Requirement
+
+**SLO** - Service Level Objective
+
+**SLI** - Service Level Inidcator
+
 ## Wymagania niefunkcjonalne
 ***
 
