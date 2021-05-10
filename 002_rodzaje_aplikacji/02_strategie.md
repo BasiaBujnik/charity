@@ -47,7 +47,7 @@ Z wywiadu powinniśmy otrzymać listę funkcjonalności do uporządkowania i tes
 3. Wgląd w zamówienie do realizacji
 ...
 
-## record-correlate-replay
+## record-correlate-replay (nagraj-skoreluj-odegraj)
 
 1. Używamy prawdziwej aplikacji.
 2. Symulujemy użytkownika (przechodząc scenariusz w przeglądarce, z wykorzystaniem Selenium lub np. Cypress)
@@ -57,18 +57,18 @@ Z wywiadu powinniśmy otrzymać listę funkcjonalności do uporządkowania i tes
 
 (to jest podejście, które będziemy dziś omawiać)
 
-## build-up
+## build-up (zbuduj sam)
 
 Budujemy ruch od zera bez nagrywania na podstawie np. Swagger UI
 
-##goal oriented
+## goal oriented (zorientowane na cel)
 
 Bazujemy na danych z produkcji. Na przykład wiemy, że konkretna transkacja jest bardzo wolna. Testujemy tylko ją przed poprawkami i po poprawkach.
 Podejście selektywne i nastawione na konkretny efekt.
 
 ***
 
-##Co potrzebujemy?
+## Co potrzebujemy na codzień?
 
     - Wiedza teoretyczna
     - Kontekst (przedmiot testów, strategia, ...)
