@@ -5,13 +5,40 @@ Najczęściej spotykane rodzaje AUT to SPA, MPA, API. ... Co to znaczy?
 
 ![spa i mpa](img/traditional-and-spa.jpg)
 
-## MPA
+## MPA (Multi Page Application; aplikacje tradycyjne)
 
-W aplikacjach typu MPA każde żądanie 
+W aplikacjach typu MPA każda nowa strona powoduje wysłanie do serwera żądania o dokument HTML, który powoduje przeładowanie
+kompletnej strony w przeglądarce.
+
+**Zadanie:** 
+- Załadujcie do przeglądarki ../003_aut/mpa/index.html
+- Zobaczcie co się dzieje w Network Tab w panelu Chrome Dev Tools
+ 
 
 ***
-## SPA
+## SPA (Single Page Application)
+
+W aplikacjach typu SPA, tylko pierwszy request jest o stronę HTML. Kolejne są już na ogół wysyłane przez frontend/javscript
+z wykorzystaniem: FETCH, HTTPRequest (AJAX) i najczęściej powodują tylko częściowe zaktualizowanie strony bez potrzeby pełnego przeładowania. Odpowiada za to javascript.
+
+**Zadanie:**
+- Załadujcie do przeglądarki ../003_aut/spa/index2.html
+- Zobaczcie co się dzieje w Network Tab w panelu Chrome Dev Tools
+ 
+
 ***
 ## API
 
+API to najczęściej nasz backend. W nowoczesnych systemach aplikacje SPA kontaktują się z API poprzez metody FETCH i AJAX w celu pobrania danych i użycia ich do aktualizacji frontendu.
+
+
+**Zadanie:**
+- Zapoznajcie się z../003_aut/api
+- Czy jesteście w stanie powiedzieć jakie API endpointy się tu znajdują i do czrgo służą?
+
 ## A teraz zapoznajmy się z naszą aplikacją :)
+
+Backend już poznaliście. Czas na frontend.
+- Załadujcie do przeglądarki ../003_aut/full/full.html
+- Zapoznajcie się z Network Tab
+- Zanalizujcie zawartość aplikacji frontendowej.
