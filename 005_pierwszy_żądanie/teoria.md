@@ -1,3 +1,5 @@
+##Kolejnośc wykonywania elementów w JMeterze
+
 Elementy JMetera wykonują się w zalożności od położenia (hierarchii) i porządku.
 
 Podstawowy schemat wygląda tak:

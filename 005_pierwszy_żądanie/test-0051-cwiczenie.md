@@ -1,15 +1,23 @@
 ćwiczenie 1:
 
-1. Uruchom test
-2. Sprawdź co znajduje się w logu
-3. Zmodyfikuj poziom logowania na ERROR. Jak zmieniła się zawartośc loga?
-4. Uzyj do ćwiczenia kombinacji klawiszy Ctrl+S,E,R 
+Dodaj do testu 2 dodatkowe HTTP samplery do naszego API:
+
+- HEAD /posts
+- DELETE /
+
+Uruchom test, zanalizuj wyniki. Co się stało?
 
 ćwiczenie 2:
 
-1. Otwórz jmeter-introduction.jmx w notatniku lub Notepad++
-2. Jakie informacje można stąd wyciągnąć?
+Dodaj dodatkowo Listenery:
+- Aggregate report
+- Graph results (uwaga: musisz najpierw zainstalować 3 Basic Graphs używając plugin managera)
 
-ćwiczenie 2:
+ćwiczenie 3:
 
-Zainstaluj plugin managera z https://jmeter-plugins.org/wiki/PluginsManager/ umieszczając go w  folderze lib/ext.
+Nazwij elementy planu w sposób opisowy.
+
+ćwiczenie 4:
+
+Zmień parametry Loop Count, rampUp, Number of Threads.
+Jaki ma to wpływ na test? 
