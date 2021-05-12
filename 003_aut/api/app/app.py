@@ -11,7 +11,7 @@ basic_auth = BasicAuth(app)
 CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-posts = []
+posts = [] # maximum size of a python list on a 32 bit system is 536,870,912
 
 #curl -X GET http://localhost:5000/
 #Invoke-WebRequest -Uri http://localhost:5000/ -Method GET
