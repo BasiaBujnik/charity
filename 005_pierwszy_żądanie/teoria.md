@@ -1,6 +1,6 @@
 Elementy JMetera wykonują się w zalożności od położenia (hierarchii) i porządku.
 
-Podstawpwy schemat wygląda tak:
+Podstawowy schemat wygląda tak:
 
 **Test Plan** - przestrzeń robocza, pod którą podpinamy wszystkie elementy naszego planu:
 - **Thread Group** -  grupa wątków, którą utożsamiamy z sesjami bądź wirtaulanymi użytkownikami:
@@ -15,3 +15,6 @@ Podstawpwy schemat wygląda tak:
      - **Listener** - elementy pozwalające wizualizować wyniki/bądź wysyłać/obrabiać je w konkretny sposób
 
 Kolejność wykonywania elementów w JMeterze będzie zgodna z tym schematem nawet jeśli w samym teście nie trzymamy się porządku.
+
+[Zakres i kolejność wykonywania elementw w JMeterze](https://jmeter.apache.org/usermanual/test_plan.html)
+Aby upewnić się do zakresu danego elementu korzystamy z pomocy.
