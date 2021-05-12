@@ -10,6 +10,7 @@ Zapamiętaj:
         -  Variables Defined here have global scope. Each Thread receives own copy of variable accessible by ${VAR_NAME}
         
 W Jmeterze istnieją 3 rodzaje zmiennych:
-- properties - mają zasięg globalny, zmiana w jednym miejscu jest widoczna wszędzie
-- user defined variables - są procesowane na samym początku testu, każdy wątek (użytkownik) otrzymuje własną kopię zmiennej 
-- variables - maja zasięg lokalny w ramach bieżącego wątka (uzytkownika)
+
+- properties (props) - mają zasięg globalny, zmiana w jednym miejscu jest widoczna wszędzie
+- user defined variables (udv) - są procesowane na samym początku testu, każdy wątek (użytkownik) otrzymuje własną kopię zmiennej 
+- variables (vars) - maja zasięg lokalny w ramach bieżącego wątka (uzytkownika)
