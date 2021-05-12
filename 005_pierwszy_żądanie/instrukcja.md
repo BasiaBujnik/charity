@@ -1,13 +1,13 @@
-W tej częśći:
+W tej części:
 
-- Wystartujemy GUI JMetera
-- Zapoznamy się ze struktura pliku JMX
-- Przejdziemy przez podstawowe opcje menu:
-    - log
-    - poziomy logowania
-    - uruchamiania testu z pliku JMX
-    - start/stop/graceful stop
-    - SER 
-    - walidacja testu
-    + pomoc
-    + przyciski +/- 
+Wyślemy pierwsze żądania w JMeter do naszego testowergo API appxx.azurewebsites.net
+
+1. Omówimy i dodamy to testu podstawowe elementy JMetera, takie jak:
+    - Thread Group (Grupa wątków)
+    - Sampler -> HTTP Request
+        - GET /posts
+        - GET /todos
+    - Listener -> View Results Tree
+
+2. Zanalizujemy wyniki w elementach Sampler Results: Request & Response
+3. Nazwiemy test plan tak aby był łatwy w zapamiętaniu
