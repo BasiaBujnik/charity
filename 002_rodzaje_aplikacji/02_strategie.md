@@ -45,7 +45,7 @@ Spotkanie 3 stron:
 
 ``źródło: Gabriel Starczewski``
 
-Z wywiadu powinniśmy otrzymać listę funkcjonalności do uporządkowania i testowania.
+Z wywiadu powinniśmy otrzymać listę funkcjonalności do uporządkowania i testowania np:
 
 1. Płatności koszyka
 2. Przeszukiwanie najbardziej dochodowych kategorii
