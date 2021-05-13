@@ -68,7 +68,7 @@ Budujemy ruch od zera bez nagrywania na podstawie np. Swagger UI
 
 ## goal oriented (zorientowane na cel)
 
-Bazujemy na danych z produkcji. Na przykład wiemy, że konkretna transkacja jest bardzo wolna. Testujemy tylko ją przed poprawkami i po poprawkach.
+Bazujemy na danych z produkcji. Na przykład wiemy, że konkretna transakcja jest bardzo wolna. Testujemy tylko ją przed poprawkami i po poprawkach.
 Podejście selektywne i nastawione na konkretny efekt.
 
 ***
