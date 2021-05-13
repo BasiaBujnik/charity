@@ -1,6 +1,6 @@
 W tej części:
 
-Wyślemy pierwsze żądania w JMeter do naszego testowego API [appxx.azurewebsites.net](appxx.azurewebsites.net)
+Wyślemy pierwsze żądania w JMeter do naszego testowego API [appxx.azurewebsites.net](https://appxx.azurewebsites.net)
 
 1. Omówimy i dodamy to testu podstawowe elementy JMetera, takie jak:
     - Thread Group (Grupa wątków)
