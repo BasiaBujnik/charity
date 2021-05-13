@@ -45,8 +45,8 @@ Czym się różnią testy frontendu i backendu?
 3) W testowaniu i optymalizacji frontendu zajmujemy się więc tym co jest związane jedynie z nim.
 4) W przypadku backendu, skupiamy się na symulowaniu obciążenia - wielu użytkowników, tutaj liczba użytkowników/klientów ma znaczenie bo liczba żądań od użytkowników to jeden z głównych czynników obciążających backend.
 5) Nie ma natomiast znaczenia jaką kto ma przeglądarkę, co generuje żądanie, liczy się tylko to ile jest ich w czasie.
-6) Dodatkowo testując backend nie renderujemy stron WWW, pomijamy więc interpretacje JavaScriptu
-7) Frontend możemy testować również E2E czyli z prawdziwym systemem pod prawdziwym lub syntetycznym obciążeniem. Oprócz tego używa się również RUM (Real User Monitoring) do analizy pasywnej.
+6) Dodatkowo testując backend nie renderujemy stron WWW, pomijamy więc interpretację JavaScriptu
+7) Frontend możemy testować również E2E (end-to-end) czyli z prawdziwym systemem pod prawdziwym lub syntetycznym obciążeniem. Oprócz tego używa się również RUM (Real User Monitoring) do analizy pasywnej.
 
 ***
 ### frontend testing
