@@ -12,7 +12,7 @@ akcji użytkownika np. kliknięcia w przycisk. Frontend jest dla użytkownika a 
 
 ![warstwy](img/app.png)
 
-    `żródło: Gabriel Starczewski`
+    `źródło: Gabriel Starczewski`
 
 Pytanie:
 
@@ -27,7 +27,7 @@ Pytanie:
 >
 > [Steve Souders, Google’s Head Performance Engineer, 2007](http://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/)
 
-Czas odpowiedzi całego systemu na żądanie użytkwonika dzielimy na:
+Czas odpowiedzi całego systemu na żądanie użytkownika dzielimy na:
 - czas związany z backendem = TTFB (Time To First Byte)
 - czas związany z frontendem = cala reszta
 
@@ -35,10 +35,10 @@ Tak wyglądają proporcje tych dwóch składników dla 50 000 reprezentatywnych 
 
 ![Golden Perormance Rule](img/golden-top50K.png)
 
-`żrodło: https://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/`
+`źrodło: https://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/`
 
 ## frontend vs backend
-Czym się różnią sie te testy?
+Czym się różnią testy frontendu i backendu?
 
 1) Wydajność frontendu w zasadzie się nie zmienia jeśli z systemu korzysta wielu użytkowników i jest podobna dla każdego użytkownika ponieważ np. przeglądarki dwóch osób nie mają ze sobą nic wspólnego
 2) Powyższe stwierdzenie jest prawdziwe o ile backend odpowiada na czas dlatego testując sam frontend czesto backend mockujemy (udajemy) i zakładamy, że nie jest on problemem.
