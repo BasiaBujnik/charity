@@ -6,28 +6,6 @@ Przyjmijmy, że jesteście producentem luksusowych aut. Jakie testy wydajnościo
 
     `żródło: https://www.autocentrum.pl/ac-file/news/58932ffa592c7d8b479156db/koenigsegg-one-1-pierwszy-na-swiecie-megasamochod.jpgl`
 
-*** 
-# Po co testować wydajność, przykłady z życia wzięte
-
-Problemy wydajnościowe aplikacji mają różne przyczyny i konsekwencje. Jest też wiele możliwych odpowiedzi i rozwiązań, które można zastosować.
-
-Testujemy wydajność ponieważ:
--  komuś coś obiecaliśmy (wymagania, obietnice)
--  tak nakazują przepisy (branża medyczna)
--  chcemy wiedzieć
--  nasza opinie/image nam nakazuje, ... 
-
-Konsekwencje problemów wydajnościowych to np.:
- - utrata przychodów (sklepy internetowe)
- - ryzyko roszczeń finansowych
- - utrata zaufania klientów
- 
-Przyczyny:
- - brak testów :)
- - bycie ofiarą własnego sukcesu
- - nieprzygotowanie aplikacji na określoną sytuacją związaną ze zwiększonym obciążeniem
- - niektóre problemy powstają tylko pod dużym obciążeniem
- 
  
 ***
 ### Przykłady
@@ -70,3 +48,27 @@ Przyczyny:
 ***
 
 Potraficie podać inne przykłady, które zapadły Wam w pamięć ?
+
+*** 
+## Czy warto testować?
+
+Problemy wydajnościowe aplikacji mają różne przyczyny i konsekwencje. Jest też wiele możliwych odpowiedzi i rozwiązań, które można zastosować.
+
+Testujemy wydajność ponieważ:
+-  komuś coś obiecaliśmy (wymagania, obietnice)
+-  tak nakazują przepisy (branża medyczna)
+-  chcemy wiedzieć
+-  nasza opinie/image nam nakazuje, ... 
+
+Konsekwencje problemów wydajnościowych to np.:
+ - utrata przychodów (sklepy internetowe)
+ - ryzyko roszczeń finansowych
+ - utrata zaufania klientów
+ 
+Przyczyny:
+ - brak testów :)
+ - bycie ofiarą własnego sukcesu
+ - nieprzygotowanie aplikacji na określoną sytuacją związaną ze zwiększonym obciążeniem
+ - niektóre problemy powstają tylko pod dużym obciążeniem
+ 
+ Testowanie może uchronić nas przed ryzykami, któych można uniknąć. Pozostałe zmaterializują się na produkcji.
