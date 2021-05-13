@@ -13,14 +13,14 @@ Proponowane definicje przez autora:
 Testowanie aplikacji pod określonym obciążeniem (load) n.p.: 100 sesji na minutę, 50 requestów na sekundę.
 System możemy testować wielokrotnie zmieniając obciążenie (load), żeby np znaleźć maksymalne obciążenie, z którym system sobie poradzi (maximum capacity testing).
 
-Pytanie:
+**Pytanie**:
 - Co może być miarą obciążenia ?
 
 ### peak load testy (testy z maksymalnym spodziewanym obciążeniem)
 
 Testujemy z maksymalnym obciążeniem, pod którym wiemy, że system będzie pracował  n.p.: 200 sesji na minutę, 100 requestów na sekundę.
 
-Pytanie:
+**Pytanie**:
 - Skąd wiemy jakie to maksymalne obciążenie jest?
 
 ### maximum, capacity testy (testy maksymalnej przepustowości/pojemności)
@@ -28,7 +28,7 @@ Pytanie:
 Testujemy z wieloma obciążeniami, zwiększając je. Maksymalne obciążenie, pod którym nasze wymagania niefunkcjonalne są spełnione to nasza maksymalna przepustowość.
 ten rodzaj testów ma za zadanie znaleźć maksimum naszej aplikacji.
 
-Pytanie:
+**Pytanie**:
 - Wymaganie niefunkcjonalne 1: 
   -  System nie może zwracać więcej niż 1 błąd na 10 000 requestów dla danej liczby równoległych sesji.
 
@@ -41,7 +41,7 @@ Tutaj testujemy pod obciążeniem (zdecydowanie większym) niż nasze maksimum. 
 jakie skutki ma przeciążenie systemu, czy procedure autoskalowania działają, etc...
 
 
-### soak testy 
+### soak testy (testy przesączeniowe)
 
 Testujemy aplikację pod średnim obciążeniem np. 60% naszego maksimum ale w długim okresie czasu. Ten rodzaj testów ma za zadanie obnażyć problemy aplikacji z zarządzaniem zasobami np:
 przepełnienie dysku, pamięci, ...
@@ -49,10 +49,10 @@ przepełnienie dysku, pamięci, ...
 
 ### spike testy
 
-Testujemy aplikację symulując gwałtowny wzrost obciążenia. Docelowa wartośc obciążenia może być mniejsza lub większa od naszego maksimum. Sprawdzamy czy aplikacja
+Testujemy aplikację symulując gwałtowny wzrost obciążenia. Docelowa wartość obciążenia może być mniejsza lub większa od naszego maksimum. Sprawdzamy czy aplikacja
 poradzi sobie z taką sytuacją.
 
-Pytanie:
+**Pytanie**:
 - W jakich rodzajach aplikacji mają miejsce takie wzorce ruchu ?
 - Jakie zdarzenia powodują takie wzorce ruchu?
 
