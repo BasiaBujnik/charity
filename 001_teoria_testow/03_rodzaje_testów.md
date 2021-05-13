@@ -11,7 +11,7 @@ Proponowane definicje przez autora:
 ### load testy (testy obciążeniowe)
 
 Testowanie aplikacji pod określonym obciążeniem (load) n.p.: 100 sesji na minutę, 50 requestów na sekundę.
-System możemy testować wielokrotnie zmieniając obciążenie (load), żeby np znależć maksymalne obciążenie, z którym system sobie poradzi (maximum capacity testing).
+System możemy testować wielokrotnie zmieniając obciążenie (load), żeby np znaleźć maksymalne obciążenie, z którym system sobie poradzi (maximum capacity testing).
 
 Pytanie:
 - Co może być miarą obciążenia ?
