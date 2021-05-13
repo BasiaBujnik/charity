@@ -6,13 +6,13 @@ Dodamy do testu:
  - setUp thread group
  - teardown thread group
 
-Do obu przeniesiemy żądanie do 
+Do obu wstawimy żądanie
 
 ```
 GET /posts
 ```
 
-z początku testu aby porównać ile postów jest w backendzie na koniec testów względem początku testów
+aby móc porównać ile postów jest w backendzie na koniec testów względem początku testów (przecież jakieś stworzyliśmy?)
 
 Następnie, stworzymy bibliotekę kroków, wstawimy do niej 
 
