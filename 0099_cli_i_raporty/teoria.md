@@ -11,7 +11,7 @@ Invoke-Expression "$path\jmeter.bat -n -t test-0099.jmx"
 
 ```
 
-Przydtane opcja:
+Przydatne opcje:
 
 ```
 -j lokalizacja loga jmetera
