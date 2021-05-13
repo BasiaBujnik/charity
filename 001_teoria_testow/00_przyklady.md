@@ -71,4 +71,4 @@ Przyczyny:
  - nieprzygotowanie aplikacji na określoną sytuacją związaną ze zwiększonym obciążeniem
  - niektóre problemy powstają tylko pod dużym obciążeniem
  
- Testowanie może uchronić nas przed ryzykami, któych można uniknąć. Pozostałe zmaterializują się na produkcji.
+ Testowanie może uchronić nas przed ryzykami, których można uniknąć. Pozostałe zmaterializują się na produkcji.
