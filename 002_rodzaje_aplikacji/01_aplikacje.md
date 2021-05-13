@@ -15,7 +15,7 @@ W aplikacjach typu MPA każda nowa strona powoduje wysłanie do serwera żądani
 kompletnej strony w przeglądarce.
 
 **Zadanie:** 
-- Załadujcie do przeglądarki ../003_aut/mpa/index.html
+- Załadujcie do przeglądarki [aplikację mpa](../003_aut/mpa/index.html)
 - Zobaczcie co się dzieje w Network Tab w panelu Chrome Dev Tools
  
 
