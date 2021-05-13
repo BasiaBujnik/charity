@@ -19,3 +19,4 @@ https://jmeter.apache.org/
 
 2. Posiada IDE/CLI
 3. Jest wysoce konfigurowalny i rozszerzalny przez pluginy
+...
