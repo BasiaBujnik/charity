@@ -59,9 +59,9 @@ Zadanie:
 
 Jakie czynniki mają najczęściej wpływ na wydajnośc frontendu ?
 
-- połączenie sieciowe (jeśli testujemy e2e)
+- połączenie sieciowe
 - rodzaj klienta (PC, Smartphone)
-- Parametry klienta np. CPU, karta graficzna, pamięć
+- parametry klienta np. CPU, karta graficzna, pamięć
 - na ogół wydajnośc frontendu badamy z perspektywy jednego użytkownika w izolacji od backendu lub z nieobciążonym backendem
 
 ***
