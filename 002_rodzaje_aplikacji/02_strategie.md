@@ -10,14 +10,14 @@
 ## Wymagania niefunkcjonalne
 ***
 
-Dobre:
+Dobrze zdefiniowane:
 
 >Wymaganie1: 95% czasów odpowiedzi API < 4s
 >
 >Wymaganie2: Maksymalna oczekiwana liczba użytkowników na minutę to 180. Akceptowalna liczba błędów to 0.0001 %
 >
 
-Złe:
+Źle zdefiniowane:
 
 >Wymaganie1: Aplikacja ma odpowiadać na każde żądanie < 4s
 >
