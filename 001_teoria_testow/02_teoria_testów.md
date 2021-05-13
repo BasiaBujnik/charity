@@ -72,12 +72,12 @@ Podczas testowania backendu symulujemy/zastępujemy naszych użytkowników narz�
 ![Backend testing people](img/backend-testing-people.png)
 ![Backend testing](img/backend-testing.png)
 
-Jakie czynniki mają najczęściej wpływ na wydajnośc backendu ?
+Jakie czynniki mają najczęściej wpływ na wydajność backendu ?
 
-- liczba równoległych sesji, żadań, zadań
+- liczba równoległych sesji, żądań, zadań
 - wolumen danych w backendzie np. w bazie danych
-- parametry maszyn obsługujących ruch. np liczba i moc CPU, ilość pamięci RAM. szybkośc dysku i operacji IO
-- wa przypadku chmur parametry usługi np. abstrakycjne jednostki obliczeniowe ACU,DTU, ... 
+- parametry maszyn obsługujących ruch. np liczba i moc CPU, ilość pamięci RAM. szybkość dysku i operacji I/O
+- w przypadku chmur parametry usługi np. abstrakcyjne jednostki obliczeniowe ACU, DTU, ... 
 - wydajność backendu testujemy zastępując prawdziwych klientów (przeglądarki, etc.) odpowiednim narzędziem np. JMeter
 
 ***
