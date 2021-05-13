@@ -1,16 +1,16 @@
-##Kolejnośc wykonywania elementów w JMeterze
+## Kolejnośc wykonywania elementów w JMeterze
 
-Elementy JMetera wykonują się w zalożności od położenia (hierarchii) i porządku.
+Elementy JMetera wykonują się w kolejności zależnej od położenia (hierarchii) i porządku.
 
 Podstawowy schemat wygląda tak:
 
 **Test Plan** - przestrzeń robocza, pod którą podpinamy wszystkie elementy naszego planu:
-- **Thread Group** -  grupa wątków, którą utożsamiamy z sesjami bądź wirtaulanymi użytkownikami:
+- **Thread Group** -  grupa wątków, którą utożsamiamy z sesjami bądź wirtualanymi użytkownikami:
     - **Config Elements** - elementy konfiguracyjne kontrolujące rózne opcje planu np. HTTP Cache Manager
     - **Pre-processors** - pozwalają zmodyfikować żądanie zanim je wyślemy
     - **Timer** - dzięki timerom możemy opóźniać akcje użytkownika 
     - **Logic Controller/Sampler**
-        - Logic Controller - kontrolują logikę/wykonanoe naszego testu np. if, for, while, ...
+        - Logic Controller - kontrolują logikę/wykonanee naszego testu np. if, for, while, ...
         - Sampler -  sampler faktycznie coś robi, symuluje akcje użytkownika, np. HTTP request, JDBC request, ...,
      - **Post-processors** - wykonują się po akcji użytkownika i moga pracować na rezultacie tej akcji
      - **Assertions**
