@@ -4,11 +4,11 @@ Przypomnijmy sobie, że:
 
 **Kontrolery logiki** - sterują przepływem programu, są to np. if, for, while, ... znane nam z programowania
 
-**Samplery** - wykonują jednostkę pracy np. wysłają żądanie HTTP
+**Samplery** - wykonują jednostkę pracy np. wysyłają żądanie HTTP
 
 Jak używać kontrolerów najlepiej wytłumaczyć na najbardziej skomplikowanym przykładzie jakim jest ``if``
 
-**IF** - akcja/część testu zdefiniowna pod tym kontrolerem wykona się jeśli warunek logiczny (wyrażenie), który IF ewaluuje jest równy logicznemu `true`
+**IF** - akcja/część testu zdefiniowana pod tym kontrolerem wykona się jeśli warunek logiczny (wyrażenie), który IF ewaluuje jest równy logicznemu `true`
 > performs actions underneath if logical condition is true
 
 Ok, a teraz jak może wyglądać wyrażenie?:
