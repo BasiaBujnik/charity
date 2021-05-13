@@ -26,4 +26,4 @@ Test Fragement/
         ...
 ```
 
-Pozwala nam zwiększyć utrzymywalność testów jeszcze bardziej poprzez re-używanie tej samej transakcji w wielu miejscach w planie.
+Użycie całej trójki pozwala nam zwiększyć utrzymywalność testów jeszcze bardziej poprzez re-używanie tej samej transakcji w wielu miejscach w planie.
