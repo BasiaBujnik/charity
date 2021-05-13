@@ -42,11 +42,11 @@ Korzystając z protokołu HTTP względem zasobów stron webowych używamy klient
 
 Przydatne komendy:
 
-Linux
+Windows
 ```powershell
     Invoke-WebRequest -Uri https://bing.com -Method GET
 ```
-Windows
+Linux
 ```console
     curl -X GET https://bing.com
 ```
