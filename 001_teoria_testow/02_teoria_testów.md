@@ -2,7 +2,7 @@
 
 ## AUT(application under test, system under test) - model warstwowy aplikacji
 
-Aplikacje w szczególności webowe można opisać jako składające się z frontendu i backendu. Czasami spotkamy się z modelem warstowym gdzie wyrózniamy warstwę prezentacji, logiki i danych.
+Aplikacje w szczególności webowe można opisać jako składające się z frontendu i backendu. Czasami spotkamy się z modelem warstwowym gdzie wyróżniamy warstwę prezentacji, logiki i danych.
 Frontend (to co wyświela przeglądarka, aplikacja desktopowa) testuje sie inaczej niż Backend (serwer aplikacji, api, baza). Ważne są inne metryki, mamy do czynienia z innym podejściem.
 Najprościej myśleć o frontendzie jako czymś co prezentuje rezultaty otrzymane z backendu i pozwala nam wchodzić w interakcje z systemem. Backend generuje rezultaty w odpowiedzi na żądania z frontendu, które są konsekwencją
 akcji użytkonwika np. kliknięcia w przycisk. Frontend jest dla użytkownika a z  backendem powinny "rozmawiać" programy. W świecie aplikacji webowych frontend top strona w przeglądarce a backend to np. API serwer i baza MySQL. 
