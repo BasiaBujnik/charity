@@ -37,8 +37,8 @@ API to najczęściej nasz backend. W nowoczesnych systemach aplikacje SPA kontak
 
 
 **Zadanie:**
-- Zapoznajcie się z../003_aut/api
-- Czy jesteście w stanie powiedzieć jakie API endpointy się tu znajdują i do czrgo służą?
+- Zapoznajcie się z [backendem, który będziemy testować](../003_aut/api/app/)
+- Czy jesteście w stanie powiedzieć jakie API endpointy się tu znajdują i do czego służą?
 
 ## A teraz zapoznajmy się z naszą aplikacją :)
 
