@@ -52,6 +52,8 @@ Potraficie podać inne przykłady, które zapadły Wam w pamięć ?
 *** 
 ## Czy warto testować?
 
+ > Testowanie może uchronić nas przed ryzykami, których można uniknąć. Pozostałe zmaterializują się na produkcji.
+ 
 Problemy wydajnościowe aplikacji mają różne przyczyny i konsekwencje. Jest też wiele możliwych odpowiedzi i rozwiązań, które można zastosować.
 
 Testujemy wydajność ponieważ:
@@ -72,4 +74,3 @@ Przyczyny:
  - nieprzygotowanie aplikacji na określoną sytuacją związaną ze zwiększonym obciążeniem
  - niektóre problemy powstają tylko pod dużym obciążeniem
  
- Testowanie może uchronić nas przed ryzykami, których można uniknąć. Pozostałe zmaterializują się na produkcji.
