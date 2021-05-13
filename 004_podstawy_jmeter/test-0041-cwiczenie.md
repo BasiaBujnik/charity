@@ -3,7 +3,7 @@
 1. Uruchom test
 2. Sprawdź co znajduje się w logu
 3. Zmodyfikuj poziom logowania na ERROR. Jak zmieniła się zawartość loga?
-4. Uzyj do ćwiczenia kombinacji klawiszy Ctrl+S,E,R 
+4. Użyj do ćwiczenia kombinacji klawiszy Ctrl+S,E,R 
 
 **ćwiczenie 2**:
 
