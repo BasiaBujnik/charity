@@ -69,7 +69,7 @@ W testach wydajnościowych musimy rozumieć jak działa przeglądarka lecz na co
 
 Z pomocą linii polecen (bash/powershell) dla dowolnego adresu URL spróbuj wykonać metody HEAD,GET,TRACE, OPTIONS
 
-## Co robi przeglądarka
+## Co robi przeglądarka krok po kroku kiedy wpisujemy w niej adres strony WWW
 
 1. W najprostszym scenariuszu ściągamy HTML, który zawiera zasoby.
 2. Przeglądarka parsuje HTML i identyfikuje dodatkowe zasoby (embedded resources).
