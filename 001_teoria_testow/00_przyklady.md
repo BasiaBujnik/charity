@@ -57,6 +57,7 @@ Problemy wydajnościowe aplikacji mają różne przyczyny i konsekwencje. Jest t
 Testujemy wydajność ponieważ:
 -  komuś coś obiecaliśmy (wymagania, obietnice)
 -  tak nakazują przepisy (branża medyczna)
+-  poprawienie czegoś na wczesnym etapie jest mnie kosztowne
 -  chcemy wiedzieć
 -  nasza opinie/image nam nakazuje, ... 
 
