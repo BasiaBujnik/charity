@@ -10,3 +10,14 @@ $path="C:\Users\gstarczewski\tools\apache-jmeter-5.2.1\bin"
 Invoke-Expression "$path\jmeter.bat -n -t test-0099.jmx"
 
 ```
+
+Przydtane opcja:
+
+```
+-j lokalizacja loga jmetera
+-f nadpisywanie plików z wynikami
+-l ścieżka do pliku z wynikami
+-e generowanie raportu 
+-o ścieżka do raportu
+```
+
