@@ -40,9 +40,9 @@ API to najczęściej nasz backend. W nowoczesnych systemach aplikacje SPA kontak
 - Zapoznajcie się z [backendem, który będziemy testować](../003_aut/api/app/)
 - Czy jesteście w stanie powiedzieć jakie API endpointy się tu znajdują i do czego służą?
 
-## A teraz zapoznajmy się z naszą aplikacją :)
+## A teraz zapoznajmy się z twarzą naszej aplikacji :)
 
 Backend już poznaliście. Czas na frontend.
-- Załadujcie do przeglądarki ../003_aut/full/full.html
+- Załadujcie do przeglądarki [frontend aplikacji, którą będziemy testować](../003_aut/full/full.html)
 - Zapoznajcie się z Network Tab
 - Zanalizujcie zawartość aplikacji frontendowej.
