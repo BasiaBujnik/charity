@@ -20,4 +20,4 @@ Następnie, stworzymy bibliotekę kroków, wstawimy do niej
 GET /posts
 ```
 
-i zaktualizujemy nasz test tak, aby był łatwiejszy w utrzymaniu. 
+i zaktualizujemy nasz test tak, aby był łatwiejszy w utrzymaniu (dzięki Wielkiej Trójce) . 
