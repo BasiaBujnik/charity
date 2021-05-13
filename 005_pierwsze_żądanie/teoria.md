@@ -1,6 +1,6 @@
 ## Kolejnośc wykonywania elementów w JMeterze
 
-Elementy JMetera wykonują się w kolejności zależnej od położenia (hierarchii) i porządku.
+Test w JMeterze jest reprezentowany przez strukturę drzewiastą. Elementy JMetera wykonują się w kolejności zależnej od położenia (hierarchii) i porządku.
 
 Podstawowy schemat wygląda tak:
 
