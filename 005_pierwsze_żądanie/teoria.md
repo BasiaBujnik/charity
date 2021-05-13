@@ -19,4 +19,5 @@ Podstawowy schemat wygląda tak:
 Kolejność wykonywania elementów w JMeterze będzie zgodna z tym schematem nawet jeśli w samym teście nie trzymamy się porządku.
 
 [Zakres i kolejność wykonywania elementw w JMeterze](https://jmeter.apache.org/usermanual/test_plan.html)
-Aby upewnić się do zakresu danego elementu korzystamy z pomocy.
+
+> tip: Aby upewnić się do zakresu danego elementu korzystamy z pomocy.
