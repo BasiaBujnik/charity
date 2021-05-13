@@ -26,7 +26,7 @@ Pytanie:
 ### maximum, capacity testy (testy maksymalnej przepustowości/pojemności)
 
 Testujemy z wieloma obciążeniami, zwiększając je. Maksymalne obciążenie, pod którym nasze wymagania niefunkcjonalne są spełnione to nasza maksymalna przepustowość.
-ten rodzaj testów ma za zadanie znależć maksimum naszej aplikacji.
+ten rodzaj testów ma za zadanie znaleźć maksimum naszej aplikacji.
 
 Pytanie:
 - Wymaganie niefunkcjonalne 1: 
