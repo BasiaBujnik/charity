@@ -31,7 +31,7 @@ z wykorzystaniem: FETCH, HTTPRequest (AJAX) i najczęściej powodują tylko czę
  
 
 ***
-## API
+## API (Application Programing Interface)
 
 API to najczęściej nasz backend. W nowoczesnych systemach aplikacje SPA kontaktują się z API poprzez metody FETCH i AJAX w celu pobrania danych i użycia ich do aktualizacji frontendu.
 
