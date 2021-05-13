@@ -26,7 +26,7 @@ W aplikacjach typu SPA, tylko pierwszy request jest o stronę HTML. Kolejne są 
 z wykorzystaniem: FETCH, HTTPRequest (AJAX) i najczęściej powodują tylko częściowe zaktualizowanie strony bez potrzeby pełnego przeładowania. Odpowiada za to javascript.
 
 **Zadanie:**
-- Załadujcie do przeglądarki ../003_aut/spa/index2.html
+- Załadujcie do przeglądarki [aplikację spa](../003_aut/spa/index2.html)
 - Zobaczcie co się dzieje w Network Tab w panelu Chrome Dev Tools
  
 
