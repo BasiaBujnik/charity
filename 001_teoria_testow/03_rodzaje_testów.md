@@ -57,14 +57,14 @@ poradzi sobie z taką sytuacją.
 - Jakie zdarzenia powodują takie wzorce ruchu?
 
 ### testy A/B (testy porównawcze)
-### chaos engineering attacks
+### chaos engineering attacks/(d)dos
 ### reliability testing (testy niezawodności)
 
-Zadanie:
+**Zadanie**:
 
->Wymaganie1: 95% czasów odpowiedzi API < 4s
+>Wymaganie 1: 95% czasów odpowiedzi API < 4s
 >
->Wymaganie2: Maksymalna oczekiwana liczba użytkowników na minutę 180.
+>Wymaganie 2: Maksymalna oczekiwana liczba użytkowników na minutę 180.
 
 - Test: 
     -   Miara obciążenia:
