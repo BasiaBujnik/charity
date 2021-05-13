@@ -1,7 +1,8 @@
-#Jak puszczać testy?
+# Jak prawidłowo uruchamiać testy?
 
-GUI powinno być używane jedynie do dewelopmentu testów, podczas prawdziwych pomiarów powinniśmy korzystać z CLI. Wszystkie zbędne elementy powinny być wyłączone.
+GUI powinno być używane jedynie do dewelopmentu testów. Podczas prawdziwych pomiarów powinniśmy korzystać z CLI. Wszystkie zbędne elementy powinny być wyłączone.
 
+Przykład:
 
 ```powershell
 
