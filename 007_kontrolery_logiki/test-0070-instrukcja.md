@@ -2,7 +2,7 @@
 
 W tej części:
 
-Dodamy kontoler IF, aby:
+Dodamy kontoler **IF** tak, aby:
 - stworzyć opcjonalnie nowy post jeśli zmienna ${createPost} jest `true`:
   ```
   POST /post/add/new
