@@ -101,11 +101,11 @@ Z powodów bezpieczeństwa przeglądarki blokują requesty HTTP ze skryptów je�
 Programista może jednak zezwolić na takie działanie. Jendym z elementów implementacji CORS jest "pre-flighted request", który 
 jest żądaniem OPTIONS sprawdzającym co można wysłać do serwera zanim to faktycznie wyślemy (wysłanie bez sprawdzenia może doprowadzić do narażenia danych).
 
-W Chromie zobaczycie te requesty jaki pre-flight.
+W Chromie zobaczycie te requesty jako "pre-flight".
 
 ### fetch and AJAX calls
 
 **Zadanie:**
 
-Otwórz 'Chrome Dev Tools' i załaduj wybraną przez siebię stronę - portal z wiadomościami
+Otwórz 'Chrome Dev Tools' i załaduj wybraną przez siebię stronę - portal z wiadomościami.
 Zanalizuj zakładkę Network, czy jesteś w stanie zrozumieć co ściąga Twoja przeglądarka?
