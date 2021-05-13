@@ -83,9 +83,9 @@ Jakie czynniki mają najczęściej wpływ na wydajność backendu ?
 ***
 ### lighhouse metrics
 
-Zadanie:
+**Zadanie**:
 - Otwórz konsolę Chrome Web Tools
-- Wykonaj audyt jednej z naszych aplikacji 
+- Wykonaj audyt jednej z naszych aplikacji  (index1.html, index2.html)
 - Zapoznaj się z metrykami
 
 Core Web Vitals
