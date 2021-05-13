@@ -43,6 +43,6 @@ API to najczęściej nasz backend. W nowoczesnych systemach aplikacje SPA kontak
 ## A teraz zapoznajmy się z twarzą naszej aplikacji :)
 
 Backend już poznaliście. Czas na frontend.
-- Załadujcie do przeglądarki [frontend aplikacji, którą będziemy testować](../003_aut/full/index.html)
+- Załadujcie do przeglądarki [frontend aplikacji, którą będziemy testować](../003_aut/full/)
 - Zapoznajcie się z zawartością Network Tab w Chrome Dev Tools.  
 - Zanalizujcie zawartość aplikacji frontendowej.
