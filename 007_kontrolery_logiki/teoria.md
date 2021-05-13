@@ -9,7 +9,7 @@ Przypomnijmy sobie, że:
 Jak używać kontrolerów najlepiej wytłumaczyć na najbardziej skomplikowanym przykładzie jakim jest ``if``
 
 **IF** - akcja/część testu zdefiniowana pod tym kontrolerem wykona się jeśli warunek logiczny (wyrażenie), który IF ewaluuje jest równy logicznemu `true`
-> performs actions underneath if logical condition is true
+> official docs: performs actions underneath if logical condition is true
 
 Ok, a teraz jak może wyglądać wyrażenie?:
 ***
