@@ -22,7 +22,7 @@ kompletnej strony w przeglądarce.
 ***
 ## SPA (Single Page Application)
 
-W aplikacjach typu SPA, tylko pierwszy request jest o stronę HTML. Kolejne są już na ogół wysyłane przez frontend/javscript
+W aplikacjach typu SPA, tylko pierwsze żądanie jest o stronę HTML. Kolejne są już na ogół wysyłane przez frontend/javascript
 z wykorzystaniem: FETCH, HTTPRequest (AJAX) i najczęściej powodują tylko częściowe zaktualizowanie strony bez potrzeby pełnego przeładowania. Odpowiada za to javascript.
 
 **Zadanie:**
