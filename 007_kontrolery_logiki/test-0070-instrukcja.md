@@ -9,7 +9,7 @@ Dodamy kontoler **IF** tak, aby:
   Content-Type: application/json
   
   {
-    title: "jmeter post",
-    body: "jmeter body"
+    "title": "jmeter post",
+    "body": "jmeter body"
   }
   ```
