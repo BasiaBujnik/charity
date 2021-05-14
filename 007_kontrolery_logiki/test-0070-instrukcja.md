@@ -10,6 +10,6 @@ Dodamy kontoler **IF** tak, aby:
   
   {
     title: "jmeter post",
-    boy: "jmeter body"
+    body: "jmeter body"
   }
   ```
