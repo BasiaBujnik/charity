@@ -46,9 +46,11 @@ Windows
 ```powershell
     Invoke-WebRequest -UseBasicParsing -Uri https://bing.com -Method GET
 ```
-Linux
+Linux (https://curl.se/docs/httpscripting.html)
 ```console
-    curl -X GET https://bing.com
+    curl https://bing.com
+    curl --head https://bing.com
+    
 ```
 
 Zasobami, które najczęściej pobieramy w trakcie interakcji ze stronami webowymi to
