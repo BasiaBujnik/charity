@@ -107,5 +107,5 @@ W Chromie zobaczycie te requesty jako "pre-flight".
 
 **Zadanie:**
 
-Otwórz 'Chrome Dev Tools' i załaduj wybraną przez siebię stronę - portal z wiadomościami.
+Otwórz 'Chrome Dev Tools' i załaduj stronę (https://jsonplaceholder.typicode.com/) - portal z wiadomościami.
 Zanalizuj zakładkę Network, czy jesteś w stanie zrozumieć co ściąga Twoja przeglądarka?
