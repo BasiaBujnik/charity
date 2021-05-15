@@ -44,7 +44,7 @@ Przydatne komendy:
 
 Windows
 ```powershell
-    Invoke-WebRequest -Uri https://bing.com -Method GET
+    Invoke-WebRequest -UseBasicParsing -Uri https://bing.com -Method GET
 ```
 Linux
 ```console
