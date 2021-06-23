@@ -44,11 +44,13 @@ Przydatne komendy:
 
 Windows
 ```powershell
-    Invoke-WebRequest -Uri https://bing.com -Method GET
+    Invoke-WebRequest -UseBasicParsing -Uri https://bing.com -Method GET
 ```
-Linux
+Linux (https://curl.se/docs/httpscripting.html)
 ```console
-    curl -X GET https://bing.com
+    curl https://bing.com
+    curl --head https://bing.com
+    
 ```
 
 Zasobami, które najczęściej pobieramy w trakcie interakcji ze stronami webowymi to
@@ -107,5 +109,8 @@ W Chromie zobaczycie te requesty jako "pre-flight".
 
 **Zadanie:**
 
-Otwórz 'Chrome Dev Tools' i załaduj wybraną przez siebię stronę - portal z wiadomościami.
+Otwórz 'Chrome Dev Tools' i załaduj stronę (https://jsonplaceholder.typicode.com/).
 Zanalizuj zakładkę Network, czy jesteś w stanie zrozumieć co ściąga Twoja przeglądarka?
+
+Otwórz stronę wp.pl. Czy są tam jakieś dodatkowe typy żądąń, których wcześniej nie widzieliśmy?
+

@@ -85,7 +85,7 @@ Jakie czynniki mają najczęściej wpływ na wydajność backendu ?
 
 **Zadanie**:
 - Otwórz konsolę Chrome Web Tools
-- Wykonaj audyt jednej z naszych aplikacji  (index1.html, index2.html)
+- Wykonaj audyt jednej z naszych aplikacji : https://red-water-022d04b03.azurestaticapps.net/
 - Zapoznaj się z metrykami
 
 Core Web Vitals
