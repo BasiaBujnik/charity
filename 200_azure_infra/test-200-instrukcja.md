@@ -80,3 +80,8 @@
 
 
     VM1|VM2 -> Extensions -> Add AzureNetworkWatcherExtension
+    
+14. Aby zezwolić na dostęp do Internetu z VMek na LB stwórz OutBound rule
+
+    
+    Outbound Rukes -> Add -> IP to Backend Pool (manial, 100 ports) 
