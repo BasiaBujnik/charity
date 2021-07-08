@@ -1,4 +1,6 @@
-## JWT
+1. Telemetry
+2. Observability vs Monitoring
 
-Simulate CSRF by 
-https://flask-wtf.readthedocs.io/en/0.15.x/csrf/
+https://docs.microsoft.com/en-us/azure/azure-monitor/app/opencensus-python
+https://docs.microsoft.com/en-us/azure/azure-monitor/app/opencensus-python-request#tracking-flask-applications
+

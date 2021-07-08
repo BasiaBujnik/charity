@@ -1,3 +1,4 @@
+https://learnxinyminutes.com/docs/powershell/
 ### CI na przykladzie powershella
 
 !Developer experience!
