@@ -1,0 +1,1 @@
+- przykład skompilowanego pliku .jar i użycie wewnątrz jmetera

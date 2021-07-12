@@ -13,7 +13,8 @@ Najprzydatniejsze opcje:
 - -p, lokalizacja pliku jmeter.properties
 - -q, lokalizacja plików .properties użytkownika
 - -J, specyfikacja parametru lokalnego
-- -G, specyfikacja paramtru globalnego (w testowaniu rozproszonym)
+- -G, specyfikacja parametru globalnego (w testowaniu rozproszonym)
+- -R, lista zdalnych hostów, na których uruchomić testy
 
 
 Przykład:
