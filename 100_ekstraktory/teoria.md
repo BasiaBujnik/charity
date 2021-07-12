@@ -16,7 +16,7 @@ Najczęściej ekstrahowane elementy to:
  
 Pamiętaj:
 - Do HTMLa - CSS
-- Do XMLa - XPATH 2.0
+- Do XMLa - XPATH 2.0 (szybszy, więceh funckjonalności ale wymaga dobrego HTMLa)
 - Do JSONa - JMSE
 - Regex kosztuje
 - Używaj domyślnych wartości
