@@ -1,1 +1,2 @@
-Nagrywanie ruchu HTTP i jego odtwarzanie
+- parametryzacja
+- Nagrywanie ruchu HTTP i jego odtwarzanie
