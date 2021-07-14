@@ -30,7 +30,12 @@
           <collectionProp name="Arguments.arguments">
             <elementProp name="udv" elementType="Argument">
               <stringProp name="Argument.name">udv</stringProp>
-              <stringProp name="Argument.value">1</stringProp>
+              <stringProp name="Argument.value">1111</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="name" elementType="Argument">
+              <stringProp name="Argument.name">name</stringProp>
+              <stringProp name="Argument.value">udv</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -59,16 +64,16 @@
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Change User Defined Variable" enabled="true">
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Change User Defined Variable ${udv} or ${__V(udv)} or ${__V(${name})} or  ${__groovy(vars.get(&quot;udv&quot;).substring(0\,2))} " enabled="true">
           <stringProp name="scriptLanguage">groovy</stringProp>
           <stringProp name="parameters"></stringProp>
           <stringProp name="filename"></stringProp>
           <stringProp name="cacheKey">true</stringProp>
           <stringProp name="script">if(ctx.getThreadNum()%2==0){
-	vars.put(&apos;udv&apos;,&apos;2&apos;)
+	vars.put(&apos;udv&apos;,&apos;2222&apos;)
 	props.put(&apos;prop&apos;,&apos;2&apos;)
 }
-log.info &quot;Thread ${ctx.getThreadNum()}, Loop: ${vars.getIteration()} UDV: ${vars.get(&apos;udv&apos;)}, PROP: ${props.get(&apos;prop&apos;)}&quot;
+log.info &quot;Thread &quot; +ctx.getThreadNum() +&quot; , Loop: &quot; + vars.getIteration() + &quot; UDV: &quot; + vars.get(&apos;udv&apos;)  +&quot;, PROP: &quot; +props.get(&apos;prop&apos;)
 </stringProp>
         </JSR223Sampler>
         <hashTree/>

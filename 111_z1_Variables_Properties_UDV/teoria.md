@@ -1,1 +1,0 @@
-#Funkcje w JMeterze na wybranych przykładach
