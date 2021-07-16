@@ -171,53 +171,11 @@ without actual network activity. This helps debugging tests.</stringProp>
             <stringProp name="HtmlExtractor.extractor_impl"></stringProp>
           </HtmlExtractor>
           <hashTree/>
-          <XPath2Extractor guiclass="XPath2ExtractorGui" testclass="XPath2Extractor" testname="XPath2 Extractor" enabled="true">
-            <stringProp name="XPathExtractor2.default">applicationVersionXPATH2_notEXxtracted</stringProp>
-            <stringProp name="XPathExtractor2.refname">applicationVersionXPATH2</stringProp>
-            <stringProp name="XPathExtractor2.matchNumber">1</stringProp>
-            <stringProp name="XPathExtractor2.xpathQuery">//footer</stringProp>
-            <stringProp name="XPathExtractor2.namespaces"></stringProp>
-          </XPath2Extractor>
-          <hashTree/>
-          <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor" enabled="true">
-            <stringProp name="XPathExtractor.default">applicationVersionXPATH_notExtracted</stringProp>
-            <stringProp name="XPathExtractor.refname">applicationVersionXPATH</stringProp>
-            <stringProp name="XPathExtractor.matchNumber">1</stringProp>
-            <stringProp name="XPathExtractor.xpathQuery">//footer</stringProp>
-            <boolProp name="XPathExtractor.validate">false</boolProp>
-            <boolProp name="XPathExtractor.tolerant">false</boolProp>
-            <boolProp name="XPathExtractor.namespace">false</boolProp>
-          </XPathExtractor>
-          <hashTree/>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="TestPlan.comments">//capturing group 1, match 1</stringProp>
-            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-            <stringProp name="RegexExtractor.refname">applicationVersionRegex</stringProp>
-            <stringProp name="RegexExtractor.regex">&lt;footer&gt;(.*)&lt;/footer&gt;</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">applicationVersionRegex_notExtracted</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor" enabled="true">
-            <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
-            <stringProp name="BoundaryExtractor.refname">applicationVersionBoundary</stringProp>
-            <stringProp name="BoundaryExtractor.lboundary">footer&gt;</stringProp>
-            <stringProp name="BoundaryExtractor.rboundary">&lt;/footer</stringProp>
-            <stringProp name="BoundaryExtractor.default">applicationVersionBoundary_notExtracted</stringProp>
-            <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
-            <stringProp name="BoundaryExtractor.match_number">1</stringProp>
-          </BoundaryExtractor>
-          <hashTree/>
           <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Display applicationVersion" enabled="true">
             <stringProp name="cacheKey">true</stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
-            <stringProp name="script">log.info(&quot;from CSS:&quot;+vars.get(&apos;applicationVersionCSS&apos;));
-log.info(&quot;from XPath:&quot;+vars.get(&apos;applicationVersionXPATH&apos;));
-log.info(&quot;from XPath2:&quot;+vars.get(&apos;applicationVersionXPATH2&apos;));
-log.info(&quot;from Regex:&quot;+vars.get(&apos;applicationVersionRegex&apos;));
-log.info(&quot;from Boundary:&quot;+vars.get(&apos;applicationVersionBoundary&apos;));</stringProp>
+            <stringProp name="script">log.info(&quot;from CSS:&quot;+vars.get(&apos;applicationVersionCSS&apos;));</stringProp>
             <stringProp name="scriptLanguage">groovy</stringProp>
           </JSR223PostProcessor>
           <hashTree/>
@@ -456,44 +414,6 @@ without actual network activity. This helps debugging tests.</stringProp>
               <stringProp name="HtmlExtractor.match_number">1</stringProp>
               <stringProp name="HtmlExtractor.extractor_impl"></stringProp>
             </HtmlExtractor>
-            <hashTree/>
-            <XPath2Extractor guiclass="XPath2ExtractorGui" testclass="XPath2Extractor" testname="XPath2 Extractor" enabled="true">
-              <stringProp name="XPathExtractor2.default">applicationVersionXPATH2_notEXxtracted</stringProp>
-              <stringProp name="XPathExtractor2.refname">applicationVersionXPATH2</stringProp>
-              <stringProp name="XPathExtractor2.matchNumber">1</stringProp>
-              <stringProp name="XPathExtractor2.xpathQuery">//footer</stringProp>
-              <stringProp name="XPathExtractor2.namespaces"></stringProp>
-            </XPath2Extractor>
-            <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor" enabled="true">
-              <stringProp name="XPathExtractor.default">applicationVersionXPATH_notExtracted</stringProp>
-              <stringProp name="XPathExtractor.refname">applicationVersionXPATH</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">1</stringProp>
-              <stringProp name="XPathExtractor.xpathQuery">//footer</stringProp>
-              <boolProp name="XPathExtractor.validate">false</boolProp>
-              <boolProp name="XPathExtractor.tolerant">false</boolProp>
-              <boolProp name="XPathExtractor.namespace">false</boolProp>
-            </XPathExtractor>
-            <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-              <stringProp name="TestPlan.comments">//capturing group 1, match 1</stringProp>
-              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-              <stringProp name="RegexExtractor.refname">applicationVersionRegex</stringProp>
-              <stringProp name="RegexExtractor.regex">&lt;footer&gt;(.*)&lt;/footer&gt;</stringProp>
-              <stringProp name="RegexExtractor.template">$1$</stringProp>
-              <stringProp name="RegexExtractor.default">applicationVersionRegex_notExtracted</stringProp>
-              <stringProp name="RegexExtractor.match_number">1</stringProp>
-            </RegexExtractor>
-            <hashTree/>
-            <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor" enabled="true">
-              <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
-              <stringProp name="BoundaryExtractor.refname">applicationVersionBoundary</stringProp>
-              <stringProp name="BoundaryExtractor.lboundary">footer&gt;</stringProp>
-              <stringProp name="BoundaryExtractor.rboundary">&lt;/footer</stringProp>
-              <stringProp name="BoundaryExtractor.default">applicationVersionBoundary_notExtracted</stringProp>
-              <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
-              <stringProp name="BoundaryExtractor.match_number">1</stringProp>
-            </BoundaryExtractor>
             <hashTree/>
             <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Display applicationVersion" enabled="true">
               <stringProp name="cacheKey">true</stringProp>
