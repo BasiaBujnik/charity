@@ -5,7 +5,7 @@ Zrozumienie środowiska uruchomieniowego jest bardzo przydatne w testach wydajno
 
 Zbudujemy w Azure następującą topologię: 
 
-![warstwy](../200_azure_infra/img/topology.png)
+![warstwy](/img/topology.png)
 
 a następnie uruchomimy naszą aplikację w tym modelu.
 Elementy, których użyjemy sa najczęściej spotykane w prawdziwym świecie. 
