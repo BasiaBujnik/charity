@@ -30,12 +30,30 @@
           <collectionProp name="Arguments.arguments">
             <elementProp name="udv" elementType="Argument">
               <stringProp name="Argument.name">udv</stringProp>
-              <stringProp name="Argument.value">1111</stringProp>
+              <stringProp name="Argument.value">${__P(udv,1111)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">//tak procesujemy  parametry z linii poleceń</stringProp>
             </elementProp>
             <elementProp name="name" elementType="Argument">
               <stringProp name="Argument.name">name</stringProp>
               <stringProp name="Argument.value">udv</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="computed" elementType="Argument">
+              <stringProp name="Argument.name">computed</stringProp>
+              <stringProp name="Argument.value">${udv}${name}</stringProp>
+              <stringProp name="Argument.desc">//that does not work</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables Computed" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="computed2" elementType="Argument">
+              <stringProp name="Argument.name">computed2</stringProp>
+              <stringProp name="Argument.value">${udv}${name}</stringProp>
+              <stringProp name="Argument.desc">//that works</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -47,6 +65,7 @@
           <stringProp name="filename"></stringProp>
           <stringProp name="cacheKey">true</stringProp>
           <stringProp name="script">props.put(&apos;prop&apos;,args[0])</stringProp>
+          <stringProp name="TestPlan.comments">//this is how we cab use a function</stringProp>
         </JSR223Sampler>
         <hashTree/>
       </hashTree>
@@ -70,12 +89,25 @@
           <stringProp name="filename"></stringProp>
           <stringProp name="cacheKey">true</stringProp>
           <stringProp name="script">log.info &quot;Before: Thread&quot; +ctx.getThreadNum() +&quot; , Loop: &quot; + vars.getIteration() + &quot; UDV: &quot; + vars.get(&apos;udv&apos;)  +&quot;, PROP: &quot; +props.get(&apos;prop&apos;)
+
 if(ctx.getThreadNum()%2==0){
 	vars.put(&apos;udv&apos;,&apos;2222&apos;)
 	props.put(&apos;prop&apos;,&apos;2&apos;)
+} else{
+	sleep(100)
 }
-log.info &quot;After: Thread&quot; +ctx.getThreadNum() +&quot; , Loop: &quot; + vars.getIteration() + &quot; UDV: &quot; + vars.get(&apos;udv&apos;)  +&quot;, PROP: &quot; +props.get(&apos;prop&apos;)</stringProp>
+
+log.info &quot;After: Thread&quot; +ctx.getThreadNum() +&quot; , Loop: &quot; + vars.getIteration() + &quot; UDV: &quot; + vars.get(&apos;udv&apos;)  +&quot;, PROP: &quot; +props.get(&apos;prop&apos;)
+</stringProp>
+          <stringProp name="TestPlan.comments">//roznica miedzy zmiennymi i wlasciwosciami i przyklad uzycia API Jmeterowego oraz funkcji</stringProp>
         </JSR223Sampler>
+        <hashTree/>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler for test started at ${TESTSTART.MS}" enabled="true">
+          <stringProp name="TestPlan.comments">//przykład użycia wbudowanych zmiennych</stringProp>
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
         <hashTree/>
       </hashTree>
       <PostThreadGroup guiclass="PostThreadGroupGui" testclass="PostThreadGroup" testname="tearDown Thread Group" enabled="true">
@@ -98,6 +130,7 @@ log.info &quot;After: Thread&quot; +ctx.getThreadNum() +&quot; , Loop: &quot; + 
           <stringProp name="filename"></stringProp>
           <stringProp name="cacheKey">true</stringProp>
           <stringProp name="script">props.clear()</stringProp>
+          <stringProp name="TestPlan.comments">//pracujac w UI wlasciwosci sie nie czyszcza automatycznie co prowadzi do wielu bledow szczegolnie na poczatku przygody z JMeterem</stringProp>
         </JSR223Sampler>
         <hashTree/>
       </hashTree>
