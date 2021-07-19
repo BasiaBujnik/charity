@@ -1,3 +1,4 @@
-## Wprowadzenie do Groovy
-## Przykladu uzycia jezyka groovy w Jmeterze (wykorzystanie podstawowych obiektów)
-## Użycie funkcji w JMeter i zmiennych wbudowanych, najwazniejsze z nich
+## pliki CSV
+
+Pliki CSV są jednym z najpopularniejszych sposobów dostarczania danych testowych. 
+JMeter ma specjalny element, który ułatawia nam pracę z plikiem CSV.

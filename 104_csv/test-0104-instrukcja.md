@@ -1,0 +1,8 @@
+1. Stworzymy prosty test, który pokazę jak można zczytać dane z pliku
+2. Zobaczym jak można odwołać się do katalogu z testem w JMeter
+3. Stworzymy test wysyłający żądania do bing.com, i zmieniający domenę na kod kraju z pliku CSV
+    GET bing.es
+    GET bing.it
+    GET bing.pl
+    ....
+    
