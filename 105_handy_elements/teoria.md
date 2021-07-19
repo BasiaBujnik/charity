@@ -1,0 +1,1 @@
+Teoria do tefo ćwiczenia znajduje się w zagnieżdżonym katalogu.

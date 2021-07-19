@@ -40,6 +40,7 @@ Właściwości (Properties):
             ${__machineName}
             ${__machineIP}
             ${__UUID()}
+            ${__Random(0,10)}
             ${__P(group1.threads)
             ${__groovy(vars.get("myVar").substring(0\,2))} //wykonuje kod groovy
             ${__V(A${N})}
