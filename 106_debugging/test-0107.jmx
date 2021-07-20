@@ -66,7 +66,7 @@
           </elementProp>
           <elementProp name="postsCSV" elementType="Argument">
             <stringProp name="Argument.name">postsCSV</stringProp>
-            <stringProp name="Argument.value">${__P(postsCSV,test-0105-odpowiedz.csv)}</stringProp>
+            <stringProp name="Argument.value">${__P(postsCSV,test-0105-odpowiedz.cs)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">//dane testowe do postów</stringProp>
           </elementProp>
@@ -302,7 +302,7 @@ without actual network activity. This helps debugging tests.</stringProp>
                 <stringProp name="cacheKey">true</stringProp>
                 <stringProp name="filename"></stringProp>
                 <stringProp name="parameters"></stringProp>
-                <stringProp name="script">log.info(&quot;from CSS:&quot;+vars.get(&apos;applicationVersionCSS&apos;));</stringProp>
+                <stringProp name="script">log.error(&quot;from CSS:&quot;+vars.get(&apos;applicatonVersionCSS&apos;));</stringProp>
                 <stringProp name="scriptLanguage">groovy</stringProp>
               </JSR223PostProcessor>
               <hashTree/>
