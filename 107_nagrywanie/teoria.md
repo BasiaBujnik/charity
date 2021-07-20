@@ -19,5 +19,6 @@ Kiedy u¿ywaæ:
 - aplikacja czêsto siê zmienia
 - do debugowania
 - kiedy potrafimy budowaæ testy w JMeterze sami
+- kiedy chcemy skorzystaæ z podstawowej korelacji zmiennych
 
 
