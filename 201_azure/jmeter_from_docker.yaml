@@ -20,7 +20,7 @@ stages:
               ls
               docker run -d `
               --name $ContainerName `
-              --entrypoint tail`
+              --entrypoint tail `
               --volume 201_azure:/test gabrielstar/crux-master:0.0.1 `
                -f /dev/null
               #command is executed inside ubuntu-like container
