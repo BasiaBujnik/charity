@@ -18,9 +18,9 @@ stages:
               curl -O -L -X GET https://mirrors.ocf.berkeley.edu/apache//jmeter/binaries/$(jmeterVersion).zip
               #Unzip
               unzip $(jmeterVersion).zip
-              ls -alh
             displayName: Download JMeter
 
           - bash: |
               sh apache-jmeter-5.4.1/bin/jmeter.sh -n -t 201_azure/test.jmx
+              ls -alh
             displayName: Run Test
