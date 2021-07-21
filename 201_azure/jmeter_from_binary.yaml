@@ -21,6 +21,8 @@ stages:
             displayName: Download JMeter
 
           - bash: |
-              sh apache-jmeter-5.4.1/bin/jmeter.sh -n -t 201_azure/test.jmx
+              mkdir -p html
+              sh $(jmeterVersion)/bin/jmeter.sh -n -t 201_azure/$(jmxFile) -j jmeter.log -l results.csv -e -o html
               ls -alh
             displayName: Run Test
+
