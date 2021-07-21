@@ -7,8 +7,11 @@ parameters:
   type: string
   default: "-Jthreads=1"
 
+- name: JMXFile
+  type: string
+  default: "test.jmx"
+
 variables:
-  jmxFile: 'test.jmx'
   containerName: jmeter
   containerImage: gabrielstar/crux-master:0.0.1
   repoDir: $(System.DefaultWorkingDirectory)/201_azure/
@@ -39,7 +42,7 @@ stages:
 
               #command is executed inside ubuntu-like container
               Start-CommandInsideDocker "$(containerName)" "ls $(containerDir) && mkdir -p $(containerDir)/html"
-              Start-CommandInsideDocker "$(containerName)" "sh /jmeter/apache-jmeter-*/bin/jmeter.sh -n -t $(containerDir)/$(jmxFile) ${{ parameters.JMeterParameters}} -e -o $(containerDir)/html -l $(containerDir)/jmeter.log"
+              Start-CommandInsideDocker "$(containerName)" "sh /jmeter/apache-jmeter-*/bin/jmeter.sh -n -t $(containerDir)/${{ parameters.JMXFile}} ${{ parameters.JMeterParameters}} -e -o $(containerDir)/html -l $(containerDir)/jmeter.log"
 
               #stop container
               docker stop "$ContainerName"
