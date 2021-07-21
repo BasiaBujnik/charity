@@ -1,3 +1,7 @@
-1. Pipeline'y - YAML
-2. DevOps/Portal
-2. JMeter task, Blazemeter task 
+Podstawowe metody puszczania testów w Azure DevOps
+
+1. JMeter task
+2. Jako kontener:
+    - kontener task
+    - skrypt
+ 

@@ -1,0 +1,28 @@
+https://mirrors.ocf.berkeley.edu/apache//jmeter/binaries/apache-jmeter-5.4.1.zip
+
+trigger: none
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+variables:
+  jmxFile: 'test.jmx'
+  jmeterVersion: 'apache-jmeter-5.4.1'
+
+stages:
+  - stage: JMeter
+    displayName: Run JMeter from binary
+    jobs:
+      - job: Jmeter
+        displayName: Test
+        steps:
+          - bash: |
+              #Download JMeter
+              curl -O -L -X GET https://mirrors.ocf.berkeley.edu/apache//jmeter/binaries/$(jmeterVersion).zip
+              #Unzip
+              unzip $(jmeterVersion).zip
+              ls -alh
+            displayName: Download JMeter
+
+          - bash: |
+
+            displayName: Run Test
