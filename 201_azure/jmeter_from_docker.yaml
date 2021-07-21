@@ -17,11 +17,12 @@ stages:
                 docker exec $ContainerName sh -c "${Command}"
               }
               $ContainerName='jmeter'
-              ls
+              $BaseDir=${pwd}
+              Write-Host "Mounting $BaseDir/201_azure"
               docker run -d `
               --name $ContainerName `
               --entrypoint tail `
-              --volume "$pwd"/201_azure:/jmx gabrielstar/crux-master:0.0.1 `
+              --volume "$BaseDir"/201_azure:/jmx gabrielstar/crux-master:0.0.1 `
                -f /dev/null
 
               Write-Host "Started container ${ContainerName} "
