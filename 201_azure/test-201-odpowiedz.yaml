@@ -45,7 +45,7 @@ stages:
               Start-CommandInsideDocker "$(containerName)" "sh /jmeter/apache-jmeter-*/bin/jmeter.sh -n -t $(containerDir)/${{ parameters.JMXFile}} ${{ parameters.JMeterParameters}} -e -o $(containerDir)/html -l $(containerDir)/jmeter.log"
 
               #stop container
-              docker stop "$ContainerName"
+              docker stop "$(containerName)"
             displayName: Run Test
 
           - task: PublishPipelineArtifact@1
