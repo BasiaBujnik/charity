@@ -21,7 +21,7 @@ stages:
               docker run -d `
               --name $ContainerName `
               --entrypoint tail `
-              --volume 201_azure:/jmx gabrielstar/crux-master:0.0.1 `
+              --volume "$pwd"/201_azure:/jmx gabrielstar/crux-master:0.0.1 `
                -f /dev/null
 
               Write-Host "Started container ${ContainerName} "
