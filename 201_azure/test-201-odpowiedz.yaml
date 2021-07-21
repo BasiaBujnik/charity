@@ -3,8 +3,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 parameters:
+- name: JMeterParameters
   type: string
-  args: "-Jthreads=1"
+  default: "-Jthreads=1"
 
 variables:
   jmxFile: 'test.jmx'
@@ -42,7 +43,7 @@ stages:
 
               #command is executed inside ubuntu-like container
               Start-CommandInsideDocker "$ContainerName" "ls /jmx && mkdir -p /jmx/html"
-              Start-CommandInsideDocker "$ContainerName" "sh /jmeter/apache-jmeter-*/bin/jmeter.sh -n -t /jmx/$(jmxFile) -e -o /jmx/html -l /jmx/jmeter.log"
+              Start-CommandInsideDocker "$ContainerName" "sh /jmeter/apache-jmeter-*/bin/jmeter.sh -n -t /jmx/$(jmxFile) ${{ parameters.JMeterParameters}} -e -o /jmx/html -l /jmx/jmeter.log"
 
               #stop container
               docker stop "$ContainerName"
