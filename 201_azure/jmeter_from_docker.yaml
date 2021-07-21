@@ -26,7 +26,7 @@ stages:
               --name ${ContainerName} `
               --entrypoint tail `
               --volume ${BaseDir}/201_azure/:/jmx/ ${JMeterContainer} `
-
+              -f /dev/null
               #Showing container started
               Write-Host "Started container ${ContainerName} "
               docker ps -a --no-trunc --filter name=^/${ContainerName}$

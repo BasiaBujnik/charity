@@ -1,6 +1,6 @@
 ## JMeter w Azure
 
-1. Uruchomimy Pipeline jako binarkê z Build Pipeline
+1. Uruchomimy Pipeline jako binarkê z Build Pipeline - jmeter_from_binary.yaml
 2. Uruchomimy Release pipeline z wykorzystaniem Azure Marketplace Task (https://marketplace.visualstudio.com/items?itemName=AlexandreGattiker.jmeter-tasks)
     Change agent to ubuntu latest
     Command Line Task (download repo zip with curl):
@@ -21,4 +21,4 @@
     
             `¿ród³ó: Gabriel Starczewski`
             
-3. Uruchomimy Jmetera z pomoc¹ kontenera Dockerowego
+3. Uruchomimy Jmetera z pomoc¹ kontenera Dockerowego - jmeter_from_docker.yaml
