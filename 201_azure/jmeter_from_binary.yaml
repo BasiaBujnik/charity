@@ -1,6 +1,6 @@
 trigger: none
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'ubuntu-latest'
 
 variables:
   jmxFile: 'test.jmx'
@@ -22,5 +22,5 @@ stages:
             displayName: Download JMeter
 
           - bash: |
-
+              apache-jmeter-5.4.1/bin/jmeter.sh -n -t 201_azure/test.jmx
             displayName: Run Test
