@@ -16,24 +16,26 @@ stages:
               function Start-CommandInsideDocker($ContainerName, $Command){
                 docker exec $ContainerName sh -c "${Command}"
               }
+              $JMeterContainer='gabrielstar/crux-master:0.0.1'
               $ContainerName='jmeter'
               $BaseDir=${pwd}
-              Write-Host "Mounting $BaseDir/201_azure"
+              Write-Host "Mounting $BaseDir/201_azure to JMeter container"
 
               #Running Jmeter container in detached mode with volumes mounted
-              docker run -d `
+              docker run -d --rm `
               --name ${ContainerName} `
               --entrypoint tail `
-              --volume ${BaseDir}/201_azure/:/jmx/ gabrielstar/crux-master:0.0.1 `
-               -f /dev/null
+              --volume ${BaseDir}/201_azure/:/jmx/ ${JMeterContainer} `
 
               #Showing container started
               Write-Host "Started container ${ContainerName} "
               docker ps -a --no-trunc --filter name=^/${ContainerName}$
 
               #command is executed inside ubuntu-like container
-              Start-CommandInsideDocker "$ContainerName" "ls /jmx"
+              Start-CommandInsideDocker "$ContainerName" "ls /jmx && mkdir -p /jmx/html"
               Start-CommandInsideDocker "$ContainerName" "sh /jmeter/apache-jmeter-*/bin/jmeter.sh -n -t /jmx/$(jmxFile) -o /jmx/html -l /jmx/jmeter.log"
+
+              #stop container
               docker stop "$ContainerName"
             displayName: Run Test
 
