@@ -33,18 +33,18 @@ stages:
 
               #command is executed inside ubuntu-like container
               Start-CommandInsideDocker "$ContainerName" "ls /jmx"
-              Start-CommandInsideDocker "$ContainerName" "sh /jmeter/apache-jmeter-*/bin/jmeter.sh -n -t /jmx/$(jmxFile)"
+              Start-CommandInsideDocker "$ContainerName" "sh /jmeter/apache-jmeter-*/bin/jmeter.sh -n -t /jmx/$(jmxFile) -o /jmx/html -l /jmx/jmeter.log"
               docker stop "$ContainerName"
             displayName: Run Test
 
           - task: PublishPipelineArtifact@1
             displayName: Archive JMeter Artifacts
             inputs:
-              path: jmeter_artifacts
+              path: 201_azure/jmeter.log
               artifact: JmeterFiles
 
           - task: PublishPipelineArtifact@1
             displayName: Archive JMeter HTML Report
             inputs:
-              path: html
+              path: 201_azure/html
               artifact: JmeterReport
