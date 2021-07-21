@@ -17,6 +17,7 @@ stages:
                 docker exec $ContainerName sh -c "${Command}"
               }
               $ContainerName='jmeter'
+              ls
               docker run -d `
               --name $ContainerName `
               --entrypoint tail `
