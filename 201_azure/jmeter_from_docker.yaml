@@ -23,6 +23,10 @@ stages:
               --entrypoint tail `
               --volume 201_azure:/test gabrielstar/crux-master:0.0.1 `
                -f /dev/null
+
+              Write-Host "Started container ${ContainerName} "
+              docker ps -a --no-trunc --filter name=^/${ContainerName}$
+
               #command is executed inside ubuntu-like container
               Start-CommandInsideDocker "$ContainerName" "ls /"
               Start-CommandInsideDocker "$ContainerName" "sh /jmeter/apache-jmeter-*/bin/jmeter.sh -n -t /test/$(jmxFile)"
