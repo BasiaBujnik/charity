@@ -1,0 +1,61 @@
+trigger: none
+pool:
+  vmImage: 'ubuntu-latest'
+
+parameters:
+  type: string
+  args: "-Jthreads=1"
+
+variables:
+  jmxFile: 'test.jmx'
+  containerName: jmeter
+  containerImage: gabrielstar/crux-master:0.0.1
+  repoDir: $(System.DefaultWorkingDirectory)/201_azure
+  containerDir: /jmx
+
+stages:
+  - stage: JMeter
+    displayName: Run JMeter from binary
+    jobs:
+      - job: Jmeter
+        displayName: Test
+        steps:
+          - pwsh: | #bash or powershell - both can run on ubuntu
+              function Start-CommandInsideDocker($ContainerName, $Command){
+                docker exec $ContainerName sh -c "${Command}"
+              }
+              $JMeterContainer='$(containerImage)'
+              $ContainerName='$(containerName)'
+              $BaseDir=${pwd}
+              Write-Host "Mounting $BaseDir/201_azure to JMeter container"
+
+              #Running Jmeter container in detached mode with volumes mounted
+              docker run -d --rm `
+              --name ${ContainerName} `
+              --entrypoint tail `
+              --volume ${BaseDir}/201_azure/:/jmx/ ${JMeterContainer} `
+              -f /dev/null
+
+              #Showing container started
+              Write-Host "Started container ${ContainerName} "
+              docker ps -a --no-trunc --filter name=^/${ContainerName}$
+
+              #command is executed inside ubuntu-like container
+              Start-CommandInsideDocker "$ContainerName" "ls /jmx && mkdir -p /jmx/html"
+              Start-CommandInsideDocker "$ContainerName" "sh /jmeter/apache-jmeter-*/bin/jmeter.sh -n -t /jmx/$(jmxFile) -e -o /jmx/html -l /jmx/jmeter.log"
+
+              #stop container
+              docker stop "$ContainerName"
+            displayName: Run Test
+
+          - task: PublishPipelineArtifact@1
+            displayName: Archive JMeter Artifacts
+            inputs:
+              path: 201_azure/jmeter.log
+              artifact: JmeterFiles
+
+          - task: PublishPipelineArtifact@1
+            displayName: Archive JMeter HTML Report
+            inputs:
+              path: 201_azure/html
+              artifact: JmeterReport
