@@ -28,7 +28,7 @@ stages:
               docker ps -a --no-trunc --filter name=^/${ContainerName}$
 
               #command is executed inside ubuntu-like container
-              Start-CommandInsideDocker "$ContainerName" "ls /"
+              Start-CommandInsideDocker "$ContainerName" "ls /test"
               Start-CommandInsideDocker "$ContainerName" "sh /jmeter/apache-jmeter-*/bin/jmeter.sh -n -t /test/$(jmxFile)"
               docker stop "$ContainerName"
             displayName: Run Test
