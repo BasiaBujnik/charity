@@ -19,12 +19,15 @@ stages:
               $ContainerName='jmeter'
               $BaseDir=${pwd}
               Write-Host "Mounting $BaseDir/201_azure"
+
+              #Running Jmeter container in detached mode with volumes mounted
               docker run -d `
-              --name $ContainerName `
+              --name ${ContainerName} `
               --entrypoint tail `
-              --volume "$BaseDir"/201_azure:/jmx gabrielstar/crux-master:0.0.1 `
+              --volume "${BaseDir}"/201_azure:/jmx gabrielstar/crux-master:0.0.1 `
                -f /dev/null
 
+              #Showing container started
               Write-Host "Started container ${ContainerName} "
               docker ps -a --no-trunc --filter name=^/${ContainerName}$
 
