@@ -24,9 +24,8 @@ stages:
               #Running Jmeter container in detached mode with volumes mounted
               docker run -d --rm `
               --name ${ContainerName} `
-              --entrypoint tail `
+              --entrypoint 'tail -f /dev/null' `
               --volume ${BaseDir}/201_azure/:/jmx/ ${JMeterContainer} `
-              -f /dev/null
               #Showing container started
               Write-Host "Started container ${ContainerName} "
               docker ps -a --no-trunc --filter name=^/${ContainerName}$
