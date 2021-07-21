@@ -22,7 +22,19 @@ stages:
 
           - bash: |
               mkdir -p html
-              sh $(jmeterVersion)/bin/jmeter.sh -n -t 201_azure/$(jmxFile) -j jmeter.log -l results.csv -e -o html
+              mkdir -p jmeter_artifacts
+              sh $(jmeterVersion)/bin/jmeter.sh -n -t 201_azure/$(jmxFile) -j jmeter_artifacts/jmeter.log -l jmeter_artifacts/results.csv -e -o html
               ls -alh
             displayName: Run Test
 
+          - task: PublishPipelineArtifact@1
+            displayName: Archive JMeter Artifacts
+            inputs:
+              path: jmeter_artifacts
+              artifact: JmeterFiles
+
+          - task: PublishPipelineArtifact@1
+            displayName: Archive JMeter HTML Report
+            inputs:
+              path: html
+              artifact: JmeterReport
