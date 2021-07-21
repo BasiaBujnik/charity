@@ -15,7 +15,7 @@ stages:
         steps:
           - bash: |
               #Download JMeter
-              curl -O -L -X GET https://mirrors.ocf.berkeley.edu/apache//jmeter/binaries/$(jmeterVersion).zip
+              curl -O -L -X GET https://mirrors.ocf.berkeley.edu/apache/jmeter/binaries/$(jmeterVersion).zip
               #Unzip
               unzip $(jmeterVersion).zip
             displayName: Download JMeter
