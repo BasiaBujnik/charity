@@ -1,6 +1,8 @@
 ## 
 
-1. U¿yj zmiennych i parametrów w Azure aby liczbê w¹tków w teœcie mo¿na by³o okreœlaæ podczas uruchomienia pipeline'u (jmeter_from_docker)
+1. U¿yj zmiennych i parametrów w Azure aby liczbê w¹tków i nazwê testu  mo¿na by³o okreœlaæ podczas uruchomienia pipeline'u (jmeter_from_docker)
+        odwo³anie do zmiennej: $(zmienna)
+        odwo³anie do parametru: ${{ parameters.parametr }}
 2. Zrefaktoruj pipeline usuwaj¹c powtórzenia
 
 https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema
