@@ -20,3 +20,5 @@
     ![spa i mpa](img/releasePipeline.png)
     
             `¿ród³ó: Gabriel Starczewski`
+            
+3. Uruchomimy Jmetera z pomoc¹ kontenera Dockerowego
