@@ -1,0 +1,41 @@
+trigger: none
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  jmxFile: 'test.jmx'
+
+stages:
+  - stage: JMeter
+    displayName: Run JMeter from binary
+    jobs:
+      - job: Jmeter
+        displayName: Test
+        steps:
+          - pwsh: | #bash or powershell - both can run on ubuntu
+              function Start-CommandInsideDocker($ContainerName, $Command){
+                docker exec $ContainerName sh -c "${Command}"
+              }
+              $ContainerName='jmeter'
+              docker run -d `
+              --name ${ContainerName} `
+              --entrypoint tail `
+              --volume 201_azure:/test gabrielstar/crux-master:0.0.1 `
+              -f /dev/null
+
+              #command is executed inside ubuntu-like container
+              Start-CommandInsideDocker $ContainerName "sh /jmeter/apache-jmeter-*/bin/jmeter.sh -n -t /test/${jmxFile)"
+              docker stop $ContainerName
+            displayName: Run Test
+
+          - task: PublishPipelineArtifact@1
+            displayName: Archive JMeter Artifacts
+            inputs:
+              path: jmeter_artifacts
+              artifact: JmeterFiles
+
+          - task: PublishPipelineArtifact@1
+            displayName: Archive JMeter HTML Report
+            inputs:
+              path: html
+              artifact: JmeterReport
