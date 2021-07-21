@@ -18,14 +18,14 @@ stages:
               }
               $ContainerName='jmeter'
               docker run -d `
-              --name ${ContainerName} `
+              --name $ContainerName `
               --entrypoint tail `
               --volume 201_azure:/test gabrielstar/crux-master:0.0.1 `
               -f /dev/null
 
               #command is executed inside ubuntu-like container
-              Start-CommandInsideDocker $ContainerName "sh /jmeter/apache-jmeter-*/bin/jmeter.sh -n -t /test/${jmxFile)"
-              docker stop $ContainerName
+              Start-CommandInsideDocker "$ContainerName" "sh /jmeter/apache-jmeter-*/bin/jmeter.sh -n -t /test/$(jmxFile)"
+              docker stop "$ContainerName"
             displayName: Run Test
 
           - task: PublishPipelineArtifact@1
