@@ -11,8 +11,8 @@ variables:
   jmxFile: 'test.jmx'
   containerName: jmeter
   containerImage: gabrielstar/crux-master:0.0.1
-  repoDir: $(System.DefaultWorkingDirectory)/201_azure
-  containerDir: /jmx
+  repoDir: $(System.DefaultWorkingDirectory)/201_azure/
+  containerDir: /jmx/
 
 stages:
   - stage: JMeter
@@ -25,25 +25,21 @@ stages:
               function Start-CommandInsideDocker($ContainerName, $Command){
                 docker exec $ContainerName sh -c "${Command}"
               }
-              $JMeterContainer='$(containerImage)'
-              $ContainerName='$(containerName)'
-              $BaseDir=${pwd}
-              Write-Host "Mounting $BaseDir/201_azure to JMeter container"
-
+              Write-Host "Mounting $(repoDir) to JMeter container"
               #Running Jmeter container in detached mode with volumes mounted
               docker run -d --rm `
-              --name ${ContainerName} `
+              --name $(containerName) `
               --entrypoint tail `
-              --volume ${BaseDir}/201_azure/:/jmx/ ${JMeterContainer} `
+              --volume $(repoDir):$(containerDir) $(containerImage) `
               -f /dev/null
 
               #Showing container started
-              Write-Host "Started container ${ContainerName} "
-              docker ps -a --no-trunc --filter name=^/${ContainerName}$
+              Write-Host "Started container $(containerImage) "
+              docker ps -a --no-trunc --filter name=^/$(containerName)$
 
               #command is executed inside ubuntu-like container
-              Start-CommandInsideDocker "$ContainerName" "ls /jmx && mkdir -p /jmx/html"
-              Start-CommandInsideDocker "$ContainerName" "sh /jmeter/apache-jmeter-*/bin/jmeter.sh -n -t /jmx/$(jmxFile) ${{ parameters.JMeterParameters}} -e -o /jmx/html -l /jmx/jmeter.log"
+              Start-CommandInsideDocker "$(containerName)" "ls $(containerDir) && mkdir -p $(containerDir)/html"
+              Start-CommandInsideDocker "$(containerName)" "sh /jmeter/apache-jmeter-*/bin/jmeter.sh -n -t $(containerDir)/$(jmxFile) ${{ parameters.JMeterParameters}} -e -o $(containerDir)/html -l $(containerDir)/jmeter.log"
 
               #stop container
               docker stop "$ContainerName"
@@ -52,11 +48,11 @@ stages:
           - task: PublishPipelineArtifact@1
             displayName: Archive JMeter Artifacts
             inputs:
-              path: 201_azure/jmeter.log
+              path: $(repoDir)/jmeter.log
               artifact: JmeterFiles
 
           - task: PublishPipelineArtifact@1
             displayName: Archive JMeter HTML Report
             inputs:
-              path: 201_azure/html
+              path: $(repoDir)/html
               artifact: JmeterReport
