@@ -9,4 +9,5 @@ data;
 let newdata = data | extend bytesSent=customDimensions.SentBytes;
 newdata;
 //wykresy
+newdata | render piechart;
 

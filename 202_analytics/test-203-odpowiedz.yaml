@@ -5,7 +5,7 @@ pool:
 variables:
   jmxFile: 'test-203.jmx'
   jmeterVersion: 'apache-jmeter-5.4.1'
-
+  jmeterParameters: '-Jthreads=2'
 stages:
   - stage: JMeter
     displayName: Run JMeter from binary
@@ -26,7 +26,7 @@ stages:
           - bash: |
               mkdir -p html
               mkdir -p jmeter_artifacts
-              sh $(jmeterVersion)/bin/jmeter.sh -n -t 202_analytics/$(jmxFile) -Jthreads=2 -j jmeter_artifacts/jmeter.log -l jmeter_artifacts/results.csv -e -o html
+              sh $(jmeterVersion)/bin/jmeter.sh -n -t 202_analytics/$(jmxFile) $(jmeterParameters) -j jmeter_artifacts/jmeter.log -l jmeter_artifacts/results.csv -e -o html
               ls -alh
             displayName: Run Test
 
