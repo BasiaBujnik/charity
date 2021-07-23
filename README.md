@@ -5,8 +5,6 @@ That is the repsitory for training: Performance Tests and JMeter
 
 Gabriel Starczewski
 
-gabriel.starczewski[at]gmail[dot]com
-
 Porfolio:
 
 https://www.linkedin.com/in/gabriel-star-tester/

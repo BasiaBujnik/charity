@@ -4,5 +4,7 @@ Budowa image'u JMeterowego z pluginami, których u¿ywamy
 
 æwiczenie:
 
+https://github.com/gabrielstar/jmeter-docker
+https://github.com/ObjectivityLtd/crux/tree/master/docker
 Zbuduj kontener, który bêdzie zawiera³ wszystkie pluginy, których bêdziesz potrzebowa³.
 Jak sprawdzisz czy kontener spe³nia Twoje wymagania (Testy)?
