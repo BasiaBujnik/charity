@@ -86,7 +86,7 @@ without actual network activity. This helps debugging tests.</stringProp>
           <stringProp name="RESPONSE_TIME">${__Random(50,500)}</stringProp>
           <stringProp name="LATENCY">${__Random(1,50)}</stringProp>
           <stringProp name="CONNECT">${__Random(1,5)}</stringProp>
-          <stringProp name="URL"></stringProp>
+          <stringProp name="URL">foo.foo</stringProp>
           <stringProp name="RESULT_CLASS">org.apache.jmeter.samplers.SampleResult</stringProp>
         </kg.apc.jmeter.samplers.DummySampler>
         <hashTree/>

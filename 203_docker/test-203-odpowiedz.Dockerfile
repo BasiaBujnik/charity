@@ -1,0 +1,42 @@
+FROM adoptopenjdk/openjdk8:x86_64-alpine-jre8u292-b10
+#https://hub.docker.com/layers/adoptopenjdk/openjdk8/x86_64-alpine-jre8u292-b10/images/sha256-b446e52ba8b594dd8e982e345d07fcbf933c2179feb093b9692ba6d53fa6b130?context=explore
+LABEL maintainer="Gabriel Starczewski"
+
+#params
+ARG JMETER_VERSION="5.4.1"
+ENV JMETER_HOME /opt/apache-jmeter-${JMETER_VERSION}
+ENV JMETER_BIN ${JMETER_HOME}/bin
+ENV MIRROR_HOST http://archive.apache.org/dist/jmeter
+ENV JMETER_DOWNLOAD_URL ${MIRROR_HOST}/binaries/apache-jmeter-${JMETER_VERSION}.tgz
+ENV JMETER_PLUGINS_DOWNLOAD_URL http://repo1.maven.org/maven2/kg/apc
+ENV JMETER_PLUGINS_FOLDER=${JMETER_HOME}/lib/ext
+
+#install and download required thingies
+RUN apk update \
+    && apk upgrade \
+    && apk add ca-certificates \
+    && update-ca-certificates \
+    && apk add --update curl unzip \
+    && rm -rf /var/cache/apk/* \
+    && mkdir -p /tmp/dependencies  \
+    && curl -v -L ${JMETER_DOWNLOAD_URL} > /tmp/dependencies/apache-jmeter-${JMETER_VERSION}.tgz \
+    && tar -xzf /tmp/dependencies/apache-jmeter-${JMETER_VERSION}.tgz -C /opt \
+    && rm -rf /tmp/dependencies
+
+#and optionally plugins
+RUN cd ${JMETER_HOME} && wget -q -O /tmp/plugin.zip https://jmeter-plugins.org/files/packages/jpgc-dummy-0.4.zip \
+                      && unzip -n /tmp/plugin.zip
+RUN cd ${JMETER_HOME} && wget -q -O /tmp/plugin.zip https://jmeter-plugins.org/files/packages/jpgc-ffw-2.0.zip \
+                      && unzip -n /tmp/plugin.zip
+RUN rm /tmp/plugin.zip
+
+ENV PATH ${PATH}:${JMETER_BIN}
+WORKDIR ${JMETER_HOME}
+#default binary to exec
+ENTRYPOINT ["jmeter"]
+#default parmater to binary
+CMD ["--version"]
+#execute example for powershell
+#docker run --volume ${pwd}:/test jmeter -n -t /test/test-203.jmx
+#execute example for bash
+#docker run --volume $(pwd):/test jmeter -n -t /test/test-203.jmx
