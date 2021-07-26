@@ -12,4 +12,4 @@
 
 **ćwiczenie 3**:
 
-Zainstaluj plugin managera z https://jmeter-plugins.org/wiki/PluginsManager/ umieszczając go w  folderze lib/ext.
+1. Zainstaluj plugin managera z https://jmeter-plugins.org/wiki/PluginsManager/ umieszczając go w  folderze lib/ext.
