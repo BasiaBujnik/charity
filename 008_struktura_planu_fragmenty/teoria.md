@@ -10,7 +10,11 @@ Mimo, że często w testach JMeterowych mamy do czynienia tylko z Thread Group'�
 - tearDown - zawsze wykonuje się na końcu, używamy do zamykania otwartych zasobów, finalizacji
 
 
-## reużywalność elementów JMeterowych - trio
+## reużywalność elementów JMeterowych - Trzej Muszkieterowie
+
+![spa i mpa](img/3.jpg)
+
+    źródło: dziennikbaltycki.pl
 
 Trio (Test Fragment - Simple Controller - Module Controller):
 ```
