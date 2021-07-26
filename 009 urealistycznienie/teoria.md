@@ -1,6 +1,12 @@
 ## Urealistycznienie naszego testu
 
-W większości przypadków symulujemy ruch WWW pochodzący od użytkowników przeglądarek, oto kilka faktów dotyczących tych aplikacji:
+> Reality is not what it seems ..
+
+>![trio](img/reality.png)
+            
+            źródło: https://i.pinimg.com/originals/dd/d7/a2/ddd7a28ec20db1ee3b1b0ab5c1ee31e3.png
+W w
+iększości przypadków symulujemy ruch WWW pochodzący od użytkowników przeglądarek, oto kilka faktów dotyczących tych aplikacji:
 
 - przeglądarki mają cache
 - protokół HTTP jest bezstanowy i większośc przeglądarek polega na ciasteczkach, żeby podtrzymać sesję użytkownika
