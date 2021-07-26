@@ -12,7 +12,7 @@ Mimo, że często w testach JMeterowych mamy do czynienia tylko z Thread Group'�
 
 ## reużywalność elementów JMeterowych - Trzej Muszkieterowie
 
-![spa i mpa](img/3.jpg)
+![trio](img/3.jpg)
 
     źródło: dziennikbaltycki.pl
 
