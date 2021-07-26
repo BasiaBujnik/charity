@@ -1,0 +1,65 @@
+2021-07-24 19:16:37,953 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2021-07-24 19:16:37,965 INFO o.a.j.JMeter: Loading user properties from: C:\Users\gstarczewski\tools\apache-jmeter-5.2.1\bin\user.properties
+2021-07-24 19:16:37,966 INFO o.a.j.JMeter: Loading system properties from: C:\Users\gstarczewski\tools\apache-jmeter-5.2.1\bin\system.properties
+2021-07-24 19:16:37,967 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2021-07-24 19:16:37,967 INFO o.a.j.JMeter: Version 5.2.1
+2021-07-24 19:16:37,967 INFO o.a.j.JMeter: java.version=1.8.0_251
+2021-07-24 19:16:37,967 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2021-07-24 19:16:37,967 INFO o.a.j.JMeter: os.name=Windows 10
+2021-07-24 19:16:37,967 INFO o.a.j.JMeter: os.arch=amd64
+2021-07-24 19:16:37,967 INFO o.a.j.JMeter: os.version=10.0
+2021-07-24 19:16:37,967 INFO o.a.j.JMeter: file.encoding=Cp1250
+2021-07-24 19:16:37,967 INFO o.a.j.JMeter: java.awt.headless=true
+2021-07-24 19:16:37,967 INFO o.a.j.JMeter: Max memory     =4294967296
+2021-07-24 19:16:37,967 INFO o.a.j.JMeter: Available Processors =8
+2021-07-24 19:16:37,970 INFO o.a.j.JMeter: Default Locale=English (EN)
+2021-07-24 19:16:37,970 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2021-07-24 19:16:37,970 INFO o.a.j.JMeter: JMeterHome=C:\Users\gstarczewski\tools\apache-jmeter-5.2.1
+2021-07-24 19:16:37,970 INFO o.a.j.JMeter: user.dir  =C:\Users\gstarczewski\Desktop\gab\jenkins\charity\204_tryb_rozproszony
+2021-07-24 19:16:37,970 INFO o.a.j.JMeter: PWD       =C:\Users\gstarczewski\Desktop\gab\jenkins\charity\204_tryb_rozproszony
+2021-07-24 19:16:37,971 INFO o.a.j.JMeter: IP: 192.168.0.4 Name: NBGSTARCZEWSKI FullName: NBGSTARCZEWSKI.objectivity.co.uk
+2021-07-24 19:16:37,975 INFO o.a.j.s.FileServer: Default base='C:\Users\gstarczewski\Desktop\gab\jenkins\charity\204_tryb_rozproszony'
+2021-07-24 19:16:37,977 INFO o.a.j.s.FileServer: Set new base='C:\Users\gstarczewski\Desktop\gab\jenkins\charity\204_tryb_rozproszony'
+2021-07-24 19:16:38,063 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-07-24 19:16:38,068 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-07-24 19:16:38,072 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-07-24 19:16:38,077 INFO o.a.j.s.SaveService: Loading file: test-204.jmx
+2021-07-24 19:16:38,110 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-07-24 19:16:38,110 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-07-24 19:16:38,110 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-07-24 19:16:38,110 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-07-24 19:16:38,110 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2021-07-24 19:16:38,110 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2021-07-24 19:16:38,127 INFO o.a.j.JMeter: Creating summariser <summary>
+2021-07-24 19:16:38,130 INFO o.a.j.e.DistributedRunner: Configuring remote engine: 127.0.0.1
+2021-07-24 19:16:38,132 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2021-07-24 19:16:38,182 INFO o.a.j.e.DistributedRunner: Starting distributed test with remote engines: [127.0.0.1] @ Sat Jul 24 19:16:38 CEST 2021 (1627146998182)
+2021-07-24 19:16:38,183 INFO o.a.j.e.ClientJMeterEngine: running clientengine run method
+2021-07-24 19:16:38,188 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2021-07-24 19:16:38,188 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2021-07-24 19:16:39,067 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2021-07-24 19:16:39,068 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2021-07-24 19:16:39,070 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-07-24 19:16:39,075 INFO o.a.j.s.BatchSampleSender: Using batching (client settings) for this run. Thresholds: num=100, time=60000
+2021-07-24 19:16:39,075 INFO o.a.j.s.DataStrippingSampleSender: Using DataStrippingSampleSender for this run
+2021-07-24 19:16:39,075 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2021-07-24 19:16:39,075 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2021-07-24 19:16:39,075 INFO o.a.j.s.BatchSampleSender: Using batching (client settings) for this run. Thresholds: num=100, time=60000
+2021-07-24 19:16:39,075 INFO o.a.j.s.DataStrippingSampleSender: Using DataStrippingSampleSender for this run
+2021-07-24 19:16:39,076 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2021-07-24 19:16:39,076 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2021-07-24 19:16:41,630 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2021-07-24 19:16:41,631 INFO o.a.j.r.RmiUtils: Disabling SSL for RMI as server.rmi.ssl.disable is set to 'true'
+2021-07-24 19:16:41,708 INFO o.a.j.e.ClientJMeterEngine: sent test to 127.0.0.1 basedir='.'
+2021-07-24 19:16:41,708 INFO o.a.j.e.ClientJMeterEngine: Sending properties {}
+2021-07-24 19:16:41,714 INFO o.a.j.e.ClientJMeterEngine: sent run command to 127.0.0.1
+2021-07-24 19:16:41,714 INFO o.a.j.e.DistributedRunner: Remote engines have been started:[127.0.0.1]
+2021-07-24 19:16:42,530 INFO o.a.j.JMeter: Started remote host:  127.0.0.1 (1627147002530)
+2021-07-24 19:16:43,754 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-07-24 19:16:43,755 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2021-07-24 19:16:43,755 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-07-24 19:16:43,755 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-07-24 19:16:44,099 INFO o.a.j.r.Summariser: summary =      2 in 00:00:02 =    1.3/s Avg:   703 Min:   315 Max:  1091 Err:     0 (0.00%)
+2021-07-24 19:16:44,100 INFO o.a.j.JMeter: Finished remote host: 127.0.0.1 (1627147004100)
+2021-07-24 19:16:44,100 INFO o.a.j.JMeter: All remote engines have ended test, starting RemoteTestStopper thread
+2021-07-24 19:16:49,102 INFO o.a.j.JMeter: Interrupting RMI Reaper
