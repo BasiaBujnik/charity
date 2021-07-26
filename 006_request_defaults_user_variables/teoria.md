@@ -6,6 +6,7 @@ Zapamiętaj:
     - HTTP Cookie Manager - zarządza ciasteczkami automatycznie w celu utrzymania sesji użytkownika
     - HTTP Cache Manager - symuluje cache przeglądarki
     - HTTP Request Defaults - pozwala skonfigurować domyślne parametry w jednym miejscu aby uniknąć powtórzeń
+    - HTTP Header Manager - dodaje nagłówki do żądania
     - User Defined Variables
         -  User Defined Variables śą definiowane na początku testu. Każdy wątek otrzymuje kopie zmiennej. UDV są dostępne poprzez ${VAR_NAME} w różnych elementach GUI JMetera.
         
