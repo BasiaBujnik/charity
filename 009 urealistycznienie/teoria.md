@@ -1,6 +1,6 @@
 ## Urealistycznienie naszego testu
 
-> Reality is not what it seems ..
+> Reality is not what it seems ... , Diabeł tkwi w szczegółach ... ,
 
 >![trio](img/reality.png)
             
