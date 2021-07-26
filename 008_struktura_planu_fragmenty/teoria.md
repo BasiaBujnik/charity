@@ -5,12 +5,15 @@
 
 Mimo, że często w testach JMeterowych mamy do czynienia tylko z Thread Group'ą, pełna struktura planu jest podobna do tej znanej nam z testów jednostkowych:
 
-- setUp - zawsze wykonuje się na początku, używamy do inicjalizacji testów
+- setUp threadGroup - zawsze wykonuje się na początku, używamy do inicjalizacji testów
 - threadGroup(s) - 1 lub więcej, równolegle lub szeregowo
-- tearDown - zawsze wykonuje się na końcu, używamy do zamykania otwartych zasobów, finalizacji
+- tearDown threadGroup - zawsze wykonuje się na końcu, używamy do zamykania otwartych zasobów, finalizacji
 
 
 ## reużywalność elementów JMeterowych - Trzej Muszkieterowie
+
+Podobnie jak w programowaniu, tak i w testach JMterowych mogą występować powtórzenia elementów. JMeter oferuje możliwość stworzenia biblioteki kroków
+, które możemy linkować z różnych miejsc w threadGroupie. Funckjonalnośc taką implementuje się zazwyczaj z wykorzystaniem 3 elementów.  
 
 ![trio](img/3.jpg)
 
