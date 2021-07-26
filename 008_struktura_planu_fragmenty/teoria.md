@@ -18,17 +18,15 @@ Mimo, że często w testach JMeterowych mamy do czynienia tylko z Thread Group'�
 
 Trio (Test Fragment - Simple Controller - Module Controller):
 ```
-TEST:
-
-Module Controller/
-    ...
-
-BIBLIOTEKA:
-
-Test Fragement/
-    /Simple controller
-       /Reusable element
-        ...
+Test Plan:
+    ThreadGroup
+        Module Controller/
+            /Reference to 'Reusable element'
+        
+    Test Fragement/
+        /Simple controller
+           /Reusable element
+                ...
 ```
 
 Użycie całej trójki pozwala nam zwiększyć utrzymywalność testów jeszcze bardziej poprzez re-używanie tej samej transakcji w wielu miejscach w planie.
