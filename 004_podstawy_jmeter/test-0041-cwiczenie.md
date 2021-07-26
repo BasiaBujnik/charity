@@ -7,7 +7,7 @@
 
 **ćwiczenie 2**:
 
-1. Otwórz [test-0040.jmx](test-0040-b.jmx)  w notatniku lub Notepad++
+1. Otwórz [test-0040-b.jmx](test-0040-b.jmx)  w notatniku lub Notepad++
 2. Jakie informacje można stąd wyciągnąć?
 
 **ćwiczenie 3**:
