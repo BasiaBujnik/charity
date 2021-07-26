@@ -100,7 +100,7 @@ Oczywiście zanim coś zostanie ściągnięte, przeglądarka nawiązuje połącz
 ### CORS
 
 Z powodów bezpieczeństwa przeglądarki blokują requesty HTTP ze skryptów jeśli dotyczą innego serwera niż źródłowy.
-Programista może jednak zezwolić na takie działanie. Jendym z elementów implementacji CORS jest "pre-flighted request", który 
+Programista może jednak zezwolić na takie działanie. Jednym z elementów implementacji CORS jest "pre-flighted request", który 
 jest żądaniem OPTIONS sprawdzającym co można wysłać do serwera zanim to faktycznie wyślemy (wysłanie bez sprawdzenia może doprowadzić do narażenia danych).
 
 W Chromie zobaczycie te requesty jako "pre-flight".
