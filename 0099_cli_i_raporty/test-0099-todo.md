@@ -1,5 +1,9 @@
 **ćwiczenie 1**:
 
-Zmodyfikuj plik [run.ps1](run.ps1) tak, aby był poprawny dla Twojej instalacji. Wykonaj testy z powłoki powershell.
+Zmodyfikuj plik [.ps1](.ps1) tak, aby był poprawny dla Twojej instalacji. Wykonaj testy z powłoki powershell.
 
+** ćwiczenie 2*
 
+Dodaj do polecenia opcje -e aby wygenerować raport HTML 
+
+   

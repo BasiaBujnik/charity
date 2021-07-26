@@ -1,6 +1,11 @@
+## Raporty i linia poleceń
+
+>>![trio](img/report_transactions_per_second.png)
+
 Testy w Jmeter powinny zawsze być uruchamiane z linii poleceń w trybi niegraficznym (-n). Żeby wyświetlić dozwolone parametry wpisz
 
         C:\Users\gstarczewski\tools\apache-jmeter-5.4.1\bin\jmeter.bat -n
+
 
 Najprzydatniejsze opcje:
 
@@ -20,3 +25,4 @@ Najprzydatniejsze opcje:
 Przykład:
 
         C:\Users\gstarczewski\tools\apache-jmeter-5.2.1\bin\jmeter.bat -n -t test.jmx
+
