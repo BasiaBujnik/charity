@@ -1,6 +1,6 @@
 Testy w Jmeter powinny zawsze być uruchamiane z linii poleceń w trybi niegraficznym (-n). Żeby wyświetlić dozwolone parametry wpisz
 
-C:\Users\gstarczewski\tools\apache-jmeter-5.2.1\bin\jmeter.bat -n
+        C:\Users\gstarczewski\tools\apache-jmeter-5.4.1\bin\jmeter.bat -n
 
 Najprzydatniejsze opcje:
 
@@ -18,4 +18,5 @@ Najprzydatniejsze opcje:
 
 
 Przykład:
-C:\Users\gstarczewski\tools\apache-jmeter-5.2.1\bin\jmeter.bat -n -t test.jmx
+
+        C:\Users\gstarczewski\tools\apache-jmeter-5.2.1\bin\jmeter.bat -n -t test.jmx
