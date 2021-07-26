@@ -112,5 +112,5 @@ W Chromie zobaczycie te requesty jako "pre-flight".
 Otwórz 'Chrome Dev Tools' i załaduj stronę (https://jsonplaceholder.typicode.com/).
 Zanalizuj zakładkę Network, czy jesteś w stanie zrozumieć co ściąga Twoja przeglądarka?
 
-Otwórz stronę wp.pl. Czy są tam jakieś dodatkowe typy żądąń, których wcześniej nie widzieliśmy?
+Otwórz stronę wp.pl. Czy są tam jakieś dodatkowe typy żądań, których wcześniej nie widzieliśmy?
 
