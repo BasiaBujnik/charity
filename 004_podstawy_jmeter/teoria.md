@@ -3,13 +3,13 @@
 JMeter to prawdopodobnie najpopularniejsze obecnie narzędzie do testów wydajnościowych ogólnego przeznaczenia na świecie.
 Jest napisane w Javie. Testy piszemy w GUI. Uruchamiamy je z GUI bądź linii poleceń (https://jmeter.apache.org/). JMeter może pracować w trybie "standalone" i "distributed".
 
-Tryb z 1 generatorem obciążenia:
+Tryb z 1 generatorem obciążenia (standalone):
 
 ![architecture](img/jmeter.png)
         
         źródłó: https://ducmanhphan.github.io/2020-01-21-How-to-use-JMeter-to-test-performance/
         
-Tryb z wieloma generatorami obciążenia (worker-controller aka master-slave)
+Tryb z wieloma generatorami obciążenia (worker-controller aka master-slave aka distributed)
 ![terminology](../204_tryb_rozproszony/img/distributed-names.svg)
 
 1. Wspiera testowanie:
