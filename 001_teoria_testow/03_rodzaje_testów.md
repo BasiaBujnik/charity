@@ -56,9 +56,11 @@ poradzi sobie z taką sytuacją.
 - W jakich rodzajach aplikacji mają miejsce takie wzorce ruchu ?
 - Jakie zdarzenia powodują takie wzorce ruchu?
 
-### testy A/B (testy porównawcze)
-### chaos engineering attacks/(d)dos
-### reliability testing (testy niezawodności)
+### Inne rodzaje testów związanych z wydajnością, Czy mówią Ci coś ?
+- testy A/B (testy porównawcze)
+- chaos engineering attacks/(d)dos
+- reliability testing (testy niezawodności)
+- recovery testing
 
 **Zadanie**:
 
