@@ -1,7 +1,7 @@
 **ćwiczenie 1 (cache, embedded resource downloads)**:
 
-W poprzednim teście mimo dodania HTTP Cache Managera i zmiany ustawień HTTP Request Defaults nie możemy zaobserwować rezultatu. Jest tak dlatego, że do tej pory nie ściągamy w teście
-głównej strony naszego frontendu.
+W poprzednim teście mimo dodania HTTP Cache Managera i zmiany ustawień HTTP Request Defaults nie możemy zaobserwować żadnej zmiany. Jest tak dlatego, że do tej pory nie ściągamy w teście
+głównej strony naszego frontendu, która może jako zasób statyczny być cache'owana.
 
 Ta jest dostępna pod adresem https://red-water-022d04b03.azurestaticapps.net/
 
