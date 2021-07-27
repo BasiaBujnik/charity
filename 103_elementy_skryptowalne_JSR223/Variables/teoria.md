@@ -54,4 +54,7 @@ Ustawienia z pliku user.properties nadpisują wcześniej parsowane pliki. Dobrą
  
  > W JMeter GUI istnieje "function helper dialog", którego można użyć, żeby wygenerować działający kod funkcji.
  
+Dodatkowo w elementach skryptowalnych mamy dostęp do publicznego API Jmetera (https://www.blazemeter.com/blog/top-8-jmeter-java-classes-you-should-be-using-with-groovy).
+Jest to kilka obiektów, z których możemy korzystać w trakcie testów.
+
 Trener pokaże przykładowy plik .jmx obrazujący powyższe kwestie.
