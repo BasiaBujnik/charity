@@ -1,6 +1,6 @@
-To æwiczenie jest opcjonalne (zale¿nie od tempa i chêci grupy)
+To Ä‡wiczenie jest opcjonalne (zaleÅ¼nie od tempa i chÄ™ci grupy)
 
-Napisz skrypt w Groovy generuj¹cy nastêpuj¹ce dane testowe w postaci tabelarycznej.
+Napisz skrypt w Groovy generujÄ…cy nastÄ™pujÄ…ce dane testowe w postaci tabelarycznej.
 
     user01@PerformanceProject_001,PASS_TO_REPLACE
     user02@PerformanceProject_001,PASS_TO_REPLACE
@@ -9,4 +9,4 @@ Napisz skrypt w Groovy generuj¹cy nastêpuj¹ce dane testowe w postaci tabelaryczn
     ...
     user02@PerformanceProject_010,PASS_TO_REPLACE
 
-Podziel go na funkcje, sparametryzuj, postaraj sie pisaæ "groovy".
+Podziel go na funkcje, sparametryzuj, postaraj sie pisaÄ‡ "groovy".
