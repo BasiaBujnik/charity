@@ -6,7 +6,7 @@ Constant throughput timer mo¿e zawieraæ funkcje np. ${__groovy(...)}
    PodpowiedŸ, wykorzystaj elementy:
    
        Funkcja - ${__groovy()}
-       API: vars.get('TESTSTART.MS')
-       API: new Date().getTime()
+       API, wbudowana zmienna: vars.get('TESTSTART.MS')
+       funkcja groovy: new Date().getTime()
        
    Do wizualizacji u¿yj plugina jp@gc: Transactions per second
