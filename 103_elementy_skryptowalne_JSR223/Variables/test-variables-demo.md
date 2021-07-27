@@ -5,6 +5,7 @@ W tej części
 - Stworzymy prosty plan setUp ThreadGroup, ThreadGroup, tearDown ThreadGroup
 - W setUp ThreadGroup:
     - Dodamy element UDV i pokażemy jak wyliczać UDV na podstawie UDV
+    - Pokażemy jak przekazywać parametry z zewnątrz z użyciem funkcji __P i nadpisywać te wartości w pliku user.properties
     - Dodamy JSR223 Sampler i zobaczymy jak można ustawiać property w kodzie
     - Pokażemy przykład użycia funkcji
 - W tearDown threadGroup pokażemy jak czyścić property i dlaczego to robić
