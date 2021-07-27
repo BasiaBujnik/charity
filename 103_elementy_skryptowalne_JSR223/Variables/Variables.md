@@ -2,12 +2,12 @@
 
 W JMeterze występują następujące elementy "programistyczne", które można stosować w większości miejsc:
 
-   - User defined variables (UDV), zmienne użytkownika - każdy wątek otrzymuje kopię tej zmiennej, są one ewaluowane na początku planu niezależnie od miejsca występowania
-   - Variables - zmienne, zmienne mają zasięg lokalny (w obrębie wątka)
-   - Properties - właściwości, mają zasięg globalny, są wspólne dla wszystkich wątków
+   - **User defined variables** (UDV), zmienne użytkownika - każdy wątek otrzymuje kopię tej zmiennej, są one ewaluowane na początku planu niezależnie od miejsca występowania
+   - **Variables** - zmienne, zmienne mają zasięg lokalny (w obrębie wątka)
+   - **Properties** - właściwości, mają zasięg globalny, są wspólne dla wszystkich wątków
         - Local properties - związane są z maszyną lokalną, odwołanie z linii poleceń przez -JpropertyName
         - Global properties - wykorzystuje się w testowaniu rozproszonym, obejmują również elementy zdalne testu, odwołanie z linii poleceń przez -GpropertyName     
-   - Funkcje https://jmeter.apache.org/usermanual/functions.html#__evalVar
+   - **Functions** - funkcje https://jmeter.apache.org/usermanual/functions.html#__evalVar
  
  JMeter udostępnia również funkcje, które rozwiązują najczęstsze problemy pojawiające się w testach bez konieczności programowania własnej logiki w np. Groovy
   
