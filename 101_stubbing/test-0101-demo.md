@@ -1,4 +1,4 @@
-## Mocki 
+## Mocki/Stuby
 
 W tej części:
 
