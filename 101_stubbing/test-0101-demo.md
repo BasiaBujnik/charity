@@ -6,4 +6,4 @@ W tej części:
 - Zainstalujemy Dummy Samplera z użyciem plugin managera
 - Zamockujemy odpowiedź z naszego testu z użyciem dummy samplera
 - Opracujemy ekstraktor na naszym mocku
-- Użyjemy opcji validate, żeby uruchomić tylko wybrany mock
+- Użyjemy opcji validate, żeby uruchomić tylko wybrany Stub, i ćwiczyć na nim poprawność ektraktora
