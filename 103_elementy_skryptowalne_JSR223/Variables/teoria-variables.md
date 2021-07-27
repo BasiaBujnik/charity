@@ -34,7 +34,13 @@ Jak odwołujemy się do tych elementów ?:
     W elementach skryptowalnych:    props.get('var')
                                     props.put('var','value') 
         
-           
+    Właściwości mogą być też zaczytywane z plików .properties. Pliki te znajdują sie w JMETER_HOME i pozwalają na nadpisywanie ustawień JMetera:
+    - system.properties - ustawienia systemowe
+    - reportgenerator.properties - ustawienia raportów
+    - jmeter.properties - ustawienia JMetera
+    - user.properties - ustawienia użytkownika
+    Ustawienia z pliku user.properties nadpisują wcześniej parsowane pliki. Dobrą praktyką jest dokonywanie zmian tylko w plikahc user.properties.
+    
  Najczęściej wykorzystywane funkcje:
  
             ${__threadNum}
