@@ -1,5 +1,5 @@
 **ćwiczenie 1 (regex i boundary)**:
 
-1. Wyekstrahuj w podobny sposób Wersję aplikacji wykorzystując regex i boundary ekstraktor
+Wyekstrahuj wersję aplikacji wykorzystując Regex i/lub Boundary ekstraktor
 
 
