@@ -1,4 +1,4 @@
-##Funkcje, Zmienne i Parametry
+## Funkcje, Zmienne i Parametry
 
 W JMeterze występują następujące elementy "programistyczne", które można stosować w większości miejsc:
 
