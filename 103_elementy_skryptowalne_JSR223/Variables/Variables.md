@@ -1,5 +1,7 @@
 ## Funkcje, Zmienne i Parametry
 
+![groovy](../img/jmeter.png)
+
 W JMeterze występują następujące elementy "programistyczne", które można stosować w większości miejsc:
 
    - **User defined variables** (UDV), zmienne użytkownika - każdy wątek otrzymuje kopię tej zmiennej, są one ewaluowane na początku planu niezależnie od miejsca występowania
