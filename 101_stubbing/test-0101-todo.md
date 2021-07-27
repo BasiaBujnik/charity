@@ -1,6 +1,6 @@
 **ćwiczenie 1 (mock)**:
 
-1. Użyj omówionego podejścia, żeby oprogramować element zliczający liczbę postów w teardown thread groupie , użyj
+Użyj omówionego podejścia, żeby oprogramować element zliczający liczbę postów w teardown thread groupie , użyj
 
 - Zamockuj /post
 - Użyj JMES extractora
