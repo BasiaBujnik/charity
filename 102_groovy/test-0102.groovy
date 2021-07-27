@@ -23,7 +23,8 @@ String zmienna3 = 'like_java';
 System.out.println(zmienna3);
 println(zmienna3)
 //Podstawowe biblioteki JAVY są już zaimplementowane dla skrócenia "kodu boilerplate"
-import java.lang.* //stąd pochodzi System.out.println i dlatego możemy to skrócić do println
+//stąd pochodzi System.out.println i dlatego możemy to skrócić do println
+import java.lang.*
 import java.util.*
 import java.io.*
 import java.net.*
