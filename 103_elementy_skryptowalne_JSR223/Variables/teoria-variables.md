@@ -29,11 +29,11 @@ Jak odwołujemy się do tych elementów ?:
                                     props.put('var','value') 
         
 Właściwości mogą być też zaczytywane z plików .properties. Pliki te znajdują sie w JMETER_HOME i pozwalają na nadpisywanie ustawień JMetera:
-- system.properties - ustawienia systemowe
-- reportgenerator.properties - ustawienia raportów
-- jmeter.properties - ustawienia JMetera
-- user.properties - ustawienia użytkownika
-Ustawienia z pliku user.properties nadpisują wcześniej parsowane pliki. Dobrą praktyką jest dokonywanie zmian tylko w plikahc user.properties.
+- _system.properties_ - ustawienia systemowe
+- _reportgenerator.properties_ - ustawienia raportów
+- _jmeter.properties_ - ustawienia JMetera
+- _user.properties_ - ustawienia użytkownika
+Ustawienia z pliku user.properties nadpisują wcześniej parsowane pliki. Dobrą praktyką jest dokonywanie zmian tylko w plikach user.properties.
     
 **Funkcje**:
 
