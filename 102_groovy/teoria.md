@@ -1,5 +1,7 @@
 ### Podstawy Groovy
 
+![groovy](img/groovy.png)
+
 Groovy:
 - Jest językiem programowania ogólnego przeznaczenia
 - Jest nadzbiorem (supersetem) JAVY
