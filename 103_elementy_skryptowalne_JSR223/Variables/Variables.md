@@ -15,27 +15,27 @@ W JMeterze występują następujące elementy "programistyczne", które można s
   
 ---
 
-Jak odwołujemy się do tych elementów:
+Jak odwołujemy się do tych elementów ?:
 
-Zmienne (Variables):
+**Zmienne** (Variables):
     
     W elementach UI: ${var}
     W elementach skryptowalnych:    vars.get('var')
                                     vars.put('var','value') 
-Funkcja:
+**Funkcje**:
 
     ${__functionName(var1,var2,var3)} //3 parametry
     ${__functionName(var1part1\,var1part2,var3)} // 2 parametry "var1part1,var1part2" i var3, znak "," musi być poprzedzony \
-    ${__functionName} //no parameter function
+    ${__functionName} //funkcja bez parametru
 
-Właściwości (Properties):
+**Właściwości** (Properties):
 
     W elementach UI: ${__P('prop','defaultValue')}
     W elementach skryptowalnych:    props.get('var')
                                     props.put('var','value') 
         
            
- Najczęściej wykorzystywane funkcje
+ Najczęściej wykorzystywane funkcje:
  
             ${__threadNum}
             ${__machineName}
@@ -46,5 +46,6 @@ Właściwości (Properties):
             ${__groovy(vars.get("myVar").substring(0\,2))} //wykonuje kod groovy
             ${__V(A${N})}
  
- W JMeter GUI istnieje function helper dialog, którego można użyć, żeby wygenerować działający kod snippet.
- Trener pokaże przykładowy plik .jmx obrazujący powyższe kwestie.
+ > W JMeter GUI istnieje "function helper dialog", którego można użyć, żeby wygenerować działający kod funkcji.
+ 
+Trener pokaże przykładowy plik .jmx obrazujący powyższe kwestie.
