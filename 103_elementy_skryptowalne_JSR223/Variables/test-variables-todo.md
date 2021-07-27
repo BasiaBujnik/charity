@@ -1,4 +1,4 @@
-## Cwiczenie
+## ćwiczenie (mniej zaawansowani mogą załadować plik z odpowiedzią i go zanalizować)
 
 1. Stwórz własny minimalny szkielet testu, w którym używasz:
 
