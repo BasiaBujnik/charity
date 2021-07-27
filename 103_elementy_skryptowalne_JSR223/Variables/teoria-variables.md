@@ -22,12 +22,6 @@ Jak odwołujemy się do tych elementów ?:
     W elementach UI: ${var}
     W elementach skryptowalnych:    vars.get('var')
                                     vars.put('var','value') 
-**Funkcje**:
-
-    ${__functionName(var1,var2,var3)} //3 parametry
-    ${__functionName(var1part1\,var1part2,var3)} // 2 parametry "var1part1,var1part2" i var3, znak "," musi być poprzedzony \
-    ${__functionName} //funkcja bez parametru
-
 **Właściwości** (Properties):
 
     W elementach UI: ${__P('prop','defaultValue')}
@@ -41,6 +35,12 @@ Właściwości mogą być też zaczytywane z plików .properties. Pliki te znajd
 - user.properties - ustawienia użytkownika
 Ustawienia z pliku user.properties nadpisują wcześniej parsowane pliki. Dobrą praktyką jest dokonywanie zmian tylko w plikahc user.properties.
     
+**Funkcje**:
+
+    ${__functionName(var1,var2,var3)} //3 parametry
+    ${__functionName(var1part1\,var1part2,var3)} // 2 parametry "var1part1,var1part2" i var3, znak "," musi być poprzedzony \
+    ${__functionName} //funkcja bez parametru
+
  Najczęściej wykorzystywane funkcje:
  
             ${__threadNum}
