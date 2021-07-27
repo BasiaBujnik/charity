@@ -9,7 +9,8 @@ W JMeterze występują następujące elementy "programistyczne", które można s
    - **Properties** - właściwości, mają zasięg globalny, są wspólne dla wszystkich wątków
         - Local properties - związane są z maszyną lokalną, odwołanie z linii poleceń przez -JpropertyName
         - Global properties - wykorzystuje się w testowaniu rozproszonym, obejmują również elementy zdalne testu, odwołanie z linii poleceń przez -GpropertyName     
-   - **Functions** - wnudowane funkcje https://jmeter.apache.org/usermanual/functions.html#__evalVar
+   - **Functions** - wbudowane funkcje https://jmeter.apache.org/usermanual/functions.html#__evalVar
+   - **Obiekty API** - pozwalają na dostęp do kontekstu JMetera
  
  Funkcje rozwiązują najczęstsze problemy pojawiające się w testach bez konieczności programowania własnej logiki w np. Groovy
   
@@ -20,13 +21,13 @@ Jak odwołujemy się do tych elementów ?:
 **Zmienne** (Variables):
     
     W elementach UI: ${var}
-    W elementach skryptowalnych:    vars.get('var')
-                                    vars.put('var','value') 
+    W elementach skryptowalnych (przez API): vars.get('var')
+                                             vars.put('var','value') 
 **Właściwości** (Properties):
 
     W elementach UI: ${__P('prop','defaultValue')}
-    W elementach skryptowalnych:    props.get('var')
-                                    props.put('var','value') 
+    W elementach skryptowalnych (przez API):    props.get('var')
+                                                props.put('var','value') 
         
 Właściwości mogą być też zaczytywane z plików .properties. Pliki te znajdują sie w JMETER_HOME i pozwalają na nadpisywanie ustawień JMetera:
 - _system.properties_ - ustawienia systemowe
@@ -54,7 +55,9 @@ Ustawienia z pliku user.properties nadpisują wcześniej parsowane pliki. Dobrą
  
  > W JMeter GUI istnieje "function helper dialog", którego można użyć, żeby wygenerować działający kod funkcji.
  
+**Obiekty API**:
+
 Dodatkowo w elementach skryptowalnych mamy dostęp do publicznego API Jmetera (https://www.blazemeter.com/blog/top-8-jmeter-java-classes-you-should-be-using-with-groovy).
-Jest to kilka obiektów, z których możemy korzystać w trakcie testów.
+Jest to kilka obiektów, z których możemy korzystać w trakcie testów np. log, ctx, vars, props, ...
 
 Trener pokaże przykładowy plik .jmx obrazujący powyższe kwestie.
