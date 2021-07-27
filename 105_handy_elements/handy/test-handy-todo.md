@@ -2,9 +2,11 @@
  
 Constant throughput timer mo¿e zawieraæ funkcje np. ${__groovy(...)}
 
-   Zaprojektuj funkcje zwiêkszaj¹ca "throughput" o 60 req/min co 10 sekund.
+   Zaprojektuj funkcje zwiêkszaj¹ca "throughput" o 60 req/min co 60 sekund.
    PodpowiedŸ, wykorzystaj elementy:
    
        Funkcja - ${__groovy()}
        API: vars.get('TESTSTART.MS')
        API: new Date().getTime()
+       
+   Do wizualizacji u¿yj plugina jp@gc: Transactions per second
