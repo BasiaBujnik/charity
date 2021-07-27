@@ -7,7 +7,7 @@ W JMeterze występują następujące elementy "programistyczne", które można s
    - **Properties** - właściwości, mają zasięg globalny, są wspólne dla wszystkich wątków
         - Local properties - związane są z maszyną lokalną, odwołanie z linii poleceń przez -JpropertyName
         - Global properties - wykorzystuje się w testowaniu rozproszonym, obejmują również elementy zdalne testu, odwołanie z linii poleceń przez -GpropertyName     
-   - **Functions** - funkcje https://jmeter.apache.org/usermanual/functions.html#__evalVar
+   - **Functions** - wnudowane funkcje https://jmeter.apache.org/usermanual/functions.html#__evalVar
  
  JMeter udostępnia również funkcje, które rozwiązują najczęstsze problemy pojawiające się w testach bez konieczności programowania własnej logiki w np. Groovy
   
