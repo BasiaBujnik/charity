@@ -8,4 +8,4 @@ $testName="test-0099-begin.jmx"
 $stamp=Get-Date  -Format "dddd_MM_dd_yyyy_HH_mm"
 #log && result files
 Write-Host "$path\jmeter.bat -f -n -t $here\$testName -j $here\report\$stamp-jmeter.log -l $here\report\$stamp-results.csv"
-Invoke-Expression "$path\jmeter.bat -f -n -t $here\$testName -j $here\report\$stamp-jmeter.log -l $here\report\$stamp-results.csv"
+Invoke-Expression "$path\jmeter.bat -LTRACE -f -n -t $here\$testName -j $here\report\$stamp-jmeter.log -l $here\report\$stamp-results.csv -e -o C:\tmp\$stamp\"

@@ -1,5 +1,7 @@
-W testach często zachodzi potrzeba wyekstrahowania jakiejś wartości z odpowiedzi HTTP, ciała tej odpowiedz lub nagłowka, i użycie tej wartości w dalszje częsci testów.
-Do ekstrakcji używamy Ekstraktórów, których w JMeterze jest kilka typów.
+## Ekstraktory
+
+W testach często zachodzi potrzeba wyekstrahowania jakiejś wartości z odpowiedzi HTTP, ciała tej odpowiedzi lub nagłówka, i użycie tej wartości w dalszej części testów.
+Do ekstrakcji używamy Ekstraktórów, których w JMeterze jest kilka rodzajów:
 
 - CSS - do parsowania dokumentów HTML : https://www.w3schools.com/cssref/css_selectors.asp
 - XPath2.0 - do parsowania dokumentów XML: https://www.w3schools.com/xml/xpath_syntax.asp (XPath nie jest już rekomendowany)
