@@ -1,6 +1,6 @@
 ## Raporty i linia poleceń
 
->>![trio](img/report_transactions_per_second.png)
+![trio](img/report_transactions_per_second.png)
 
 Testy w Jmeter powinny zawsze być uruchamiane z linii poleceń w trybi niegraficznym (-n). Żeby wyświetlić dozwolone parametry wpisz
 

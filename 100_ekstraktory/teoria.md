@@ -15,6 +15,10 @@ Najczęściej ekstrahowane elementy to:
  - wersja aplikacji
  - tokeny CSRF
  - tokeny dostępowe
+
+![trio](img/csrf.png)
+
+        żródło: terasoluna.org
  
 Pamiętaj:
 - Do HTMLa - CSS
