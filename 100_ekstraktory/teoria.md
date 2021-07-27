@@ -21,8 +21,9 @@ Najczęściej ekstrahowane elementy to:
         żródło: terasoluna.org
  
 Pamiętaj:
+
 - Do HTMLa - CSS
-- Do XMLa - XPATH 2.0 (szybszy, więceh funckjonalności ale wymaga dobrego HTMLa)
+- Do XMLa - XPATH 2.0 (szybszy, więcej funckjonalności ale wymaga dobrego HTMLa)
 - Do JSONa - JMSE
 - Regex kosztuje
-- Używaj domyślnych wartości
+- Używaj domyślnych wartości w ekstraktorach
