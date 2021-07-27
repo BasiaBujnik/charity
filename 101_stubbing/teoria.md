@@ -10,7 +10,7 @@ Podejściem, które ułatwi nam pracę nad takimi elementami jest mockowanie/stu
 - dummy sampler (zewnętrzny plugin)
 - opcja Validate
 
-aby usprawnić sobie pracę z ekstraktorami. "Stuby" te w pewnym sensie będzie można też traktować jako testy bardziej zaawansowanych logik.
+aby usprawnić sobie pracę z ekstraktorami (stworzymy zaślepkę) . "Stuby" te w pewnym sensie będzie można też traktować jako testy bardziej zaawansowanych logik.
 
 ![trio](img/doubles.png)
        
