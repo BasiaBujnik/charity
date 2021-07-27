@@ -1,5 +1,5 @@
-//Groovy jest supersetem Javy, mo¿na wiêc pisaæ w Javie w kompilatorze/intepreterze Groovy, Groovy lub mieszaæ kod JAVA+Groovy
-//zmienne s¹ dynamicznie typowane
+//Groovy jest supersetem Javy, moÅ¼na wiÄ™c pisaÄ‡ w Javie w kompilatorze/intepreterze Groovy, Groovy lub mieszaÄ‡ kod JAVA+Groovy
+//zmienne sÄ… dynamicznie typowane
 def zmienna = 'like_groovy'
 zmienna = 2
 zmienna = 2.4d
@@ -9,21 +9,21 @@ zmienna = 1;
 //groovy opakowuje wszystkie typy w klasy
 int a=1
 a.getClass() //class java.lang.Integer
-//funkcje mog¹ byæ wykonywane na ró¿ny sposób
+//funkcje mogÄ… byÄ‡ wykonywane na rÃ³Å¼ny sposÃ³b
 def fun(def z1,def z2){
     z1+z2
 }
 int zmienna1=1,zmienna2=2
 fun(zmienna1,zmienna2)
 fun zmienna1, zmienna2
-//ostatnie wyra¿enie w funkcji jest traktowane jako wartoœc zwracana, nie trzeba u¿ywaæ s³owa return
+//ostatnie wyraÅ¼enie w funkcji jest traktowane jako wartoÅ›c zwracana, nie trzeba uÅ¼ywaÄ‡ sÅ‚owa return
 assert fun(2,3) == 5
-//mo¿na pogramowac jak w JAVIE, mieszaæ kod lub pisaæ w natywnym Groovy
+//moÅ¼na pogramowac jak w JAVIE, mieszaÄ‡ kod lub pisaÄ‡ w natywnym Groovy
 String zmienna3 = 'like_java';
 System.out.println(zmienna3);
 println(zmienna3)
-//Podstawowe biblioteki JAVY s¹ ju¿ zaimplementowane dla skrócenia "kodu boilerplate"
-import java.lang.* //st¹d pochodzi System.out.println i dlatego mo¿emy to skróciæ do println
+//Podstawowe biblioteki JAVY sÄ… juÅ¼ zaimplementowane dla skrÃ³cenia "kodu boilerplate"
+import java.lang.* //stÄ…d pochodzi System.out.println i dlatego moÅ¼emy to skrÃ³ciÄ‡ do println
 import java.util.*
 import java.io.*
 import java.net.*
@@ -32,7 +32,7 @@ import groovy.util.*
 import java.math.BigInteger
 import java.math.BigDecimal
 
-// funkcje wygl¹daj¹ standardowo, ostatnia wartoœæ jest zwracama, chyba, ¿e u¿yjmey void w definicji, return jest opcjonalny
+// funkcje wyglÄ…dajÄ… standardowo, ostatnia wartoÅ›Ä‡ jest zwracama, chyba, Å¼e uÅ¼yjmey void w definicji, return jest opcjonalny
 def funkcja(def argument="mocny", def argument2="2"){
     println argument+argument2 //returns null
 }
@@ -64,22 +64,22 @@ lista.clear()
 lista = lista - 5;
 //operatory sa aliasami do funkcji
 assert lista.minus(8) == lista - 8
-//G-String, podobnie jak w innych jêzykach jak C# "" pozwala na ekstrapolacje
+//G-String, podobnie jak w innych jÄ™zykach jak C# "" pozwala na ekstrapolacje
 "lista ${lista}" //toString() wykonane automatycznie
 "lista ${lista*2}" //duplikacja listy
-"lista ${lista.size()+1+'costam'}" //w ${} mo¿e byæ dowolne wyra¿enie
+"lista ${lista.size()+1+'costam'}" //w ${} moÅ¼e byÄ‡ dowolne wyraÅ¼enie
 //closury, czyli bloki kodu
-def c = { //dzia³a jak funckja bezparametrowa
+def c = { //dziaÅ‚a jak funckja bezparametrowa
     print "c"
 }
 c()
 assert c()==c.call()
-def cc = { p1,p2->//dzia³a jak funckja z parametrami
+def cc = { p1,p2->//dziaÅ‚a jak funckja z parametrami
     print "${p1} == ${p2}"
 }
 cc(1,1)
 //klasy i magia Groovy
-//obiekty beda mialy automatycznie utowrzone gettery i settery (bêd¹ property) wg pewnych regu³
+//obiekty beda mialy automatycznie utowrzone gettery i settery (bÄ™dÄ… property) wg pewnych reguÅ‚
 //https://learnxinyminutes.com/docs/groovy/
 class B{
     def b ='c';
@@ -87,7 +87,7 @@ class B{
         "badB"
     }
 }
-class A extends B{ //nie ma potrzeby definiowaæ domyœlnego konsktruktora
+class A extends B{ //nie ma potrzeby definiowaÄ‡ domyÅ›lnego konsktruktora
     def a = 'a'
     def aa = 'aa'
     def print(){
