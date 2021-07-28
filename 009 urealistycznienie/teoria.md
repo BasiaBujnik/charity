@@ -19,4 +19,6 @@ JMeter oferuje następujące elementy, dzięki którym nasz test będzie lepiej 
 - protokół HTTP jest bezstanowy i większośc przeglądarek polega na ciasteczkach, żeby podtrzymać sesję użytkownika (**HTTP Cookie Manager**)
 - przeglądarki mogą pobierać zasoby statyczne strony równolegle (css, js, img, ..) (**HTTP Request Defaults: Parallel download, download embedded resources**)
 - użytkownik wykonując akcje na stronie działa z przerwami (tzw. think time) (**Timery**)
-- przeładowanie jednej strony to zazwyczaj wiele różnych żądań do backendu, które chcemy oceniać sumarycznie tzw Page View (**Transaction Controller**)
+- przeładowanie jednej strony to zazwyczaj wiele różnych żądań do backendu, które chcemy oceniać sumarycznie tzw Page View (**Transaction Controller**) \*
+
+\* - Transaction Controller służy ogólnie do agregacji np. całej iteracji użytkownika
