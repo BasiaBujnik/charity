@@ -69,7 +69,10 @@ W testach wydajnościowych musimy rozumieć jak działa przeglądarka lecz na co
 
 **Zadanie**:
 
-Z pomocą linii polecen (bash/powershell) dla dowolnego adresu URL spróbuj wykonać metody HEAD,GET,TRACE, OPTIONS
+Z pomocą linii polecen (bash/powershell) dla dowolnego adresu URL spróbuj wykonać metody HEAD,GET,TRACE, OPTIONS np:
+
+        Invoke-WebRequest https://red-water-022d04b03.azurestaticapps.net/ -Method OPTIONS | 
+            Select-Object -ExpandProperty Headers 
 
 ## Co robi przeglądarka krok po kroku kiedy wpisujemy w niej adres strony WWW
 

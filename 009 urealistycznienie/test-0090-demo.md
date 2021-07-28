@@ -10,4 +10,4 @@ Dodamy do testu:
 
 Zmodyfikujemy:
 
-- HTTP Request Defaults/Advanced/
+- HTTP Request Defaults/Advanced/ i zaznaczymy opcje 'Download Embedded Resources'

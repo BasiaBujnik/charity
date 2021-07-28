@@ -12,15 +12,15 @@
 
 Dobrze zdefiniowane:
 
->Wymaganie1: 95% czasów odpowiedzi API < 4s
+>**Wymaganie1**: Maksymalna oczekiwana liczba użytkowników na minutę to 180. Akceptowalna liczba błędów to 0.0001 %
 >
->Wymaganie2: Maksymalna oczekiwana liczba użytkowników na minutę to 180. Akceptowalna liczba błędów to 0.0001 %
->
+>**Wymaganie2**: Przy liczbie 180 użytkowników na minutę 95% czasów odpowiedzi API < 4s
 
-Źle zdefiniowane:
+Źle zdefiniowane :
 
->Wymaganie1: Aplikacja ma odpowiadać na każde żądanie < 4s
+>Wymaganie2: Aplikacja ma odpowiadać na każde żądanie < 4s *
 >
+\* Tak zdefiniowane wymaganie sprawia, że będziemy brali pod uwagę tzw. "outliery" czyli odchyłki. Każdy proces ma pewną zmienność.
 
 
 ## Strategie/podejścia

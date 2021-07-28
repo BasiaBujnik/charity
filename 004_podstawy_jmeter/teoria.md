@@ -1,6 +1,11 @@
 # JMeter
 
 JMeter to prawdopodobnie najpopularniejsze obecnie narzędzie do testów wydajnościowych ogólnego przeznaczenia na świecie.
+
+![architecture](img/tools.jpg)
+
+        żródło: https://www.linkedin.com/in/lloyd-watts-5523374/
+
 Jest napisane w Javie. Testy piszemy w GUI. Uruchamiamy je z GUI bądź linii poleceń (https://jmeter.apache.org/). 
 
 #### JMeter może pracować w trybie "standalone" i "distributed".

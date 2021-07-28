@@ -11,9 +11,17 @@ Jak używać kontrolerów najlepiej wytłumaczyć na najbardziej skomplikowanym 
 **IF** - akcja/część testu zdefiniowana pod tym kontrolerem wykona się jeśli warunek logiczny (wyrażenie), który IF ewaluuje jest równy logicznemu `true`
 > official docs: performs actions underneath if logical condition is true
 
-Ok, a teraz jak może wyglądać wyrażenie?:
+W najprostszej formie warunek powinien być zmienną zawierającą true lub false:
+
+    ${zmienna} //zmienna=true|false
+
+Tutaj się zatrzymam i zrobimy demo z [test-0070-demo.md](test-0070-demo.md) aby to zobrazować.
+
 ***
-JavaScript (variable expression odznaczone)
+
+A po demo .., jak może wyglądać bardziej skomplikowane wyrażenie w IF ?:
+
+Można w warunku użyć JavaScript (variable expression odznaczone)
 
 ```javascript 
     JS1: ${JMeterThread.last_sample_ok} - returns true, executes if last sample in execution chain was OK
@@ -23,7 +31,7 @@ JavaScript (variable expression odznaczone)
     JS5: var a = function() {return "${loops}"==="2";};a(); - plain JS executed, strict comparisom
 ```
 ***
-Groovy (variable expression zaznaczone)
+lub Groovy (variable expression zaznaczone)
 ```groovy 
 
     Groovy1: ${__groovy("${loops}"=="2")} , with Variable Expression checked
