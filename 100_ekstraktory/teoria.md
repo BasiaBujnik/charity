@@ -23,7 +23,7 @@ Najczęściej ekstrahowane elementy to:
 Pamiętaj:
 
 - Do HTMLa - CSS
-- Do XMLa - XPATH 2.0 (szybszy, więcej funckjonalności ale wymaga dobrego HTMLa)
+- Do XMLa - XPATH 2.0 (szybszy, więcej funkcjonalności ale wymaga dobrego HTMLa)
 - Do JSONa - JMSE
 - Regex kosztuje
 - Używaj domyślnych wartości w ekstraktorach
