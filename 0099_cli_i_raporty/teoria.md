@@ -6,6 +6,7 @@ Testy w Jmeter powinny zawsze być uruchamiane z linii poleceń w trybi niegrafi
 
         C:\Users\gstarczewski\tools\apache-jmeter-5.4.1\bin\jmeter.bat -n
 
+(zmień ścieżkę tak, aby odpowiadała lokalizacji Twojej na dysku)
 
 Najprzydatniejsze opcje:
 
