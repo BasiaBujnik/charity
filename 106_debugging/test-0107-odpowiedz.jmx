@@ -66,7 +66,7 @@
           </elementProp>
           <elementProp name="postsCSV" elementType="Argument">
             <stringProp name="Argument.name">postsCSV</stringProp>
-            <stringProp name="Argument.value">${__P(postsCSV,test-0105-odpowiedz.csv)}</stringProp>
+            <stringProp name="Argument.value">${__P(postsCSV,test-0104-todo_result.csv)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">//dane testowe do postów</stringProp>
           </elementProp>
@@ -91,7 +91,7 @@
       <hashTree/>
       <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
         <boolProp name="clearEachIteration">false</boolProp>
-        <boolProp name="useExpires">false</boolProp>
+        <boolProp name="useExpires">true</boolProp>
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
       </CacheManager>
       <hashTree/>

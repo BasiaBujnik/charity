@@ -35,3 +35,17 @@ Tryb z wieloma generatorami obciążenia (worker-controller aka master-slave aka
 #### Posiada IDE/CLI
 #### Jest wysoce konfigurowalny i rozszerzalny przez pluginy
 ...
+
+Podczas pracy z JMeterem będziemy symulować użytkownika wg następującego scenariusza:
+
+    User Journey:
+        1. GET /main page
+        2. GET /todos
+        3. HEAD /posts
+        4. 2x POST /post/add/new
+
+- Dodatkowo będziemy logować liczbę postów w systemie przed i po teście.
+- Test zaloguje również wersję aplikacji, którą testujemy.
+- Przez cały czas dodawać będziemy nowe elementy i refaktoryzować test w oparciu o dobre praktyki.
+
+
