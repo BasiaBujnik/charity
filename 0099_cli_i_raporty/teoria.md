@@ -27,4 +27,4 @@ Przykład:
 
         C:\Users\gstarczewski\tools\apache-jmeter-5.2.1\bin\jmeter.bat -n -t test.jmx
 
-> Przed uruchomieniem testu usuń z planu lub wyłącz zbędne elementy, szczególnie listenery
+> Przed uruchomieniem testu usuń z planu lub wyłącz zbędne elementy, szczególnie listenery, które konsumują zasoby
