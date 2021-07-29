@@ -19,7 +19,7 @@ Tutaj się zatrzymam i zrobimy demo z [test-0070-demo.md](test-0070-demo.md) aby
 
 ***
 
-A po demo .., jak może wyglądać bardziej skomplikowane wyrażenie w IF ?:
+[Opcja] A po demo .., jak może wyglądać bardziej skomplikowane wyrażenie w IF ?:
 
 Można w warunku użyć JavaScript (variable expression odznaczone)
 
