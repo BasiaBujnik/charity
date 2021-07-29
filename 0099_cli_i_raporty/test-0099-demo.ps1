@@ -1,7 +1,3 @@
-#Disable in reportgenerator.properties as there is a bug around this
-#jmeter.reportgenerator.exporter.json.classname=org.apache.jmeter.report.dashboard.JsonExporter
-#jmeter.reportgenerator.exporter.json.property.output_dir=report-output
-
 $path="C:\Users\gstarczewski\Downloads\apache-jmeter-5.4.1\bin"
 $here="C:\Users\gstarczewski\Desktop\gab\jenkins\charity\0099_cli_i_raporty"
 $testName="test-0099-begin.jmx"
