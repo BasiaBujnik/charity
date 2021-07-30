@@ -1,1 +1,0 @@
-log.info "#################### ############ #####" //must be JMeter API calls

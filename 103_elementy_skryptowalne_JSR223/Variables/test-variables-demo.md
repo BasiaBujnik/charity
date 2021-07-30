@@ -1,17 +1,49 @@
-## Instrukcja
+## Instrukcja - zmienne, właściwości, funkcje, API
 
 W tej części
 
-- Stworzymy prosty plan setUp ThreadGroup, ThreadGroup, tearDown ThreadGroup
+- Stworzymy prosty plan 
+            
+            Test Plan 
+                 setUp ThreadGroup
+                 ThreadGroup
+                 tearDown ThreadGroup
+                 
 - W setUp ThreadGroup:
     - Dodamy element UDV i pokażemy jak wyliczać UDV na podstawie UDV
+    
+                    Test Plan 
+                         setUp ThreadGroup
+                            User Defined Variables
+                            User Defined Variables Calculated
+                         ThreadGroup
+                         tearDown ThreadGroup
+                         
     - Pokażemy jak przekazywać parametry z zewnątrz z użyciem funkcji __P i nadpisywać te wartości w pliku user.properties
-    - Dodamy JSR223 Sampler i zobaczymy jak można ustawiać property w kodzie
-    - Pokażemy przykład użycia funkcji
+                    
+                    url	| ${__P(url,onet.pl)}	//tak procesujemy  parametry z linii poleceń w elemencie UDV
+                    (..)/jmeter.bat -Judv=sport.onet.pl //a tak je podajemy z linii poleceń
+                    udv=pogoda.onet.pl //a taki wpis musi być w pliku user.propeties jeśli chcemy użyć pliku properties to ustawienia wartości propetty
+                    
+    - Dodamy JSR223 Sampler i zobaczymy jak można ustawiać property w kodzie przez metody API i jak wywoływać funkcje
+    
+                        Test Plan 
+                             setUp ThreadGroup
+                                User Defined Variables
+                                User Defined Variables Computed
+                                Set properties ${__UUID}
+                             ThreadGroup
+                             tearDown ThreadGroup
+                             
 - W tearDown threadGroup pokażemy jak czyścić property i dlaczego to robić
-- W Głównej grupie:
-    - Dodamy Debug sampler, żeby wyświetlić obecnie załadowane zmienne i właściwości
-    - Użyjemy wbudowanych właściwości, które możemy wyświetlić "Property Display"
-    - Pokażemy przykład wykorzystania API Jmeterowego w JSR223 Samplerze aby zobrazować różnice między zmiennymi i właściwościami.
+                
+                props.clear()
+                
+                
+***
+                
+- Następnie:
+    - Wyświetlimy  własćiwości z "Property Display" i "Debug Samplerem"
+    - Pokażemy przykład wykorzystania JSR223 preprocesora do zmiany zmiennej i, że zmiana ta będzie lokalna dla wątku.
     
 

@@ -8,5 +8,5 @@ New-Item -Path "$PSScriptRoot" -Name "logs" -ItemType "directory" -Force
 
 $path="C:\Users\gstarczewski\tools\apache-jmeter-5.4.1\bin"
 $testName="test-variables-demo_result.jmx"
-Invoke-Expression "$path\jmeter.bat -LDEBUG -f -n -t $testName -j logs\jmeter.log -l results\results.csv -Judv=3333" #udv prop set in command
-#Invoke-Expression "$path\jmeter.bat -LDEBUG -f -n -t $testName -j logs\jmeter.log -l results\results.csv" #udv prop read from user.properties
+Invoke-Expression "$path\jmeter.bat  -f -n -t $testName -j logs\jmeter.log -l results\results.csv -Jurl='sport.onet.pl'" #udv prop set in command
+#Invoke-Expression "$path\jmeter.bat -f -n -t $testName -j logs\jmeter.log -l results\results.csv" #udv prop read from user.properties
