@@ -16,9 +16,12 @@ Najczęściej ekstrahowane elementy to:
  - tokeny CSRF
  - tokeny dostępowe
 
+
+#### CSRF
 ![trio](img/csrf.png)
 
         żródło: terasoluna.org
+#### OAUTH
         
 ![trio](img/slack_oauth.png)
 
