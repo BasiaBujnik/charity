@@ -4,4 +4,8 @@ Zastanów się nad nazewnictwem elementów w drzewie JMeter. Czy po ostatnich zm
 Jak można je ulepszyć?
 
 
+**ćwiczenie 2**
+
+Zasymuluj spike test
+
 
