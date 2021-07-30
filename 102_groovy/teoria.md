@@ -12,7 +12,7 @@ Groovy:
 
 W tej części:
  
-- Zainstalujemy groovy http://groovy-lang.org/install.html#SDKMAN wybierając metodę 'Install Binary'
-- Uruchomimy konsolę groovy wykonując w powershellu ``groovyConsole.bat`` albo otwierając konsolę z folderu instalacyjnego.
+- [Zainstalujemy groovy](https://groovy.apache.org/download.html)
+- Uruchomimy konsolę groovy otwierając ją z folderu instalacyjnego.
 
-Trener omówi podstawowe elementy Groovy (https://learnxinyminutes.com/docs/groovy/)
+Trener omówi [podstawowe elementy Groovy](https://learnxinyminutes.com/docs/groovy/)
