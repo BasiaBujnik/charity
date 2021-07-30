@@ -6,3 +6,5 @@
 
 
 \* - CTT mo¿e jedynie zwalniaæ ¿¹dania wiêc w celu osi¹gniêcia po¿¹danej prêdkoœci musimy mieæ wystarczaj¹co wiele w¹tków i system musi odpowiadaæ odpowiednio szybko
+
+To bêdzie ostatnie æwiczenie, w któym rozbudowujemy nasz test. Zrobimy wiêc równie¿ krótkie podsumowanie.
