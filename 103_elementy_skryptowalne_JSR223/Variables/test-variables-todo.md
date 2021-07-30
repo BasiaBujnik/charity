@@ -5,8 +5,6 @@
 
     - Przynajmniej 1 funkcji w wlemencie UI
     - User Defined Variables, których wartośc możesz zmienić z zewnątrz przez parametry np. loops, threads:
-    - User Defined Variables, który ustawia nowe UDV jako konkatenacje zmiennych z poprzedniego elementu 
-    - Elementu skryptowalnego JSR223/Groovy, w którym wyświetlasz numer wątka i pętli. Podpowiedź, użyj:
  
  3. Przerób plik test-variables-demo_result.jmx tak aby url był czytany bezpośrednio z property a nie ze zmiennej.
         
