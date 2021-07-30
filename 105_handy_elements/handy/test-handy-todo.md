@@ -10,3 +10,4 @@ Constant throughput timer mo¿e zawieraæ funkcje np. ${__groovy(...)}
        funkcja groovy: new Date().getTime()
        
    Do wizualizacji u¿yj plugina jp@gc: Transactions per second
+   Do napisania logiki funckji mo¿esz wykorzystaæ grroovyConsole.
