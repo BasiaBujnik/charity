@@ -22,8 +22,8 @@ W tej części
     - Pokażemy jak przekazywać parametry z zewnątrz z użyciem funkcji __P i nadpisywać te wartości w pliku user.properties
                     
                     url	| ${__P(url,onet.pl)}	//tak procesujemy  parametry z linii poleceń w elemencie UDV
-                    (..)/jmeter.bat -Judv=sport.onet.pl //a tak je podajemy z linii poleceń
-                    udv=pogoda.onet.pl //a taki wpis musi być w pliku user.propeties jeśli chcemy użyć pliku properties to ustawienia wartości propetty
+                    (..)/jmeter.bat -Jurl=sport.onet.pl //a tak je podajemy z linii poleceń
+                    url=pogoda.onet.pl //a taki wpis musi być w pliku user.propeties jeśli chcemy użyć pliku properties to ustawienia wartości propetty
                     
     - Dodamy JSR223 Sampler i zobaczymy jak można ustawiać property w kodzie przez metody API i jak wywoływać funkcje
     
