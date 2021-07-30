@@ -19,6 +19,11 @@ Najczęściej ekstrahowane elementy to:
 ![trio](img/csrf.png)
 
         żródło: terasoluna.org
+        
+![trio](img/slack_oauth.png)
+
+        żródło: slack.com
+
  
 Pamiętaj:
 
