@@ -25,7 +25,7 @@ W tej części
                     (..)/jmeter.bat -Jurl=sport.onet.pl //a tak je podajemy z linii poleceń
                     url=pogoda.onet.pl //a taki wpis musi być w pliku user.propeties jeśli chcemy użyć pliku properties to ustawienia wartości propetty
                     
-    - Dodamy JSR223 Sampler i zobaczymy jak można ustawiać property w kodzie przez metody API i jak wywoływać funkcje
+    - Dodamy JSR223 Sampler i zobaczymy jak można ustawiać zmienne w kodzie przez metody API i jak wywoływać funkcje
     
                         Test Plan 
                              setUp ThreadGroup
