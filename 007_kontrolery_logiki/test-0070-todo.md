@@ -1,6 +1,6 @@
 **ćwiczenie 1 (preflight)**:
 
-Pod kontrolerem **IF** a przed ``POST /post/add/new`` dodaj   ``OPTIONS /post/add/new`` aby zasymulować pre-flight z przeglądarki.
+Pod kontrolerem **IF** a przed żądaniem ``POST /post/add/new`` dodaj   ``OPTIONS /post/add/new`` aby zasymulować pre-flight z przeglądarki.
  
 **ćwiczenie 2**:
 

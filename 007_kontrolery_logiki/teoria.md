@@ -2,13 +2,13 @@
 
 Przypomnijmy sobie, że:
 
-**Kontrolery logiki** - sterują przepływem programu, są to np. if, for, while, ... znane nam z programowania
+    **Kontrolery logiki** - sterują przepływem programu, są to np. if, for, while, ... znane nam z programowania. Wykonują się z tym samym priorytetem co samplery.
 
-**Samplery** - wykonują jednostkę pracy np. wysyłają żądanie HTTP
+    **Samplery** - wykonują jednostkę pracy np. wysyłają żądanie HTTP
 
-Jak używać kontrolerów najlepiej wytłumaczyć na najbardziej skomplikowanym przykładzie jakim jest ``if``
+Przykład:
 
-**IF** - akcja/część testu zdefiniowana pod tym kontrolerem wykona się jeśli warunek logiczny (wyrażenie), który IF ewaluuje jest równy logicznemu `true`
+**IF** - akcja/część testu zdefiniowana pod tym kontrolerem wykona się jeśli warunek logiczny (wyrażenie), który IF ewaluuje jest równy logicznemu `true` lub wartość jest 'true'
 > official docs: performs actions underneath if logical condition is true
 
 W najprostszej formie warunek powinien być zmienną zawierającą true lub false:
@@ -19,7 +19,7 @@ Tutaj się zatrzymam i zrobimy demo z [test-0070-demo.md](test-0070-demo.md) aby
 
 ***
 
-[Opcja] A po demo .., jak może wyglądać bardziej skomplikowane wyrażenie w IF ?:
+Jak może wyglądać bardziej skomplikowane wyrażenie w IF ?:
 
 Można w warunku użyć JavaScript (variable expression odznaczone)
 
@@ -38,4 +38,5 @@ lub Groovy (variable expression zaznaczone)
     Groovy2: ${__groovy(${loops} as int==2)}, alternative
 ```
 
+Wróćimy do tego tematu po zapoznaniu się z elementami programowalnymi w JMeter.
 JMeter rekomenduje Groovy jako język skryptowy do elementów JMeter ze względu na wydajność.
