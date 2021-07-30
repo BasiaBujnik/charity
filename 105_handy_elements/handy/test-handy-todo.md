@@ -11,4 +11,4 @@ Constant throughput timer zamiast sta³ej wartoœci mo¿e przyjmowaæ funkcje jako p
        
    Do wizualizacji u¿yj plugina jp@gc: Transactions per second
    
-   Do napisania logiki funkcji mo¿esz wykorzystaæ grroovyConsole.
+   Do napisania logiki funkcji mo¿esz wykorzystaæ groovyConsole.
