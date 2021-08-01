@@ -1,10 +1,13 @@
 ## Debugowanie w³asnych testów
 
-GUI:
+![groovy](img/debug.jpg)
 
-- LogLevel && Log viewer
-- Listenery
+Podstawowe elementy, któruch mo¿esz u¿yæ do debugowania testów w JMeterze to:
+
+- Opcje 'Log Level'  && Log viewer w GUI
+- Listenery róznego rodzaju np Tree
 - Zaznacz element -> Help -> Enable Debug
+- jmeter.log jeœli testy s¹ uruchamiane w trybie niegrafivcznym
 
 
 Non-GUI:
