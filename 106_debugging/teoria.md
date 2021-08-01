@@ -1,6 +1,6 @@
 ## Debugowanie w³asnych testów
 
-![groovy](img/debug.jpg)
+![debug](img/debug.jpg)
 
 Podstawowe elementy, któruch mo¿esz u¿yæ do debugowania testów w JMeterze to:
 
