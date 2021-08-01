@@ -1,9 +1,9 @@
 ## nagrywanie ruchu
 
-1. Skonfiguruj i nagraj ruch ponownie, u¿ywaj¹c do grupowania Transaction Controllera, ustaw:
+1. Skonfiguruj i nagraj ruch ponownie, uÅ¼ywajÄ…c do grupowania Transaction Controllera, ustaw:
     - w HTTP  Sampler settings:  Naming scheme: prefix, Transaction name: 'appxx'
     - zaznacz 'Put each group into a Transaction Controller'
-    - dodaj element UDV jako dziecko _Test Script Recordera_ aby wykonaæ  podstawow¹ korelacjê:
+    - dodaj element UDV jako dziecko _Test Script Recordera_ aby wykonaÄ‡  podstawowÄ… korelacjÄ™:
     
         |  Name | Value   |  
         |---|---|
@@ -15,4 +15,4 @@
     
 2. Opcjonalnie:
     - odfiltruj statyczne pliki - Request Filtering/URL Patterns to Exclude: (?i).*\.(bmp|css|js|gif|ico|jpe?g|png|swf|woff|woff2|js|ttf)
-    - zaznacz Retrieve Embedded Resources - zobacz jak zmieni siê Twój test
+    - zaznacz Retrieve Embedded Resources - zobacz jak zmieni siÄ™ TwÃ³j test
