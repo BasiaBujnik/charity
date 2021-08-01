@@ -17,5 +17,5 @@ Non-GUI:
 
 Poziom logowania z linii poleceñ mo¿na zmieniaæ [przez parametr](https://jmeter.apache.org/usermanual/get-started.html)  -LDEBUG np:
 ```powershell
-        Invoke-Expression "$JMETER_HOME\jmeter.bat -LDEBUG -f -n -t test.jmx -j logs\jmeter.log -l results\results.csv" 
+        Invoke-Expression "$JMETER_HOME\jmeter.bat -LDEBUG -f -n -t test.jmx -j logs\jmeter.log" 
 ```
