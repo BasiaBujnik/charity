@@ -15,3 +15,6 @@
 2. Opcjonalnie:
     - odfiltruj statyczne pliki - Request Filtering/URL Patterns to Exclude: (?i).*\.(bmp|css|js|gif|ico|jpe?g|png|swf|woff|woff2|js|ttf)
     - zaznacz Retrieve Embedded Resources - zobacz jak zmieni się Twój test
+
+
+> W Twoim nagraniu może pojawić się element [Authorization Manager](https://octoperf.com/blog/2018/04/24/jmeter-basic-authentication/#configuration-2), który również wykorzystywany jest do _basic auth_ 
