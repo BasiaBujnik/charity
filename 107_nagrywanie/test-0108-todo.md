@@ -10,8 +10,7 @@
         |   frontend| red-water-022d04b03.azurestaticapps.net  |  
         |  backend | appxx.azurewebsites.net  |   
   
-
-    - odegraj ruch
+    - odegraj ruch, jak zmienił się Twój test ?
     
 2. Opcjonalnie:
     - odfiltruj statyczne pliki - Request Filtering/URL Patterns to Exclude: (?i).*\.(bmp|css|js|gif|ico|jpe?g|png|swf|woff|woff2|js|ttf)
