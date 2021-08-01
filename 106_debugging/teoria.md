@@ -8,8 +8,9 @@ Podstawowe elementy, któruch mo¿esz u¿yæ do debugowania testów w JMeterze to:
 
 - Opcje 'Log Level'  && Log viewer w GUI
 - Listenery róznego rodzaju np Tree  Listener
-- Selektywne debugowanie pojedynczych elementów w GUI -> Help -> Enable Debug
+- Selektywne debugowanie pojedynczych elementów w GUI -> Help -> Enable Debug 
 - jmeter.log. jmeter-server.log jeœli testy s¹ uruchamiane w trybie niegraficznym
+- Debug PostProcesor
 
 
 Non-GUI:
