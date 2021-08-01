@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.1">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="APPXX test" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -66,7 +66,7 @@
           </elementProp>
           <elementProp name="postsCSV" elementType="Argument">
             <stringProp name="Argument.name">postsCSV</stringProp>
-            <stringProp name="Argument.value">${__P(postsCSV,test-0104-todo_result.csv)}</stringProp>
+            <stringProp name="Argument.value">${__P(postsCSV,test-0104-todo-result.csv)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">//dane testowe do postów</stringProp>
           </elementProp>
@@ -91,7 +91,7 @@
       <hashTree/>
       <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
         <boolProp name="clearEachIteration">false</boolProp>
-        <boolProp name="useExpires">true</boolProp>
+        <boolProp name="useExpires">false</boolProp>
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
       </CacheManager>
       <hashTree/>
@@ -302,7 +302,7 @@ without actual network activity. This helps debugging tests.</stringProp>
                 <stringProp name="cacheKey">true</stringProp>
                 <stringProp name="filename"></stringProp>
                 <stringProp name="parameters"></stringProp>
-                <stringProp name="script">log.info(&quot;from CSS:&quot;+vars.get(&apos;applicationVersionCSS&apos;));</stringProp>
+                <stringProp name="script">log.error(&quot;from CSS:&quot;+vars.get(&apos;aplicationVersionCSS&apos;));</stringProp>
                 <stringProp name="scriptLanguage">groovy</stringProp>
               </JSR223PostProcessor>
               <hashTree/>
