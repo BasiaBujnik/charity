@@ -1,24 +1,25 @@
 ## Nagrywanie ruchu HTTP i jego odtwarzanie
 
-W testach wydajnoœciowych stosujemy wzorzec "record-correlate-replay". Nagrywamy ruch, korelujemy zmienne, odgrywamy przygotowany w ten sposób test.
+W testach wydajnoÅ›ciowych stosujemy wzorzec "record-correlate-replay". Nagrywamy ruch, korelujemy zmienne, odgrywamy przygotowany w ten sposÃ³b test.
 
 ![spa i mpa](img/proxy-flow.png)
-        `¿ród³ó: www.freecodecamp.org`
+        `Å¼rÃ³dÅ‚Ã³: www.freecodecamp.org`
         
         
-JMeter posiada wbudowany element do nagrywania ruchu poprzez proxy w przegl¹darce. W skrócie nagrywanie sk³ada siê z nastêpuj¹cyh kroków:
-- konfiguracja przegl¹darki tak, ¿eby ruch przechodzi³ przez proxy, którym jest nagrywarka JMeterowa
-- symulacja sesji u¿ytkownika w przegl¹darce
-- korelacja zmiennych w nagranym teœcie tj. access tokeny, has³a, loginy, csrf tokeny i inne wartoœci dynamiczne
+JMeter posiada wbudowany element do nagrywania ruchu poprzez proxy w przeglÄ…darce. W skrÃ³cie nagrywanie skÅ‚ada siÄ™ z nastÄ™pujÄ…cyh krokÃ³w:
+- konfiguracja przeglÄ…darki tak, Å¼eby ruch przechodziÅ‚ przez proxy, ktÃ³rym jest nagrywarka JMeterowa
+- import certyfikatu proxy JMeterowego do przeglÄ…darki (proxy dziaÅ‚a jak MITM i ma wÅ‚asny certyfikat, ktÃ³ry trzeba zaakceptowaÄ‡,Å¼eby poÅ‚Ä…czenie SSL byÅ‚o uznane za bezpieczne)
+- symulacja sesji uÅ¼ytkownika w przeglÄ…darce
+- korelacja zmiennych w nagranym teÅ›cie tj. access tokeny, hasÅ‚a, loginy, csrf tokeny i inne wartoÅ›ci dynamiczne
 - oczyszczenie i urealistycznienie skryptu
 
-Kiedy u¿ywaæ:
+Kiedy uÅ¼ywaÄ‡:
 
 - nie znamy aplikacji (nie budujemy jej w oparciu o np. OpenAPI)
-- aplikacja jest skomplikowana lub nagrywana sesja bardzo d³uga 
-- aplikacja czêsto siê zmienia
+- aplikacja jest skomplikowana lub nagrywana sesja bardzo dÅ‚uga 
+- aplikacja czÄ™sto siÄ™ zmienia
 - do debugowania
-- kiedy potrafimy budowaæ testy w JMeterze sami
-- kiedy chcemy skorzystaæ z podstawowej korelacji zmiennych
+- kiedy potrafimy budowaÄ‡ testy w JMeterze sami
+- kiedy chcemy skorzystaÄ‡ z podstawowej korelacji zmiennych
 
 
