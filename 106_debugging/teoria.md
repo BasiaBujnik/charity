@@ -2,6 +2,8 @@
 
 ![debug](img/debug.jpg)
 
+        Ÿród³ó: javatpoint.com
+
 Podstawowe elementy, któruch mo¿esz u¿yæ do debugowania testów w JMeterze to:
 
 - Opcje 'Log Level'  && Log viewer w GUI
