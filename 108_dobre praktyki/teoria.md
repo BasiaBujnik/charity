@@ -12,3 +12,6 @@ JMeter ma w³asn¹ listê [rekomendowanych praktyk](https://jmeter.apache.org/userm
 6. Testy powinny byæ proste. Wybieraj prostotê ponad programowanie w elementach JSR223. 
 7. U¿ywaj konwencji - jeœli pracujesz sam - w³asnej, jeœli w zespole ustalcie j¹ wspólnie
 8. Staraj sie budowaæ test z gotowych elementów JMeterowych
+9. Rozwijaj siê w wielu dziedzinach
+
+![rozwój](img/rozwoj.png)
