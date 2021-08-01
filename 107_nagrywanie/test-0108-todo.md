@@ -3,7 +3,7 @@
 1. Skonfiguruj i nagraj ruch ponownie, u¿ywaj¹c do grupowania Transaction Controllera, ustaw:
     - w HTTP  Sampler settings:  Naming scheme: prefix, Transaction name: 'appxx'
     - zaznacz 'Put each group into a Transaction Controller'
-    - dodaj element UDV aby zrobiæ podstawow¹ korelacjê:
+    - dodaj element UDV jako dziecko _Test Script Recordera_ aby wykonaæ  podstawow¹ korelacjê:
     
         |  Name | Value   |  
         |---|---|
@@ -14,5 +14,5 @@
     - odegraj ruch
     
 2. Opcjonalnie:
-    - odfiltruj statyczne pliki - URL Patterns to Exclude: (?i).*\.(bmp|css|js|gif|ico|jpe?g|png|swf|woff|woff2|js|ttf)
-     - zaznacz Retrieve Embedded Resources
+    - odfiltruj statyczne pliki - Request Filtering/URL Patterns to Exclude: (?i).*\.(bmp|css|js|gif|ico|jpe?g|png|swf|woff|woff2|js|ttf)
+    - zaznacz Retrieve Embedded Resources - zobacz jak zmieni siê Twój test
