@@ -10,7 +10,7 @@ Zbudujemy nastêpuj¹c¹ topologiê i uruchomimy nasz test w trybie rozproszonym:
     - Ubuntu 20 +
     - Z haslem do logowania zamiast SSH
      
-2. Stwórz Bastion Host po stwrozeniu 1 VMki, ¿eby mo¿na siê by³o pod³¹czyæ do nich z przegl¹darki (trwa to do 10 minut, dobrze iœæ wtedy na kawê)
+2. Stwórz Bastion Host po stworzeniu 1 VMki, ¿eby mo¿na siê by³o pod³¹czyæ do nich z przegl¹darki (trwa to do 10 minut, dobrze iœæ wtedy na kawê)
 4. Na 2 VMkach odpal jmeter-server.sh
 5. Na 3-ciej odpal test, który u¿ywa IP pozosta³ych maszyn. (test mo¿esz skopiowaæ CTRL-C, CTRL-V z katalogu æwiczenia na VMkê)
 
