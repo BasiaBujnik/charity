@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.1">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -138,12 +138,22 @@ without actual network activity. This helps debugging tests.</stringProp>
             </elementProp>
             <elementProp name="instrumentationKey" elementType="Argument">
               <stringProp name="Argument.name">instrumentationKey</stringProp>
-              <stringProp name="Argument.value">743b6025-3e21-420d-8c09-26c809527d3f</stringProp>
+              <stringProp name="Argument.value">3dbd7838-7e24-44a9-ac80-bce7f65c1525;IngestionEndpoint=https://westus2-2.in.applicationinsights.azure.com/</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="liveMetrics" elementType="Argument">
               <stringProp name="Argument.name">liveMetrics</stringProp>
               <stringProp name="Argument.value">true</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="samplersList" elementType="Argument">
+              <stringProp name="Argument.name">samplersList</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="useRegexForSamplerList" elementType="Argument">
+              <stringProp name="Argument.name">useRegexForSamplerList</stringProp>
+              <stringProp name="Argument.value">false</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>

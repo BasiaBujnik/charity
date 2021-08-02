@@ -29,3 +29,5 @@ newdata;
 newdata | render piechart;
 
 ```
+
+Język ten może być użyty do tworzenia wykresów i dashboardów - skutecznie zastępując tradycyjny raport HTMLowy.
