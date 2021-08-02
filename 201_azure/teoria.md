@@ -1,5 +1,10 @@
 ## JMeter w Azure DevOps
 
+Azure DevOps to portal do automatyzacji procesów deweloperskich, który mo¿e korzystaæ z zasobów Azure (z Azure Portal) jak i spoza niego (no. GitHub) poprzez 
+linki, które nazywamy Service Connections.
+
+***
+
 Wykonanie testów w systemie CI/CD (Azure DevOps lub innym) to nic innego jak automatyzacja. Zanim bêdziemy automatyzowaæ musimy wiedzieæ co automatyzujemy. Opiszmy wiêc zadanie w postaci kroków:
 
 - Pobierz repozytorium z testami (wymagane)
