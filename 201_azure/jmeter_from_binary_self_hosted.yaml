@@ -1,5 +1,5 @@
 trigger: none
-pool: agents
+pool: boo
 variables:
   jmxFile: 'test.jmx'
   jmeterVersion: 'apache-jmeter-5.4.1'
@@ -11,12 +11,6 @@ stages:
       - job: Jmeter
         displayName: JMeter tests
         steps:
-          - task: JavaToolInstaller@0
-            inputs:
-              versionSpec: '8'
-              jdkArchitectureOption: 'x86'
-              jdkSourceOption: 'PreInstalled'
-
           - bash: |
               #Download JMeter
               curl -O -L -X GET https://mirrors.ocf.berkeley.edu/apache/jmeter/binaries/$(jmeterVersion).zip
