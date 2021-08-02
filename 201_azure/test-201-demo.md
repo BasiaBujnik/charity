@@ -1,4 +1,4 @@
-## JMeter w Azure
+## JMeter w Azure (to demo robimy wspólnie)
 
 1. Uruchomimy Release pipeline 
 
@@ -42,5 +42,3 @@
             
 ***
             
-C:\Users\gstarczewski\Desktop\gab\jenkins\charity\201_azure\img\pipelineDocker.png
-2. Uruchomimy Jmetera z pomocą kontenera Dockerowego - jmeter_from_docker.yaml
