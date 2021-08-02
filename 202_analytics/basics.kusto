@@ -1,13 +1,1 @@
-//wyœwietla dane z tabeli
-requests;
-//wyœwietla wybrane kolumny
-requests | project url,duration;
-//przypisanie wyniku filtracji do zmiennej
-let data = requests | project url, duration, customDimensions;
-data;
-//rozszerzenie tabeli o nowe kolumeny
-let newdata = data | extend bytesSent=customDimensions.SentBytes;
-newdata;
-//wykresy
-newdata | render piechart;
 

@@ -7,3 +7,25 @@ W JMeter dane do Azure Insights można wysyłać poprzez plugin [Azure Backend L
 W Azure Insights dane można obrabiać językiem zapytań [Kusto](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/tutorial?pivots=azuredataexplorer)
 
 ![kusto](img/kusto.png)
+
+Przykłady zapytań w kusto:
+
+```roomsql
+//wyświetla dane z tabeli
+requests;
+
+//wyświetla wybrane kolumny
+requests | project url,duration;
+
+//przypisanie wyniku filtracji do zmiennej
+let data = requests | project url, duration, customDimensions;
+data;
+
+//rozszerzenie tabeli o nowe kolumeny
+let newdata = data | extend bytesSent=customDimensions.SentBytes;
+newdata;
+
+//wykresy
+newdata | render piechart;
+
+```
