@@ -1,12 +1,10 @@
-https://abstracta.us/blog/software-testing/best-demo-websites-for-practicing-different-types-of-software-tests/
+Client supplied NFRs for the App:
 
-1. Analyze NFRs:
-
-    **NFR1**: 95th percentile for HTTP calls should be below 1200 ms.
+    **NFR1**: 95th percentile for all HTTP calls should be below 1200 ms. Valid for load NFR1.
     
-    **NFR2**: System should support 10 users buying products
+    **NFR2**: System should support 10 users buying products - errors thrown 0%.
 
-2. Record Example Traffic Session for "User Buying Products". (Record)
+Critical scenario provided by BA is "User Buying Products", it consist of:
 
     1. Open Main Page: https://www.demoblaze.com/
     2. Click 'Monitors'
@@ -15,9 +13,10 @@ https://abstracta.us/blog/software-testing/best-demo-websites-for-practicing-dif
     5. Click 'Cart'
     6. Fill in form and purchase
 
-3. Parametrize and Randomize Test (Correlate)
-4. Run test locally (Replay)
-5. Consider best option to run it on Azure. Implement the best one, analyze report.
-6. Present results, conclusions and findings to the team.
-7. Mention any risks and limitations. 
+1. Record test.
+2. Parametrize and Randomize Test if necessary.
+2. Run test locally first. Ensure good practices are followed.
+3. Consider best option to run it on Azure. Implement the best one, analyze report.
+4. Present results, conclusions and findings to the team.
+5. Mention any risks and limitations. 
 
