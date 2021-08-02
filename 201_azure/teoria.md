@@ -27,6 +27,8 @@ pipeline:
       ...
 ```
 
+Przyk³adowy prosty pipeline znajdujê siê w pliku [teoria-pipeline.yaml](teoria-pipeline.yaml)
+
 
 ***
 
