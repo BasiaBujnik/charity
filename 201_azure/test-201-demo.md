@@ -23,15 +23,15 @@
          -  Taurus Installer
          -  Taurus Runner (Taurus Configuration YAML):
          
-                ```yaml
-                execution:
-                - scenario:
-                    script: charity-master/201_azure/test.jmx
-                
-                reporting:
-                - module: junit-xml
-                  filename: taurus-output/TEST-Taurus.xml
-                ```    
+            ```yaml
+            execution:
+            - scenario:
+                script: charity-master/201_azure/test.jmx
+            
+            reporting:
+            - module: junit-xml
+              filename: taurus-output/TEST-Taurus.xml
+            ```    
          - Publish Test Results
            
     - Uruchom testy tworząc nowy release i wdrażając go
