@@ -58,4 +58,4 @@
     Instrukcje są identyczne jak powyżej. Uruchomimy pipeline ale wrócimy do niego jeszcze po module [Docker](../203_docker/teoria.md)
 
 
-> Jeśli subskrypcja jest darmowa i nie ma dostępu do publicznych agentów, trzeba podpiąć pod subskrypcję Azure VM Scale Set.
+> Jeśli subskrypcja jest darmowa i nie ma dostępu do publicznych agentów, trzeba podpiąć pod subskrypcję Azure VM Scale Set (i zainstalować na agentach AdoptJDK 8 i zipa) .
