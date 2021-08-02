@@ -15,3 +15,16 @@ Podstawowymi elementami, z którym wchodzimy w interakcjê s¹ obrazy i kontenery.
 ![Docker](img/architecture.svg)
         
         Ÿród³o: docker.com
+        
+        
+Wiêkszoœæ deweloperów u¿ywa Dockera aby rozwi¹zaæ problem zale¿noœci systemowych. Spójrzmy na przyk³ad:
+
+```dockerfile
+ # syntax=docker/dockerfile:1
+ FROM node:12-alpine
+ RUN apk add --no-cache python g++ make
+ WORKDIR /app
+ COPY . .
+ RUN yarn install --production
+ CMD ["node", "src/index.js"]
+```

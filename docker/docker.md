@@ -1,6 +1,7 @@
-### Instalacja Jenkinsa z obrazu dockerowego
+### Polecenie dockera ba przykładzie Jenkinsa
 
 Oficjalny obraz dockera znajduje się pod adresem - https://hub.docker.com/r/jenkins/jenkins
+
 Możesz go zainstlować pobierając obraz poleceniem:
 
 ```docker pull jenkins/jenkins:lts``` 

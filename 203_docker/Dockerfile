@@ -6,10 +6,10 @@ LABEL maintainer="Gabriel Starczewski"
 ARG JMETER_VERSION="5.4.1"
 ENV JMETER_HOME /opt/apache-jmeter-${JMETER_VERSION}
 ENV JMETER_BIN ${JMETER_HOME}/bin
-ENV MIRROR_HOST http://archive.apache.org/dist/jmeter
-ENV JMETER_DOWNLOAD_URL ${MIRROR_HOST}/binaries/apache-jmeter-${JMETER_VERSION}.tgz
-ENV JMETER_PLUGINS_DOWNLOAD_URL http://repo1.maven.org/maven2/kg/apc
-ENV JMETER_PLUGINS_FOLDER=${JMETER_HOME}/lib/ext
+ARG MIRROR_HOST=http://archive.apache.org/dist/jmeter
+ARG JMETER_DOWNLOAD_URL=${MIRROR_HOST}/binaries/apache-jmeter-${JMETER_VERSION}.tgz
+ARG JMETER_PLUGINS_DOWNLOAD_URL=http://repo1.maven.org/maven2/kg/apc
+ARG JMETER_PLUGINS_FOLDER=${JMETER_HOME}/lib/ext
 
 #install and download required thingies
 RUN apk update \
