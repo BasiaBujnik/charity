@@ -7,4 +7,4 @@ CRUX jest automatyzacją opartą o Azure+Kubernetes, która pozwala na puszczani
 
 ![CRUX](img/crux.png)
 
-Wspólnie uruchomimy CRUXA.
+Wspólnie uruchomimy [CRUXA](https://github.com/ObjectivityLtd/crux).
