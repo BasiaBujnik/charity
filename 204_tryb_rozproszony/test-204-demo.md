@@ -37,5 +37,11 @@ cd apache-jmeter-5.4.1/bin
 ./jmeter -Dserver.rmi.ssl.disable=true -n -t examples/CSVSample.jmx  -R 10.0.0.5
 ```
 
+Problem przy testowaniu rozproszonym zaczyna siê pojawiaæ w momencie gdy chcemy elastycznie skalowaæ workery. 
+
+Rozwi¹zuje siê go na kilka sposobów, korzystaj¹c z:
+- VM Scale Set
+- Azure Container Instances
+- Azure Kubernetes Service
           
 
