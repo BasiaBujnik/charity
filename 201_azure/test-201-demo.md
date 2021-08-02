@@ -6,7 +6,7 @@
         - JMeter Installer
         - Taurus Installer/Runner
     
-    - Stworzymy pipeline: Wejdź w Pipeline -> Releases -> New Release Pipeline -> Add Stage (Empty job, Jmeter tests) 
+    - Stworzymy pipeline: Wejdź w Pipelines -> Releases -> New Release Pipeline -> Add Stage (Empty job, Jmeter tests) 
     
     - W 'Agent job' zmień 'Agent Specification' na  ubuntu latest. To nasza platforma do automatyzacji.
     - Dodaj następujące taski do pipeline'a:
@@ -41,4 +41,17 @@
 `żródłó: Gabriel Starczewski`
             
 ***
-            
+2.  Uruchomimy i zanalizujemy [pipeline uruchamiający test z binarki](jmeter_from_binary.yaml)
+     
+     Najpierw sforkujemy nasze repozytorium do Azure'a, tak, żeby każdy miał swoją kopię:
+     
+     - Repos -> Files -> Import Repository: https://github.com/gabrielstar/charity.git
+     
+    Następnie załadujemy przykładowe repo:
+     
+     - Pipelines -> Create Pipeline -> Azure Repos Git -> Exisiting pipeline -> jmeter_from_binary
+    
+    Na koniec klikamy 'Run'
+     
+3.  Uruchomimy i zanalizujemy [pipeline uruchamiający test z dockera](jmeter_from_docker.yaml)
+    Instrukcje są identyczne jak powyżej.
