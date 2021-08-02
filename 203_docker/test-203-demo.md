@@ -1,6 +1,6 @@
 ## Docker (do demo robimy wspólnie)
 
-- Zanalizujemy wspólnie zawartość pliku [Dockerfile](Dockerfile) i zbudujmey wykorzystując skrypt [build.ps1](build.ps1).
+- Zanalizujemy wspólnie zawartość pliku [Dockerfile](Dockerfile) i zbudujemy wykorzystując skrypt [build.ps1](build.ps1).
 - Zalogujemy się do wnętrza kontenera.
 - Uruchomimy test
 
