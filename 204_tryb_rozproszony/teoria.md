@@ -1,24 +1,22 @@
-tryb rozproszony
+## Tryb rozproszony
 
-na Azure
+[Tryb rozproszony](https://jmeter.apache.org/usermanual/jmeter_distributed_testing_step_by_step.html) stosujemy wtedy gdy 1 maszyna 
+nie wystarcza nam do wygenerowania założonego obciążenia .
 
-https://jmeter.apache.org/usermanual/jmeter_distributed_testing_step_by_step.html
+W tym trybie mamy 2 rodzaj kontrolerów:
+- worker (wykonuje test)
+- master (koordynuje test na workerach)
 
 ![architecture](img/distributed-jmeter.svg)
 ![terminology](img/distributed-names.svg)
 
 
-            �r�d�o: https://jmeter.apache.org/usermanual/jmeter_distributed_testing_step_by_step.html
+            żródło: https://jmeter.apache.org/usermanual/jmeter_distributed_testing_step_by_step.html
 
 
 
-Jak ?
+Jak uruchomić testy w tym trybie na własnej maszynie?
 
-1. Id� do katalogu ${JMETER_HOME}/bin i wystartuj jmeter-server.bat
-2. Uruchom skrypt run.ps1, podaj parametr -R 127.0.0.1
-
-Inne opcje:
-
-https://docs.microsoft.com/en-us/samples/azure-samples/jmeter-aci-terraform/jmeter-aci-terraform/
-https://github.com/ObjectivityLtd/crux
+1. Idź do katalogu `${JMETER_HOME}/bin` i wystartuj `jmeter-server.bat`
+2. Wyedytuj plik [teoria.ps1](teoria.ps1), przeanalizuj, i uruchom (controller).
 
