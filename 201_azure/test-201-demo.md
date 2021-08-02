@@ -49,9 +49,10 @@
      
     Następnie załadujemy przykładowe repo:
      
-     - Pipelines -> Create Pipeline -> Azure Repos Git -> Exisiting pipeline -> jmeter_from_binary
+     - Pipelines -> Create Pipeline -> Azure Repos Git -> Exisiting Azure pipelines YAML file -> jmeter_from_binary.yaml
     
     Na koniec klikamy 'Run'
      
 3.  Uruchomimy i zanalizujemy [pipeline uruchamiający test z dockera](jmeter_from_docker.yaml)
-    Instrukcje są identyczne jak powyżej.
+
+    Instrukcje są identyczne jak powyżej. Uruchomimy pipeline ale wrócimy do niego jeszcze po module [Docker](../203_docker/teoria.md)
