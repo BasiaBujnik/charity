@@ -59,3 +59,4 @@
 
 
 > Jeśli subskrypcja jest darmowa i nie ma dostępu do publicznych agentów, trzeba podpiąć pod subskrypcję Azure VM Scale Set (i zainstalować na agentach AdoptJDK 8 i zipa) .
+> Lub pobrać aganeta na własny PC i odpalić z powershella
