@@ -1,4 +1,4 @@
-## Parametryzacja pipeline'a
+## Parametryzacja pipeline'a testowego
 
 1. Użyj [zmiennych](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch
 ) i [parametrów](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/runtime-parameters?view=azure-devops&tabs=script) w Azure aby 
