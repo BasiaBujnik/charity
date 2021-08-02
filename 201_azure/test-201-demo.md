@@ -56,3 +56,6 @@
 3.  Uruchomimy i zanalizujemy [pipeline uruchamiający test z dockera](jmeter_from_docker.yaml)
 
     Instrukcje są identyczne jak powyżej. Uruchomimy pipeline ale wrócimy do niego jeszcze po module [Docker](../203_docker/teoria.md)
+
+
+> Jeśli subskrypcja jest darmowa i nie ma dostępu do publicznych agentów, trzeba podpiąć pod subskrypcję Azure VM Scale Set.
