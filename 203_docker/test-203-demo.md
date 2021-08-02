@@ -1,7 +1,7 @@
-## Docker (do demo robimy wspólnie)
+## Docker (do demo robimy wspÃ³lnie)
 
-- Zanalizujemy wspólnie zawartoœc pliku [Dockerfile](Dockerfile) i zbudujmey wykorzystuj¹c skrypt [build.ps1](build.ps1).
-- Zalogujemy siê do wnêtrza kontenera.
+- Zanalizujemy wspÃ³lnie zawartoÅ›Ä‡ pliku [Dockerfile](Dockerfile) i zbudujmey wykorzystujÄ…c skrypt [build.ps1](build.ps1).
+- Zalogujemy siÄ™ do wnÄ™trza kontenera.
 - Uruchomimy test
 
 ```powershell
