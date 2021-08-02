@@ -11,21 +11,21 @@ W Azure Insights dane można obrabiać językiem zapytań [Kusto](https://docs.m
 Przykłady zapytań w kusto:
 
 ```powershell
-//wyświetla dane z tabeli
+#wyświetla dane z tabeli
 requests;
 
-//wyświetla wybrane kolumny
+#wyświetla wybrane kolumny
 requests | project url,duration;
 
-//przypisanie wyniku filtracji do zmiennej
+#przypisanie wyniku filtracji do zmiennej
 let data = requests | project url, duration, customDimensions;
 data;
 
-//rozszerzenie tabeli o nowe kolumeny
+#rozszerzenie tabeli o nowe kolumeny
 let newdata = data | extend bytesSent=customDimensions.SentBytes;
 newdata;
 
-//wykresy
+#wykresy
 newdata | render piechart;
 
 ```
