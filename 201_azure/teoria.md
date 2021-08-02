@@ -8,7 +8,7 @@ Wykonanie testów w systemie CI/CD (Azure DevOps lub innym) to nic innego jak aut
 - Opublikuj wynik testów (opcjonalne)
 - Opublikuj artefakty testowe (opcjonalne)
 
-Do automatyzacji wyorzystujemy pipeline'y. Automatyzacjê implementujemy korzystaj¹c z gotowych elementów pipeline'a (stepów) lub rozszerzeñ, które mo¿emy zainstalowaæ z Azure Marketplace. 
+Do automatyzacji wykorzystujemy pipeline'y. Automatyzacjê implementujemy korzystaj¹c z gotowych elementów pipeline'a (stepów) lub rozszerzeñ, które mo¿emy zainstalowaæ z Azure Marketplace. 
 
 Pipeline ma nastêpuj¹c¹ [strukturê](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema):
 
