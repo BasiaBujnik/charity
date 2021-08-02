@@ -28,3 +28,11 @@ Wiêkszoœæ deweloperów u¿ywa Dockera aby rozwi¹zaæ problem zale¿noœci systemowych
  RUN yarn install --production
  CMD ["node", "src/index.js"]
 ```
+
+Nawet w tak prostym pliku definiujemy obraz jako:
+
+- pewien system operacyjny :) //to rozwi¹zuje masê problemów
+- rozszerzony o programy, które doinstalowujemy
+- z pewnymi ustawieniami
+
+Podstawowe komendy dockera znajdziecie w [docker](../docker/docker.md)
