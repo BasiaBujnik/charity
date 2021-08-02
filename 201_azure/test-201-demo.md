@@ -2,14 +2,14 @@
 
 1. Uruchomimy Release pipeline 
 
-    - Z [Azure Marketplace](https://marketplace.visualstudio.com/items?itemName=AlexandreGattiker.jmeter-tasks) zainstalujemy potrzebne narzêdzia
+    - Z [Azure Marketplace](https://marketplace.visualstudio.com/items?itemName=AlexandreGattiker.jmeter-tasks) zainstalujemy potrzebne narzÄ™dzia
         - JMeter Installer
         - Taurus Installer/Runner
     
-    - Stworzymy pipeline: WejdŸ w Pipeline -> Releases -> New Release Pipeline -> Add Stage (Empty job, Jmeter tests) 
+    - Stworzymy pipeline: WejdÅº w Pipeline -> Releases -> New Release Pipeline -> Add Stage (Empty job, Jmeter tests) 
     
-    - W 'Agent job' zmieñ 'Agent Specification' na  ubuntu latest. To nasza platforma do automatyzacji.
-    - Dodaj nastêpuj¹ce taski do pipeline'a:
+    - W 'Agent job' zmieÅ„ 'Agent Specification' na  ubuntu latest. To nasza platforma do automatyzacji.
+    - Dodaj nastÄ™pujÄ…ce taski do pipeline'a:
     
         -   Command Line Task (download repo zip with curl):
                 
@@ -33,13 +33,13 @@
                 ```    
          - Publish Test Results
            
-    - Uruchom testy tworz¹c nowy release i wdra¿aj¹c go
+    - Uruchom testy tworzÄ…c nowy release i wdraÅ¼ajÄ…c go
             
 ![release](img/releasePipeline.png)
     
-`¿ród³ó: Gabriel Starczewski`
+`Å¼rÃ³dÅ‚Ã³: Gabriel Starczewski`
             
 ***
             
 C:\Users\gstarczewski\Desktop\gab\jenkins\charity\201_azure\img\pipelineDocker.png
-2. Uruchomimy Jmetera z pomoc¹ kontenera Dockerowego - jmeter_from_docker.yaml
+2. Uruchomimy Jmetera z pomocÄ… kontenera Dockerowego - jmeter_from_docker.yaml
