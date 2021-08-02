@@ -38,16 +38,16 @@ stages:
 
               #stop container
               docker stop "$ContainerName"
-            displayName: Run Test
+            displayName: Run JMeter Test
 
           - task: PublishPipelineArtifact@1
-            displayName: Archive JMeter Artifacts
+            displayName: Archive JMeter Test Artifacts
             inputs:
               path: 201_azure/jmeter.log
               artifact: JmeterFiles
 
           - task: PublishPipelineArtifact@1
-            displayName: Archive JMeter HTML Report
+            displayName: Archive JMeter Test HTML Report
             inputs:
               path: 201_azure/html
               artifact: JmeterReport

@@ -11,7 +11,7 @@ stages:
     displayName: Run JMeter from binary
     jobs:
       - job: Jmeter
-        displayName: Test
+        displayName: JMeter tests
         steps:
           - bash: |
               #Download JMeter
@@ -25,16 +25,16 @@ stages:
               mkdir -p jmeter_artifacts
               sh $(jmeterVersion)/bin/jmeter.sh -n -t 201_azure/$(jmxFile) -j jmeter_artifacts/jmeter.log -l jmeter_artifacts/results.csv -e -o html
               ls -alh
-            displayName: Run Test
+            displayName: Run JMeter Test
 
           - task: PublishPipelineArtifact@1
-            displayName: Archive JMeter Artifacts
+            displayName: Archive JMeter Test Artifacts
             inputs:
               path: jmeter_artifacts
               artifact: JmeterFiles
 
           - task: PublishPipelineArtifact@1
-            displayName: Archive JMeter HTML Report
+            displayName: Archive JMeter Test HTML Report
             inputs:
               path: html
               artifact: JmeterReport
