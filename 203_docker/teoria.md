@@ -1,10 +1,17 @@
-Budowa image'u JMeterowego z pluginami, których u¿ywamy
+## Docker i JMeter
+
+Zajmiemy suê budow¹ obrazu Dockerowego z JMeterem i pluginami, których u¿ywamy. To nie jest rocket science :)
 
 ![not rocket science](https://media1.tenor.com/images/69ed8ada5228636d893a9477078cf4d6/tenor.gif)
 
-æwiczenie:
+Docker wzi¹³ siê z potrzeby osczêdnoœci zasobów:
 
-https://github.com/gabrielstar/jmeter-docker
-https://github.com/ObjectivityLtd/crux/tree/master/docker
-Zbuduj kontener, który bêdzie zawiera³ wszystkie pluginy, których bêdziesz potrzebowa³.
-Jak sprawdzisz czy kontener spe³nia Twoje wymagania (Testy)?
+![Docker](img/docker.png)
+     
+        Ÿród³o: edureka.co
+        
+Podstawowymi elementami, z którym wchodzimy w interakcjê s¹ obrazy i kontenery.
+        
+![Docker](img/architecture.svg)
+        
+        Ÿród³o: docker.com

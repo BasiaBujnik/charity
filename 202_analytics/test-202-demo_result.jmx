@@ -138,7 +138,7 @@ without actual network activity. This helps debugging tests.</stringProp>
             </elementProp>
             <elementProp name="instrumentationKey" elementType="Argument">
               <stringProp name="Argument.name">instrumentationKey</stringProp>
-              <stringProp name="Argument.value">3dbd7838-7e24-44a9-ac80-bce7f65c1525;IngestionEndpoint=https://westus2-2.in.applicationinsights.azure.com/</stringProp>
+              <stringProp name="Argument.value">3dbd7838-7e24-44a9-ac80-bce7f65c1525</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="liveMetrics" elementType="Argument">
