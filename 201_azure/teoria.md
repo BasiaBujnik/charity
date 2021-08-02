@@ -10,7 +10,7 @@ Wykonanie testów w systemie CI/CD (Azure DevOps lub innym) to nic innego jak aut
 
 Do automatyzacji wykorzystujemy pipeline'y. Automatyzacjê implementujemy korzystaj¹c z gotowych elementów pipeline'a (stepów) lub rozszerzeñ, które mo¿emy zainstalowaæ z Azure Marketplace. 
 
-Pipeline ma nastêpuj¹c¹ [strukturê](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema):
+Pipeline w Azure Devops ma nastêpuj¹c¹ [strukturê](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema):
 
 ```yaml
 
@@ -39,13 +39,17 @@ Podstawowe metody puszczania testów w Azure DevOps na agentach Microsoftu s¹ nas
     ![release pipeline](img/releasePipeline.png)
 
 2.  **Jako build pipeline (YAML) z u¿yciem binarki**
-    
+
+    W tym podejœciu definicjê pipeline'u trzymamy w kodzie w pliku YAML a JMetera za ka¿dym razem instalujemy tak jak robiliœmy to w naszym systemie.
+        
     ![build pipeline](img/pipelineBinary.png)
     
 3. **Jako build pipeline (YAML) z u¿yciem kontenera dockerowego**
+
+     W tym podejœciu nie musimy instalowaæ JMetera. Testy zostan¹ uruchomione w kontenerze Dockerowym, który ju¿ go zawiera.
     
-    ![docker pipeline](img/pipelineDocker.png)
-    
+    ![docker pipeline](img/pipelineDocker.png) 
+ 
 ***
 
 Je¿eli u¿ywamy prywatnych agentów, JMeter mo¿e byæ na nich doinstalowany przez zespó³ DevOps. Nie trzeba wtedy instalowaæ JMetera za ka¿dym razem.
