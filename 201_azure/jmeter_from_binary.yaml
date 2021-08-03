@@ -3,7 +3,7 @@ pool:
   name: Default
   demands:
     - agent.os -equals Linux
-    -
+
 variables:
   jmxFile: 'test.jmx'
   jmeterVersion: 'apache-jmeter-5.4.1'
