@@ -59,6 +59,19 @@ Podstawowe metody puszczania testów w Azure DevOps na agentach Microsoftu s¹ nas
  
 ***
 
-Je¿eli u¿ywamy prywatnych agentów, JMeter mo¿e byæ na nich doinstalowany przez zespó³ DevOps. Nie trzeba wtedy instalowaæ JMetera za ka¿dym razem.
-Mo¿liwe s¹ ro¿ne wariacje tych podejœæ.
- 
+Od 3.2021, ¿eby móc wykonywaæ pipeline'y na agentach Azure w ramach darmowych subskrypcji musimy zainstalowaæ w³asnego agenta. Zrobimy to:
+- Tworz¹c w Portalu VMkê
+- Tworz¹c dla niej Bastion
+- Loguj¹c siê do VMki przez Bastion, zainstalujemy Javê i wszystko czego bêdzie potrzebowa³ nasz pipeline:
+    ```shell script
+    sudo apt-get update
+    sudo apt install openjdk-8-jre-headless
+    sudo apt install unzip
+    curl -O -L https://vstsagentpackage.azureedge.net/agent/2.189.0/vsts-agent-linux-x64-2.189.0.tar.gz
+    mkdir myagent && cd myagent
+    tar zxvf ~/Downloads/vsts-agent-linux-x64-2.189.0.tar.gz
+   ./config.sh
+   #jako URL podajemy nazwê organizacji
+   #PAT powinien mieæ scope agents management
+   ./run.sh
+```
