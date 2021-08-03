@@ -7,8 +7,8 @@
 ```powershell
 
 #execute example for powershell
-docker run --volume ${pwd}:/test jmeter -n -t /test/test-203-begin.jmx
+docker run --rm --volume ${pwd}:/test jmeter -n -t /test/test-203-begin.jmx
 #execute example for bash
-docker run --volume $(pwd):/test jmeter -n -t /test/test-203.jmx
+docker run --rm --volume $(pwd):/test jmeter -n -t /test/test-203.jmx
 
 ```

@@ -7,6 +7,8 @@ Witajcie na szkoleniu z testów wydajnościowych i podstaw JMeter'a
 Nazywam się Gabriel Starczewski. Swoją karierę zaczynałem jako deweloper PHP. Następnie przez wiele lat bylem managerem zespołów IT w tym SRE, IT Supportu, Monitoringu oraz Architektem Testów (IBM, Credit Suisse, Capgemini).
 W Objectivity w roli Test Architekta od ponad roku zajmuję się przede wszystkim testami wydajnościowymi.
 
+![gabriel](img/me.png)
+
 Dewelopuję CRUXa - rozwiązanie do budowy chmury do testów wydajnościowych opartej o Azure i Kubernetes:
 https://github.com/ObjectivityLtd/crux. 
 
