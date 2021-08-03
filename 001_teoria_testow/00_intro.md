@@ -30,22 +30,37 @@ Moje szkolenia:
 
 Część 1 - przygotowanie teoretyczne
 
-1. Teoria testów wydajnościowych
-2. Protokół HTTP i zasady działania przeglądarek internetowych
-3. Aplikacje SPA/MPA
-4. Podejścia w budowaniu scenariuszy testowych
-5. Zapoznanie z celem naszych testów - aplikacją (AUT)
+    1. Teoria testów wydajnościowych
+    2. Protokół HTTP i zasady działania przeglądarek internetowych
+    3. Aplikacje SPA/MPA, frontend vs backend
+    4. Podejścia w budowaniu scenariuszy testowych
+    5. Zapoznanie z celem naszych testów - aplikacją (AUT)
 
-Część 2 - narzędzie/umiejętności
+Część 2 - Jmeter
 
---- 
-6. Wprowadzenie do JMetera
-7. Pierwsze żądania i kolejność wykonywania elementów w JMeter
-8. Elementy konfiguracyjne JMetera. Zmienne
-9. Kontrolery logiki
-10. Struktura planu i trio: Test Fragment, Module Controller, Simple Controller
-11. Urealistycznienie naszego testu 
-12. Jak puszczać testy z CLI, jak generować raporty?
+    6. Wprowadzenie do JMetera
+    7. Pierwsze żądania i kolejność wykonywania elementów w JMeter
+    8. Elementy konfiguracyjne JMetera. Zmienne
+    9. Kontrolery logiki
+    10. Struktura planu i trio: Test Fragment, Module Controller, Simple Controller
+    11. Urealistycznienie naszego testu 
+    12. Jak puszczać testy z CLI, jak generować raporty?
+
+Część 3 - Jmeter zaawansowany
+
+
+    13. Ekstraktory XPATH, CSS, JSONPath, .... stubbing
+    14. Groovy i elementy skryptowalne w JMeter
+    15. Wybrane, przydatne elementy JMetera
+    16. Debugowanie i Nagrywanie testów
+
+Część 4 - TestOps/Azure
+
+    17. Dockeryzacja JMetera
+    18. Integracja JMetera z Azure Insights
+    19. Tryb rozproszony (+crux)
+    20. Azure pipelines
+    21. Hackathon 
 
 ### Zasady i organizacja szkolenia?
 
