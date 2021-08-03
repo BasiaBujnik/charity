@@ -1,21 +1,21 @@
 ## JMeter w Azure DevOps
 
-Azure DevOps to portal do automatyzacji procesów deweloperskich, który mo¿e korzystaæ z zasobów Azure (z Azure Portal) jak i spoza niego (no. GitHub) poprzez 
-linki, które nazywamy Service Connections.
+Azure DevOps to portal do automatyzacji procesÃ³w deweloperskich, ktÃ³ry moÅ¼e korzystaÄ‡ z zasobÃ³w Azure (z Azure Portal) jak i spoza niego (np. GitHub) poprzez 
+linki, ktÃ³re nazywamy Service Connections.
 
 ***
 
-Wykonanie testów w systemie CI/CD (Azure DevOps lub innym) to nic innego jak automatyzacja. Zanim bêdziemy automatyzowaæ musimy wiedzieæ co automatyzujemy. Opiszmy wiêc zadanie w postaci kroków:
+Wykonanie testÃ³w w systemie CI/CD (Azure DevOps lub innym) to nic innego jak automatyzacja. Zanim bÄ™dziemy automatyzowaÄ‡ musimy wiedzieÄ‡ co automatyzujemy. Opiszmy wiÄ™c zadanie w postaci krokÃ³w:
 
 - Pobierz repozytorium z testami (wymagane)
 - Zainstaluj JMetera (wymagane)
 - Uruchom Testy (wymagane)
-- Opublikuj wynik testów (opcjonalne)
+- Opublikuj wynik testÃ³w (opcjonalne)
 - Opublikuj artefakty testowe (opcjonalne)
 
-Do automatyzacji wykorzystujemy pipeline'y. Automatyzacjê implementujemy korzystaj¹c z gotowych elementów pipeline'a (stepów) lub rozszerzeñ, które mo¿emy zainstalowaæ z Azure Marketplace. 
+Do automatyzacji wykorzystujemy pipeline'y. AutomatyzacjÄ™ implementujemy korzystajÄ…c z gotowych elementÃ³w pipeline'a (stepÃ³w) lub rozszerzeÅ„, ktÃ³re moÅ¼emy zainstalowaÄ‡ z Azure Marketplace. 
 
-Pipeline w Azure Devops ma nastêpuj¹c¹ [strukturê](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema):
+Pipeline w Azure Devops ma nastÄ™pujÄ…cÄ… [strukturÄ™](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema):
 
 ```yaml
 
@@ -31,29 +31,29 @@ pipeline:
     stage B:
       ...
 ```
-Przyk³adowy prosty pipeline w YAML znajdujê siê w pliku [teoria-pipeline.yaml](teoria-pipeline.yaml)
-Pipeline'y wykonuj¹ siê na agentach. Od 3.2021 darmowe subskrypcje nie mog¹ korzystaæ z chmurowych agentów i musimy sami sobie [agenta zainstalowaæ](../agent/teoria.md).
+PrzykÅ‚adowy prosty pipeline w YAML znajdujÄ™ siÄ™ w pliku [teoria-pipeline.yaml](teoria-pipeline.yaml)
+Pipeline'y wykonujÄ… siÄ™ na agentach. Od 3.2021 darmowe subskrypcje nie mogÄ… korzystaÄ‡ z chmurowych agentÃ³w i musimy sami sobie [agenta zainstalowaÄ‡](../agent/teoria.md).
 
 
 ***
 
-Podstawowe metody puszczania testów w Azure DevOps na agentach Microsoftu s¹ nastêpuj¹ce:
+Podstawowe metody puszczania testÃ³w w Azure DevOps na agentach Microsoftu sÄ… nastÄ™pujÄ…ce:
 
 1. **Jako release pipeline**
 
-    Release pipeline'y zosta³y stworzone do wdra¿ania aplikacji ale mog¹ te¿ s³u¿yæ do automatyzacji. Polegaj¹ na rêcznej konfiguracji i na chwilê obecn¹ nie mo¿na ich zapisaæ w postaci YAML.
+    Release pipeline'y zostaÅ‚y stworzone do wdraÅ¼ania aplikacji ale mogÄ… teÅ¼ sÅ‚uÅ¼yÄ‡ do automatyzacji. PolegajÄ… na rÄ™cznej konfiguracji i na chwilÄ™ obecnÄ… nie moÅ¼na ich zapisaÄ‡ w postaci YAML.
 
     ![release pipeline](img/releasePipeline.png)
 
-2.  **Jako build pipeline (YAML) z u¿yciem binarki**
+2.  **Jako build pipeline (YAML) z uÅ¼yciem binarki**
 
-    W tym podejœciu definicjê pipeline'u trzymamy w kodzie w pliku YAML a JMetera za ka¿dym razem instalujemy tak jak robiliœmy to w naszym systemie.
+    W tym podejÅ›ciu definicjÄ™ pipeline'u trzymamy w kodzie w pliku YAML a JMetera za kaÅ¼dym razem instalujemy tak jak robiliÅ›my to w naszym systemie.
         
     ![build pipeline](img/pipelineBinary.png)
     
-3. **Jako build pipeline (YAML) z u¿yciem kontenera dockerowego**
+3. **Jako build pipeline (YAML) z uÅ¼yciem kontenera dockerowego**
 
-     W tym podejœciu nie musimy instalowaæ JMetera. Testy zostan¹ uruchomione w kontenerze Dockerowym, który ju¿ go zawiera.
+     W tym podejÅ›ciu nie musimy instalowaÄ‡ JMetera. Testy zostanÄ… uruchomione w kontenerze Dockerowym, ktÃ³ry juÅ¼ go zawiera.
     
     ![docker pipeline](img/pipelineDocker.png) 
  
