@@ -34,5 +34,5 @@ Od 3.2021, żeby móc wykonywać pipeline'y na agentach Azure w ramach darmowych
    #jako URL podajemy nazwę organizacji
    #PAT powinien mieć scope agents management
    #pool name: Default
-   ./run.sh # or ./run.sh &
+   nohup ./run.sh & # or ./run.sh or ./run.sh & 
 ```
