@@ -1,4 +1,4 @@
-## Korzystamy z elementów konfiguracyjnych
+## Korzystamy z podstawowych elementów konfiguracyjnych
 
 W tej części:
 
