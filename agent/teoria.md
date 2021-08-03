@@ -1,7 +1,7 @@
-Od 3.2021, ¿eby móc wykonywaæ pipeline'y na agentach Azure w ramach darmowych subskrypcji musimy zainstalowaæ w³asnego agenta. Zrobimy to:
-- Tworz¹c w Portalu VMkê (Standard DS1 v2 (1 vcpus, 3.5 GiB memory))
-- Tworz¹c dla niej Bastion (trwa to do 10 minut, dobry moment na kawê...)
-- Loguj¹c siê do VMki przez Bastion, zainstalujemy Javê, dockera i wszystko czego bêdzie potrzebowa³ nasz pipeline:
+Od 3.2021, Å¼eby mÃ³c wykonywaÄ‡ pipeline'y na agentach Azure w ramach darmowych subskrypcji musimy zainstalowaÄ‡ wÅ‚asnego agenta. Zrobimy to:
+- TworzÄ…c w Portalu VMkÄ™ (Standard DS1 v2 (1 vcpus, 3.5 GiB memory))
+- TworzÄ…c dla niej Bastion (trwa to do 10 minut, dobry moment na kawÄ™...)
+- LogujÄ…c siÄ™ do VMki przez Bastion, zainstalujemy JavÄ™, dockera i wszystko czego bÄ™dzie potrzebowaÅ‚ nasz pipeline:
 
     ```shell script
 
@@ -31,8 +31,8 @@ Od 3.2021, ¿eby móc wykonywaæ pipeline'y na agentach Azure w ramach darmowych su
     mkdir myagent && cd myagent
     tar zxvf ~/Downloads/vsts-agent-linux-x64-2.189.0.tar.gz
    ./config.sh
-   #jako URL podajemy nazwê organizacji
-   #PAT powinien mieæ scope agents management
+   #jako URL podajemy nazwÄ™ organizacji
+   #PAT powinien mieÄ‡ scope agents management
    #pool name: Default
    ./run.sh # or ./run.sh &
 ```
