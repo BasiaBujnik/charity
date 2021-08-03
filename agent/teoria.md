@@ -1,5 +1,5 @@
 Od 3.2021, żeby móc wykonywać pipeline'y na agentach Azure w ramach darmowych subskrypcji musimy zainstalować własnego agenta. Zrobimy to:
-- Tworząc w Portalu VMkę (Standard DS1 v2 (1 vcpus, 3.5 GiB memory))
+- Tworząc w Portalu VMkę (Ubuntu 20.04, Standard DS1 v2 (1 vcpus, 3.5 GiB memory))
 - Tworząc dla niej Bastion (trwa to do 10 minut, dobry moment na kawę...)
 - Logując się do VMki przez Bastion, zainstalujemy Javę, dockera i wszystko czego będzie potrzebował nasz pipeline:
 
