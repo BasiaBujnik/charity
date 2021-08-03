@@ -15,4 +15,4 @@ Influencers:
 - https://www.linkedin.com/in/nvanderhoeven/
 - https://www.linkedin.com/in/joecolantonio/
 - https://www.linkedin.com/in/leandromelendez/
-
+- https://www.linkedin.com/in/gabriel-star-tester/
