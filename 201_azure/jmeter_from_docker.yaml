@@ -13,6 +13,8 @@ stages:
     jobs:
       - job: Jmeter
         displayName: Test
+        workspace:
+          clean: all
         steps:
           - pwsh: | #bash or powershell - both can run on ubuntu
               function Start-CommandInsideDocker($ContainerName, $Command){

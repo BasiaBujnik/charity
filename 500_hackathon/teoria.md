@@ -1,6 +1,8 @@
+## Let us test ourselves
+
 Client supplied NFRs for the App:
 
-    **NFR1**: 95th percentile for all HTTP calls should be below 1200 ms. Valid for load NFR1.
+    **NFR1**: 95th percentile for all HTTP calls should be below 1200 ms. Valid for load NFR2.
     
     **NFR2**: System should support 10 users buying products - errors thrown 0%.
 
