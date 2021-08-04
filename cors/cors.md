@@ -61,11 +61,11 @@ Naszym 'Origin' jest w tym przypadku http://www.example.com
     
 > Access-Control-Allow-Origin: * - jest to ustawienie odpowiednie dla publicznych API, ogólnie dostêpmnych obrazków czy fontów
 
-Jak widaæ to serwer decyduje o tym na co zezwala klientom (originom) a rol¹ przegl¹darki jest respektowanie tych zasad i np. nie wysy³anie danych tam gdzie nie zostan¹ one zaaakceptowane.
+Jak widaæ to serwer decyduje o tym na co zezwala klientom (originom) a rol¹ przegl¹darki jest respektowanie tych zasad i np. nie wysy³anie danych tam gdzie nie zostan¹ one zaaakceptowane. Mimo to jak widaæ ¿¹danie zosta³o wys³ane ...  
 
 ### preflight
 
-W nowoczesnych przegl¹darkach dla pewnych typów ¿¹dañ Cross-Origin gdzie potencjalnie modyfikowane/przesy³ane mog¹ byæ dane u¿ytkownika, przegl¹darka sprawdzi czy ma uprawnienia do wys³ania takiego ¿¹dania, zanim wyœle dane:
+.., ¿eby by³o odrobinê bezpieczniej w nowoczesnych przegl¹darkach dla pewnych typów ¿¹dañ Cross-Origin gdzie potencjalnie modyfikowane/przesy³ane mog¹ byæ dane u¿ytkownika, przegl¹darka sprawdzi czy ma uprawnienia do wys³ania takiego ¿¹dania, zanim wyœle dane:
 
    ```powershell
          OPTIONS / HTTP/1.1.
