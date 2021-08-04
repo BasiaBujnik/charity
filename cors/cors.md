@@ -1,4 +1,4 @@
-## CORS
+## CORS (Cross-origin resource sharing)
 
 - Domyœlnie ¿¹dania, o za³adowanie w przegl¹darce zasobów pochodz¹cych z innej strony ni¿ ta, z której pobraliœmy Ÿród³o strony s¹ blokowane (same origin policy). 
 - Zapobiega to pewnym rodzajom ataku, w których strona której nie kontrolujemy mo¿e zawieraæ "niebezpieczny kod javscript", który za³adujemy do przegl¹darki i w ten sposób atakuj¹cy bêdzie mia³ dostêp do danych poprzez DOM w przegl¹darce.
