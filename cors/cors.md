@@ -1,6 +1,6 @@
 ## CORS
 
-- Domyœlnie ¿¹dania, o za³adowanie w przgl¹darce zasobów pochodz¹cych z innej strony ni¿ ta, z której pobraliœmy Ÿród³o strony s¹ blokowane (same origin policy). 
+- Domyœlnie ¿¹dania, o za³adowanie w przegl¹darce zasobów pochodz¹cych z innej strony ni¿ ta, z której pobraliœmy Ÿród³o strony s¹ blokowane (same origin policy). 
 - Zapobiega to pewnym rodzajom ataku, w których strona której nie kontrolujemy mo¿e zawieraæ "niebezpieczny kod javscript", który za³adujemy do przegl¹darki i w ten sposób atakuj¹cy bêdzie mia³ dostêp do danych poprzez DOM w przegl¹darce.
 - W prawdziwym zyciu czêsto jednak chcemy komunikowaæ siê do innych domen np. API/backend mo¿e byæ na zupe³nie innym serwerze ni¿ frontend.
  - Cross-origin resource sharing (CORS) jest mechanizem, który pozwala na wysy³anie ¿¹dañ i ³adawanie zasobów z/do domen innych ni¿ ta, z której pochodzi Ÿród³o strony.
