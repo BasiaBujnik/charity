@@ -63,7 +63,7 @@ Naszym 'Origin' jest w tym przypadku http://www.example.com
 
 Jak widaæ to serwer decyduje o tym na co zezwala klientom (originom) a rol¹ przegl¹darki jest respektowanie tych zasad i np. nie wysy³anie danych tam gdzie nie zostan¹ one zaaakceptowane.
 
-###preflight
+### preflight
 
 W nowoczesnych przegl¹darkach dla pewnych typów ¿¹dañ Cross-Origin gdzie potencjalnie modyfikowane/przesy³ane mog¹ byæ dane u¿ytkownika, przegl¹darka sprawdzi czy ma uprawnienia do wys³ania takiego ¿¹dania, zanim wyœle dane:
 
