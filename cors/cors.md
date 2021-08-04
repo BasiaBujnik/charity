@@ -49,10 +49,10 @@ Naszym 'Origin' jest w tym przypadku http://www.example.com
    - Jeúli serwer **service.example.com** pozwala na po≥πczenie z tego Originu, wysy≥a odpowiedü i dodaje nag≥Ûwek
    
    ```powershell
-           HTTTP/1.1 200 OK 
-           Access-Control-Allow-Origin: http://www.example.com
-         
-           (..body..)
+       HTTTP/1.1 200 OK 
+       Access-Control-Allow-Origin: http://www.example.com
+     
+       (..body..)
         
     ```
         
