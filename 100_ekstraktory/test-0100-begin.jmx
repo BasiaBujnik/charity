@@ -15,7 +15,7 @@
           </elementProp>
           <elementProp name="loops" elementType="Argument">
             <stringProp name="Argument.name">loops</stringProp>
-            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.value">2</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="rampUp" elementType="Argument">
@@ -136,35 +136,7 @@
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
           </HTTPSamplerProxy>
-          <hashTree>
-            <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="Extract Application Version with CSS" enabled="true">
-              <stringProp name="HtmlExtractor.refname">applicationVersionCSS</stringProp>
-              <stringProp name="HtmlExtractor.expr">footer</stringProp>
-              <stringProp name="HtmlExtractor.attribute"></stringProp>
-              <stringProp name="HtmlExtractor.default">applicationVersionCSS_notExtracted</stringProp>
-              <boolProp name="HtmlExtractor.default_empty_value">false</boolProp>
-              <stringProp name="HtmlExtractor.match_number">1</stringProp>
-              <stringProp name="HtmlExtractor.extractor_impl"></stringProp>
-            </HtmlExtractor>
-            <hashTree/>
-            <XPath2Extractor guiclass="XPath2ExtractorGui" testclass="XPath2Extractor" testname="Extract Application Version with XPATH" enabled="true">
-              <stringProp name="XPathExtractor2.default">applicationVersionXPATH2_notExtracted</stringProp>
-              <stringProp name="XPathExtractor2.refname">applicationVersionXPATH2</stringProp>
-              <stringProp name="XPathExtractor2.matchNumber">1</stringProp>
-              <stringProp name="XPathExtractor2.xpathQuery">//footer</stringProp>
-              <stringProp name="XPathExtractor2.namespaces"></stringProp>
-            </XPath2Extractor>
-            <hashTree/>
-            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Display applicationVersion" enabled="true">
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="script">log.info(&quot; from CSS &quot; + vars.get(&apos;applicationVersionCSS&apos;))
-log.info(&quot; from XPATH &quot; + vars.get(&apos;applicationVersionXPATH2&apos;))</stringProp>
-              <stringProp name="scriptLanguage">groovy</stringProp>
-            </JSR223PostProcessor>
-            <hashTree/>
-          </hashTree>
+          <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP GET Request for https://appxx.azurewebsites.net/todos" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments"/>
