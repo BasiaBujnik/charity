@@ -8,6 +8,21 @@ Przypomnijmy sobie, że:
 
 Przykład:
 
+***
+**Interleave controller** - Dla każdego wątka, w każdym przebiegu wykonany zostanie jeden, kolejny element z grupy
+
+```
+    Interleave Controller
+        /sampler1
+        /sampler2
+        /sampler3
+```
+
+Pętla 1: /sampler1
+Pętla 2: /sampler2
+Pętla 3: /sampler3
+***
+
 **IF** - akcja/część testu zdefiniowana pod tym kontrolerem wykona się jeśli warunek logiczny (wyrażenie), który IF ewaluuje jest równy logicznemu `true` lub wartość jest 'true'
 > official docs: performs actions underneath if logical condition is true
 
