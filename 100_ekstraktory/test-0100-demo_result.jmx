@@ -155,16 +155,6 @@
               <stringProp name="XPathExtractor2.namespaces"></stringProp>
             </XPath2Extractor>
             <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor" enabled="true">
-              <stringProp name="XPathExtractor.default">applicationVersionXPATH_notExtracted</stringProp>
-              <stringProp name="XPathExtractor.refname">applicationVersionXPATH</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">1</stringProp>
-              <stringProp name="XPathExtractor.xpathQuery">//footer</stringProp>
-              <boolProp name="XPathExtractor.validate">false</boolProp>
-              <boolProp name="XPathExtractor.tolerant">false</boolProp>
-              <boolProp name="XPathExtractor.namespace">false</boolProp>
-            </XPathExtractor>
-            <hashTree/>
             <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Display applicationVersion" enabled="true">
               <stringProp name="cacheKey">true</stringProp>
               <stringProp name="filename"></stringProp>
