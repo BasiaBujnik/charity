@@ -21,7 +21,9 @@ Przykład:
 ```
 
 Pętla 1: /sampler1
+
 Pętla 2: /sampler2
+
 Pętla 3: /sampler3
 ***
 
