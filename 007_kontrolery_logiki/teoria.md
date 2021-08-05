@@ -2,9 +2,9 @@
 
 Przypomnijmy sobie, że:
 
-    **Kontrolery logiki** - sterują przepływem programu, są to np. if, for, while, ... znane nam z programowania. Wykonują się z tym samym priorytetem co samplery.
+**Kontrolery logiki** - sterują przepływem programu, są to np. if, for, while, ... znane nam z programowania. Wykonują się z tym samym priorytetem co samplery.
 
-    **Samplery** - wykonują jednostkę pracy np. wysyłają żądanie HTTP
+**Samplery** - wykonują jednostkę pracy np. wysyłają żądanie HTTP
 
 Przykład:
 
