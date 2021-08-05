@@ -28,7 +28,6 @@ Pętla 3: /sampler3
 ***
 
 **IF** - akcja/część testu zdefiniowana pod tym kontrolerem wykona się jeśli warunek logiczny (wyrażenie), który IF ewaluuje jest równy logicznemu `true` lub wartość jest 'true'
-> official docs: performs actions underneath if logical condition is true
 
 W najprostszej formie warunek powinien być zmienną zawierającą true lub false:
 
