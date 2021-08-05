@@ -9,3 +9,7 @@ Sparametryzuj ustawienia Grupy Wątków (Thread Groupy):
 
 Umieść parametry z ćwiczenia 1 w sekcji Test Plan
 
+ćwiczenie 3 (opcja):
+
+Wykorzystaj HTTP Authorization Managera do realizacji Basic Auth
+
