@@ -1,5 +1,7 @@
 ## Elementy konfiguracyjne JMetera
 
+![kontrolery](img/configelements.png)
+
 Zapamiętaj:
 
 - **Config Elements** - elementy konfiguracyjne mają wpływ na zachowanie innych elementów lub całego JMetera. Najczęściej używane to:
