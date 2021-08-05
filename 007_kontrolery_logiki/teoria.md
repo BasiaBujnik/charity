@@ -1,5 +1,7 @@
 ## Kontrolery logiki
 
+![kontrolery](img/controllers.png)
+
 Przypomnijmy sobie, że:
 
 **Kontrolery logiki** - sterują przepływem programu, są to np. if, for, while, ... znane nam z programowania. Wykonują się z tym samym priorytetem co samplery.
