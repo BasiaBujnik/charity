@@ -10,7 +10,7 @@
 2. Uruchom test z CLI dla:
     - 10 użytkowników `../jmeter.bat -Jusers=10 ...`
     - 50 użytkowników `../jmeter.bat -Jusers=50 ...`
-3. Znalizuj log JMetera, czy znajduje się w nim jakaś informacja o parametrach?
+3. Zanalizuj log JMetera, czy znajduje się w nim jakaś informacja o parametrach?
     
 
 
