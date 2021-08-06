@@ -6,7 +6,7 @@ Często niepraktyczne jest uruchamianie całego testu po to tylko, żeby móc pr
 
 Podejściem, które ułatwi nam pracę nad takimi elementami jest mockowanie/stubbing (zaślepianie). Skorzystamy z następujących elementów:
 
-- setUp thread groupa
+- setUp thread groupa (loops=0,threads=0)
 - dummy sampler (zewnętrzny plugin)
 - opcja Validate
 
