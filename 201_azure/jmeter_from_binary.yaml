@@ -1,6 +1,8 @@
 trigger: none
 pool:
+  #on cloud agent
   #vmImage: 'ubuntu-latest' cloud agent
+  #on self hosted
   name: Default
   demands:
     - agent.os -equals Linux
